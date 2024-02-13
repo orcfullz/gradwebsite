@@ -286,6 +286,7 @@ nav li {
 
     #title-details-datetime {
         margin: 20px 0px;
+        margin-left: 0px;
     }
 
     #event-guide {
