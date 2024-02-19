@@ -107,9 +107,12 @@ p {
     margin-top: 20px;
 }
 
+#title-details-location {
+    margin-right: 96px;
+}
+
 #title-details-datetime {
     margin-right: 48px;
-    margin-left: 96px;
 }
 
 .subtitle {
@@ -325,6 +328,10 @@ nav li {
     #title-details {
         flex-direction: column;
     };
+
+    #title-details-location {
+        margin: 20px 0px;
+    }
 
     #title-details-datetime {
         margin: 20px 0px;
