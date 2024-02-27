@@ -1,4 +1,4 @@
-const imageLinks = [
+var imageLinks = [
     { name: "Canice", link: "https://i.postimg.cc/g0LHfKdF/Canice.png" },
     { name: "Celeste", link: "https://i.postimg.cc/RZN7HTW6/Celeste.png" },
     { name: "Cunjia", link: "https://i.postimg.cc/J755V0wn/Cunjia.png" },
@@ -29,6 +29,6 @@ const imageLinks = [
     { name: "Valerie", link: "https://i.postimg.cc/Wzy3L0TC/Valerie.png" },
     { name: "Wina", link: "https://i.postimg.cc/KjjzH0St/Wina.png" },
     { name: "Wing", link: "https://i.postimg.cc/3rfWvQm1/Wing.png" },
-    { name: "Yuhan", link: "https://i.postimg.cc/bNGr0VRh/Yuhan.png" },
+    { name: "Yuhang", link: "https://i.postimg.cc/bNGr0VRh/Yuhan.png" },
     { name: "Zhi-Hui", link: "https://i.postimg.cc/TYZwtjkW/Zhi-Hui.png" }
   ];  

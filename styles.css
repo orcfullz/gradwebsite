@@ -25,13 +25,15 @@
 :root {
     --main-color-blue: #11212B;
     --main-color-yellow: #EBFF6B;
+    --font-color-blue: #366381;
+    --background-yellow: #FBFFE1;
 }
 
 body {
     margin: 0;
     font-family: "Meta Pro";
     color: #FBFFE1;
-    height: 200vw;
+    height: fit-content;
     font-weight: 400;
     /* font-stretch: expanded; */
     /* letter-spacing: 1px; */
@@ -454,15 +456,14 @@ nav li {
 }
 
 #main-page {
-    background-color: #EBFF6B;
+    background-color: var(--background-yellow);
+    height: fit-content;
 }
 
 #main-page-content {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin-left: 5%;
-    background: #EBFF6B;
     padding-top: 64px; 
 }
 
@@ -472,10 +473,71 @@ nav li {
     top: 0;
     align-self: flex-start;   
     flex: 15%;
+    padding-top: 200px;
+}
+
+.filter {
+    height: 4em;
+    border-radius: 2em 0 0 2em;
+    margin: auto 0;
+    padding-left: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.active {
+    background-color: var(--main-color-yellow);
+}
+
+.filter p {
+    color: var(--font-color-blue);
+    font-weight: 500;
+    font-size: 28px;
+    vertical-align: middle;
 }
 
 #main-page-collections {
     flex: 80%;
+    padding-top: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.designer-element {
+    width: 197px;
+    margin: 20px;
+}
+
+.project-element {
+    width: 197px;
+    margin: 20px;
+}
+
+.project-image {
+    width: 197px;
+    height: 197px;
+    background-image: url("assets/landscape-placeholder\ 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 12px;
+}
+
+.designer-image {
+    width: 197px;
+    height: 202px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 12px;
+}
+
+.designer-text {
+    color: var(--font-color-blue);
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
 }
 
 #welcome-page {
@@ -580,6 +642,35 @@ nav li {
     #event-guide {
         height: fit-content;
     }
+
+    #main-page-content {
+        flex-direction: column;
+    }
+
+    #main-page-filter {
+        position: -webkit-sticky; /* for Safari */
+        position: sticky;
+        top: 0;
+        flex: 15%;
+        padding: 72px 0px 24px 0px;
+        background-color: #FBFFE1;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .filter {
+        width: 50%;
+    }
+
+    #designer-filter p {
+        margin-right: 1.5em;
+        margin-left: auto;
+    }
+
+    #designer-filter.active {
+        border-radius: 0px 2em 2em 0px;
+    }
 }
 
 
@@ -668,5 +759,9 @@ nav li {
     .by-way-images {
         width: 100%;
         max-height: 200px;
+    }
+
+    #designer-element {
+        width: 146px;
     }
 }
