@@ -9,22 +9,6 @@
     <script src="scripts/script.js" type="module"></script>
 </head>
 <body>
-    <div id="navigation-menu">
-        <div id="navigation-logo">
-            <img src="assets/logo_navigation.png" alt="logo" id="navigation-img">
-        </div>
-        <div id="navigation-list">
-            <nav id="nav-bar">
-              <ul>
-                <li><a href="#event-guide" class="nav-link">Event Guide</a></li>
-                <li><a href="#designers" class="nav-link">Designers</a></li>
-                <li><a href="https://cde.nus.edu.sg/did/" target="_blank" class="nav-link">About DID</a></li>
-                <li><a href="#gradbook" class="nav-link">Gradbook</a></li>
-                <li><a href="#merch" class="nav-link">Gradbook</a></li>
-              </ul>
-            </nav>
-        </div>
-    </div>
     <div id="welcome-page" class="pages active">
         <div class="diagonal-accent"></div>
         <div id="welcome-page-content">
@@ -87,7 +71,23 @@
         </div>
     </div>
     <div id="event-guide">
-        <div class="diagonal-accent"></div>
+        <div id="navigation-menu-event" class="navigation-menu">
+            <div id="navigation-logo">
+                <img src="assets/logo_navigation.png" alt="logo" id="navigation-img">
+            </div>
+            <div class="topnav" id="navigation-list">
+                <nav id="nav-bar">
+                  <ul>
+                    <li><a href="#event-guide" class="nav-link">Event Guide</a></li>
+                    <li><a href="#designers" class="nav-link">Designers</a></li>
+                    <li><a href="https://cde.nus.edu.sg/did/" target="_blank" class="nav-link">About DID</a></li>
+                    <li><a href="#gradbook" class="nav-link">Gradbook</a></li>
+                    <li><a href="#merch" class="nav-link">Merch</a></li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="diagonal-accent" id="diagonal-accent-event"></div>
         <div id="event-guide-content" class="row">
             <div id="event-guide-details" class="column">
                 <div id="event-guide-rsvp">
@@ -148,38 +148,40 @@
                         </div>
                     </div>
                     <div id="getting-there-image">
-                        
+                        <img src="assets/map.png" alt="map" id="getting-there-map">
+                        <img src="assets/Location pin.png" alt="map" id="getting-there-pin">
+                        <img src="assets/map_redirect.png" alt="map" id="getting-there-link">
                     </div>
                 </div>
                 <div id="getting-there-by" class="row">
                     <div id="by-car" class="by-way">
-                        <div id="by-car-content">
+                        <div id="by-car-content" class="first-content">
                             <div id="by-car-title" class="headings subtitle">
                                 By car
                             </div>
-                            <div id="by-car-text">
+                            <div id="by-car-text" class="by-way-text">
                                 From Ayer Rajah Expressway (AYE), take the Normanton Park or South Buona Vista Road exit and then take the turn into Science Park Drive.
                             </div>
                         </div>
-                        <div id="by-car-image">
-                            
+                        <div id="by-car-image" class="second-content">
+                            <img src="assets/by-car.png" alt="by-car" id="by-car-img" class="by-way-images">
                         </div>
                     </div>
                     <div id="by-train" class="by-way">
-                        <div id="by-train-content">
+                        <div id="by-train-content" class="first-content">
                             <div id="by-train-title" class="headings subtitle">
                                 By train
                             </div>
-                            <div id="by-train-text">
+                            <div id="by-train-text" class="by-way-text">
                                 Take the Circle Line and alight at Kent Ridge MRT and then take Exit B. Visitors can access the park by foot or take the Singapore Science Park shuttle bus.
                             </div>
                         </div>
-                        <div id="by-train-image">
-                            
+                        <div id="by-train-image" class="second-content">
+                            <img src="assets/by-train.png" alt="by-train" id="by-train-img" class="by-way-images">
                         </div>
                     </div>
                     <div id="by-bus" class="by-way">
-                        <div id="by-bus-content">
+                        <div id="by-bus-content" class="first-content">
                             <div id="by-bus-title" class="headings subtitle">
                                 By bus
                             </div>
@@ -187,22 +189,81 @@
                                 Take public Bus No. 92/ 92A from Buona Vista MRT Station. Other public Bus services plying along Buona Vista Flyover are 14, 33, 97, 166, 197, 963 and 963e.
                             </div>
                         </div>
-                        <div id="by-bus-image">
+                        <div id="by-bus-second" class="second-content">
                             <div class="subtitle headings">
                                 Nearest bus stops
                             </div>
-                            <div class="row">
+                            <div id="by-bus-images" class="row">
                                 <div class="bus-images">
+                                    <img src="assets/by-bus-1.png" alt="by-bus" class="by-bus-img">
+                                    <p>
                                     <span class="headings">Opp Ascent(15181)</span>
                                     <br>Bus 92
+                                    </p>
                                 </div>
                                 <div class="bus-images">
+                                    <img src="assets/by-bus-1.png" alt="by-bus" class="by-bus-img">
+                                    <p>
                                     <span class="headings">Ascent(15189)</span>
                                     <br>Bus 92
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-logo">
+                <div><img id="logo-footer" src="assets/logo_footer.png" alt="logo-footer"></div>
+                <div class="subtitle headings">DID Grad Show</div>
+            </div>
+            <div id="footer-description">
+                <div>
+                    <p class="headings">
+                        7-10 June 2024  &#8226  Ascent Building, 118222
+                    </p>
+                </div>
+            </div>
+            <div id="footer-social">
+                <div>
+                    <img class="social" src="assets/instagram-symbol.png" alt="logo-footer">
+                    <img class="social" src="assets/share-symbol.png" alt="logo-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main-page">
+        <div id="navigation-menu-event" class="navigation-menu">
+            <div id="navigation-logo">
+                <img src="assets/logo_navigation.png" alt="logo" id="navigation-img">
+            </div>
+            <div class="topnav" id="navigation-list">
+                <nav id="nav-bar">
+                  <ul>
+                    <li><a href="#event-guide" class="nav-link">Event Guide</a></li>
+                    <li><a href="#designers" class="nav-link">Designers</a></li>
+                    <li><a href="https://cde.nus.edu.sg/did/" target="_blank" class="nav-link">About DID</a></li>
+                    <li><a href="#gradbook" class="nav-link">Gradbook</a></li>
+                    <li><a href="#merch" class="nav-link">Merch</a></li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="main-page-content">
+            <div id="main-page-filter">
+                <div id="designer-filter" class="filter active">
+                    <p>Designers</p>
+                </div>
+                <div id="works-filter" class="filter">
+                    <p>Works</p>
+                </div>
+            </div>
+            <div id="main-page-collections">
+                <div class="designer-element">
+                    <div class="designer-image"></div>
+                    <div class="designer-text">Canice</div>
                 </div>
             </div>
         </div>

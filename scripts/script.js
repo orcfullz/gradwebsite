@@ -25,3 +25,9 @@ element.addEventListener('mouseup', function (event) {
     navMenu.style.display = "flex";
   }
 });
+
+let designer_page = document.querySelector("designer-content");
+
+const generateDesignerContent = (data) => {
+  
+} 
