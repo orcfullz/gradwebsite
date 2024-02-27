@@ -652,11 +652,6 @@ nav li {
     text-align: center;
 }
 
-
-#event-guide {
-    display: none;
-}
-
 @media only screen and (max-width: 1920px) {
     #welcome-page-logo {
         width: 400px;

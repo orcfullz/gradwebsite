@@ -37,7 +37,6 @@ console.log("javascript loaded")
 
 window.onload = () => {
   generateDesignerCollection();
-  generateProjectCollection();
 
   document.querySelector("#designer-filter").addEventListener("click", (e) => {
     generateDesignerCollection();
