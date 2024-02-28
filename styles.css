@@ -48,6 +48,7 @@ body {
 
 a {
     text-decoration: none !important;
+    overflow: hidden;
 }
 
 .headings {
