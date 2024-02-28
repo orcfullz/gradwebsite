@@ -29,6 +29,7 @@
     --background-yellow: #FBFFE1;
     --secondary-yellow: #F3FFA6;
     --secondary-blue: #1E3746;
+    --secondary-text-yellow: #F5FFB5;
 }
 
 html {
@@ -285,6 +286,10 @@ nav li {
     color: #9AA4AA;
 }
 
+.navigation-menu-mobile {
+    display: none;
+}
+
 /* Event Guide Page */
 .row {
     display: flex;
@@ -296,6 +301,12 @@ nav li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+
+#diagonal-accent-event {
+    height: 140px;
+    background-position: center;
 }
 
 #event-guide {
@@ -369,16 +380,11 @@ nav li {
 #getting-there-image {
     position: relative;
     height: 160px;
-}
-
-#getting-there-map {
-    position: absolute;
-    height: 160px;
-}
-
-#getting-there-pin {
-    position: absolute;
-    top: 80px;
+    width: 240px;
+    border-radius: 10px;
+    background-image: url("assets/getting-there.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #getting-there-link {
@@ -386,7 +392,7 @@ nav li {
     width: 32px;
     height: 32px;
     bottom: 0px;
-    left: 100%;
+    right: 0;
 }
 
 #getting-there-by {
@@ -562,6 +568,7 @@ nav li {
     background-image: url("assets/share-symbol.png");
 }
 
+/* Main Page */
 
 #main-page {
     background-color: var(--background-yellow);
@@ -652,6 +659,7 @@ nav li {
     text-align: center;
 }
 
+
 @media only screen and (max-width: 1920px) {
     #welcome-page-logo {
         width: 400px;
@@ -692,27 +700,40 @@ nav li {
         display: none;
     }
 
-
     #event-guide {
         height: fit-content;
+        color: var(--secondary-text-yellow);
     }
 
     #event-guide-content {
         flex-direction: column !important;
-        width: 80%;
+        width: 90%;
         padding-bottom: 48px;
+        align-items: center;
+    }
+
+    #event-guide-details {
+        width: 80%;
     }
 
     #event-guide-direction {
         margin-left: 0px;
+        width: 100%;
     }
 
     #getting-there {
         flex-direction: column !important;
+        align-items: center;
+        margin-top: 24px;
+    }
+
+    #getting-there-content {
+        width: 80%;
     }
 
     #getting-there-by {
         flex-direction: column !important;
+        margin-top: 24px;
     }
 
     #getting-there-by div {
@@ -736,11 +757,26 @@ nav li {
     #by-bus .second-content {
         width: 80%;
         margin: 0px auto;
+        border-radius: 0;
+    }
+
+    #getting-there-image {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        border-radius: 0;
+    }
+
+    #getting-there-link {
+        width: 10%;
+        height: auto;
     }
 
     .by-way-images {
         width: 100%;
         height: 400px;
+        background-size: cover;
+        border-radius: 0;
     }
 
     #event-guide {
@@ -907,6 +943,49 @@ nav li {
     .project-element {
         margin: 10px;
     }
+
+    #navigation-menu-event-mobile.navigation-menu {
+        display: flex;
+        height: 100px;
+        width: 90%;
+        background-color: var(--main-color-blue);
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+
+    #navigation-menu-main-mobile.navigation-menu {
+        display: flex;
+        height: 100px;
+        width: 90%;
+        background-color: var(--background-yellow);
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+
+    .navigation-img-mobile {
+        width:46px;
+        height: 48px;
+    }
+
+    .menu-img {
+        width: 30px;
+        height: 36px;
+    }
+
+    #navigation-list-mobile {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 259px;
+        height: 700px;
+        align-self: flex-start;
+        z-index: 999;
+    }
+
+    .navigation-menu {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 560px) {
@@ -923,6 +1002,12 @@ nav li {
     .by-way-images {
         width: 100%;
         max-height: 200px;
+    }
+
+    #getting-there-image {
+        width: 100%;
+        max-height: 200px;
+        background-position: center;
     }
 
     #designer-element {
