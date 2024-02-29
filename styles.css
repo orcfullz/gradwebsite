@@ -291,6 +291,85 @@ nav li {
     display: none;
 }
 
+.navigation-img-mobile {
+    width:46px;
+    height: 48px;
+}
+
+.menu-img {
+    width: 30px;
+    height: 36px;
+}
+
+#navigation-list-mobile {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 360px;
+    width: 60vw;
+    height: 95vh;
+    align-self: flex-start;
+    z-index: 999;
+    flex-direction: column;
+    justify-items: space-between;
+    gap: 22px;
+    align-items: center;
+}
+
+#navigation-mobile-main {
+    background-color: var(--font-color-blue);
+}
+
+.navigation-mobile {
+    width: 100%;
+    height: 85%;
+    border-radius: 0 0 30vw 30vw;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 3em;
+    font-size: 30px; 
+}
+
+#navigation-button-main-img {
+    height: 78px;
+    width: 78px;
+}
+
+.navigation-button {
+    height: 10%;
+    width: auto;
+}
+
+#nav-bar-mobile > ul {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+#nav-bar-mobile li {
+    list-style: none;
+    border-radius: 10%;
+    margin: 4px;
+    overflow: hidden;
+    color: #001;
+}
+
+.nav-link-main {
+    color: #FFF;
+}
+
+.nav-link:hover {
+    /* background: rgb(128, 128, 128, 0.3) 0*/
+    color: #9AA4AA;
+}
+
+
 /* Event Guide Page */
 .row {
     display: flex;
@@ -627,7 +706,8 @@ nav li {
 }
 
 .designer-element {
-    width: 197px;
+    width: 197
+    px;
     margin: 20px;
 }
 
@@ -952,6 +1032,7 @@ nav li {
         background-color: var(--main-color-blue);
         justify-content: space-between;
         padding: 0 5%;
+        overflow: visible;
     }
 
     #navigation-menu-main-mobile.navigation-menu {
@@ -961,27 +1042,7 @@ nav li {
         background-color: var(--background-yellow);
         justify-content: space-between;
         padding: 0 5%;
-    }
-
-    .navigation-img-mobile {
-        width:46px;
-        height: 48px;
-    }
-
-    .menu-img {
-        width: 30px;
-        height: 36px;
-    }
-
-    #navigation-list-mobile {
-        display: flex;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 259px;
-        height: 700px;
-        align-self: flex-start;
-        z-index: 999;
+        overflow: visible;
     }
 
     .navigation-menu {
@@ -1012,6 +1073,6 @@ nav li {
     }
 
     #designer-element {
-        width: 146px;
+        width: 132px;
     }
 }
