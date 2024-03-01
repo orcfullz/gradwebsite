@@ -41,10 +41,22 @@ window.onload = () => {
   document.querySelector("#designer-filter").addEventListener("click", (e) => {
     generateDesignerCollection();
   });
+
+  document.querySelector(".menu-icon").addEventListener("click", (e) => {
+    openMenu();
+  })
+
+  document.querySelector(".navigation-button").addEventListener("click", (e) => {
+    closeMenu();
+  })
+
+  document.querySelector(".close-to-des").addEventListener("click", (e) => {
+    closeMenu();
+})
   
-  document.querySelector("#project-filter").addEventListener("click", (e) => {
-    generateProjectCollection();
-  });
+  // document.querySelector("#project-filter").addEventListener("click", (e) => {
+  //   generateProjectCollection();
+  // });
 }
 
 const delta = 20;
@@ -75,17 +87,23 @@ element.addEventListener('mouseup', function (event) {
 
 // let designer_page = document.querySelector("designer-content");
 
+const openMenu = () => {
+  const navMobile = document.querySelector("#navigation-list-mobile");
+  navMobile.classList.add("active")
+}
 
-
-
+const closeMenu = () => {
+  const navMobile = document.querySelector("#navigation-list-mobile");
+  navMobile.classList.remove("active")
+}
 
 
 const generateDesignerCollection = () => {
   const designerFilter = document.querySelector("#designer-filter");
-  const projectFilter = document.querySelector("#project-filter");
+  // const projectFilter = document.querySelector("#project-filter");
   if (!("active" in designerFilter.classList)) {
     designerFilter.classList.add("active");
-    projectFilter.classList.remove("active");
+    // projectFilter.classList.remove("active");
   }
 
   const collections = document.querySelector("#main-page-collections");
@@ -109,31 +127,31 @@ const generateDesignerCollection = () => {
   })
 } 
 
-const generateProjectCollection = () => {
-  const designerFilter = document.querySelector("#designer-filter");
-  const projectFilter = document.querySelector("#project-filter");
-  if (!("active" in projectFilter.classList)) {
-    projectFilter.classList.add("active");
-    designerFilter.classList.remove("active");
-  }
+// const generateProjectCollection = () => {
+//   const designerFilter = document.querySelector("#designer-filter");
+//   const projectFilter = document.querySelector("#project-filter");
+//   if (!("active" in projectFilter.classList)) {
+//     projectFilter.classList.add("active");
+//     designerFilter.classList.remove("active");
+//   }
 
-  const collections = document.querySelector("#main-page-collections");
-  collections.innerHTML = "";
+//   const collections = document.querySelector("#main-page-collections");
+//   collections.innerHTML = "";
   
-  imageLinks.forEach((d, i) => {
-    const container = document.createElement('div');
-    container.classList.add("project-element");
-    container.id = d.name;
+//   imageLinks.forEach((d, i) => {
+//     const container = document.createElement('div');
+//     container.classList.add("project-element");
+//     container.id = d.name;
 
-    const image_div = document.createElement("div");
-    image_div.classList.add("project-image");
-    image_div.style.backgroundImage = `url(assets/landscape-placeholder\ 1.png)`;
+//     const image_div = document.createElement("div");
+//     image_div.classList.add("project-image");
+//     image_div.style.backgroundImage = `url(assets/landscape-placeholder\ 1.png)`;
 
-    const text_div = document.createElement("div");
-    text_div.classList.add("designer-text");
-    text_div.innerHTML = "Project Name but Two Lines";
+//     const text_div = document.createElement("div");
+//     text_div.classList.add("designer-text");
+//     text_div.innerHTML = "Project Name but Two Lines";
 
-    container.append(image_div, text_div);
-    collections.append(container)
-  })
-} 
+//     container.append(image_div, text_div);
+//     collections.append(container)
+//   })
+// } 

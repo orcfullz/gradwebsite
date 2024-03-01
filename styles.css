@@ -51,6 +51,7 @@ body {
 a {
     text-decoration: none !important;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .headings {
@@ -224,9 +225,9 @@ p {
     width: 860px;
     height: 860px;
     position: absolute;
-    /* z-index: -100; */
     bottom: -196px;
     right: -144px;
+    overflow: hidden;
     border-radius: 860.914px;
     background: radial-gradient(50% 50% at 50% 50%, rgba(235, 255, 107, 0.10) 10%, rgba(217, 217, 217, 0.00) 100%);
 }
@@ -319,23 +320,34 @@ nav li {
 }
 
 #navigation-list-mobile {
+    display: none;
+    height: 0vh;
+    transition: all ease 300ms, display 0s; 
+}
+
+#navigation-list-mobile.active {
     display: flex;
     position: fixed;
     top: 0;
     right: 0;
     max-width: 360px;
     width: 60vw;
-    height: 92.5vh; 
     align-self: flex-start;
     z-index: 999;
     flex-direction: column;
     justify-items: space-between;
     gap: 22px;
     align-items: center;
+    height: 92.5vh;
 }
 
 #navigation-mobile-main {
     background-color: var(--font-color-blue);
+}
+
+#navigation-mobile-event {
+    background-color: var(--background-yellow);
+    color: var(--main-color-blue);
 }
 
 .navigation-mobile {
@@ -346,10 +358,11 @@ nav li {
     align-items: end;
     justify-content: center;
     padding-bottom: 3em;
-    font-size: 30px; 
+    font-size: 30px;
+    font-weight: 500;
 }
 
-#navigation-button-main-img {
+.navigation-button-img {
     height: 78px;
     width: 78px;
 }
@@ -370,15 +383,15 @@ nav li {
   }
   
 #nav-bar-mobile li {
-    list-style: none;
-    border-radius: 10%;
     margin: 4px;
-    overflow: hidden;
-    color: #001;
 }
 
 .nav-link-main {
     color: #FFF;
+}
+
+.nav-link-event {
+    color: var(--main-color-blue);
 }
 
 .nav-link:hover {
@@ -440,11 +453,6 @@ nav li {
 .bus-stop {
     font-size: 16px;
     font-weight: 500;
-}
-
-#diagonal-accent-event {
-    height: 160px;
-    background-position: center;
 }
 
 #event-guide {
@@ -652,8 +660,11 @@ nav li {
     margin-left: 0;
 }
 
-#footer-description-main .webpage {
+#footer-description-main {
     color: var(--main-color-blue);
+}
+
+.webpage {
     font-weight: 350;
     font-size: 16px;
     line-height: 20px;
@@ -661,9 +672,6 @@ nav li {
 
 #footer-description-event .webpage {
     color: var(--main-color-yellow);
-    font-weight: 350;
-    font-size: 16px;
-    line-height: 20px;
 }
 
 .footer-description .mobile {
@@ -725,6 +733,7 @@ nav li {
     align-self: flex-start;   
     flex: 15%;
     padding-top: 200px;
+    cursor: pointer;
 }
 
 .filter {
@@ -737,7 +746,7 @@ nav li {
     color: #366381;
 }
 
-.active {
+.filter-active {
     background-color: var(--main-color-yellow);
     color: #1E3746 !important;
 }
@@ -761,19 +770,18 @@ nav li {
 }
 
 .designer-element {
-    width: 197
-    px;
+    width: 180px;
     margin: 20px;
 }
 
 .project-element {
-    width: 197px;
+    width: 180px;
     margin: 20px;
 }
 
 .project-image {
-    width: 197px;
-    height: 197px;
+    width: 180px;
+    height: 185px;
     background-image: url("assets/landscape-placeholder\ 1.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -781,8 +789,8 @@ nav li {
 }
 
 .designer-image {
-    width: 197px;
-    height: 202px;
+    width: 180px;
+    height: 185px;
     background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 12px;
@@ -888,7 +896,7 @@ nav li {
         margin-left: auto;
     }
 
-    #designer-filter.active {
+    #designer-filter.filter-active {
         border-radius: 0px 2em 2em 0px;
     }
 
@@ -1170,6 +1178,11 @@ nav li {
 
     #designer-element {
         width: 132px;
+    }
+
+    #designer-image {
+        width: 132px;
+        height: 136px;
     }
 
     .footer-logo {
