@@ -961,6 +961,8 @@ nav li {
 
     #welcome-page-mobile-how {
         font-size: 18px;
+        font-weight: 500;
+        z-index: 2;
     }
 
     #welcone-page-mobile-arrow {
