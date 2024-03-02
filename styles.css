@@ -338,7 +338,7 @@ nav li {
     justify-items: space-between;
     gap: 22px;
     align-items: center;
-    height: 92.5vh;
+    height: 87.5vh;
 }
 
 #navigation-mobile-main {
@@ -1189,6 +1189,8 @@ nav li {
 
     #event-guide-content {
         width: 95%;
+        padding-bottom: 24px;
+        align-items: center;
     }
 
     .by-way-images {
