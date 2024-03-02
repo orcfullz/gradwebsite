@@ -592,10 +592,6 @@ nav li {
     background-color: var(--secondary-blue);
 }
 
-#footer-main {
-    background-color: var(--secondary-yellow);
-}
-
 .footer {
     margin-bottom: 32px;
     margin-top: auto;
@@ -608,6 +604,11 @@ nav li {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+#footer-main {
+    background-color: var(--secondary-yellow);
+    margin-bottom: 0px;
 }
 
 .footer-logo {
@@ -716,13 +717,14 @@ nav li {
 #main-page {
     background-color: var(--background-yellow);
     height: fit-content;
+    padding-bottom: 48px;
 }
 
 #main-page-content {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin-bottom: 48px;
+    padding-bottom: 48px;
     gap: 64px;
 }
 
@@ -770,17 +772,17 @@ nav li {
 }
 
 .designer-element {
-    width: 180px;
+    width: 178px;
     margin: 20px;
 }
 
 .project-element {
-    width: 180px;
+    width: 178px;
     margin: 20px;
 }
 
 .project-image {
-    width: 180px;
+    width: 178px;
     height: 185px;
     background-image: url("assets/landscape-placeholder\ 1.png");
     background-size: cover;
@@ -789,7 +791,7 @@ nav li {
 }
 
 .designer-image {
-    width: 180px;
+    width: 178px;
     height: 185px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -875,7 +877,7 @@ nav li {
         position: sticky;
         top: 0;
         flex: 15%;
-        padding: 72px 0px 24px 0px;
+        padding: 72px 0px 12px 0px;
         background-color: #FBFFE1;
         width: 100%;
         display: flex;
@@ -889,6 +891,10 @@ nav li {
 
     .filter {
         width: 50%;
+    }
+
+    .filter p {
+        font-size: 1.5em;
     }
 
     #designer-filter p {
@@ -1107,6 +1113,21 @@ nav li {
         overflow: visible;
     }
 
+    #main-page-filter {
+        padding-top: 100px;
+    }
+
+    .filter {
+        height: 2.5em;
+        border-radius: 2em 0 0 2em;
+        margin: auto 0;
+        padding-left: 2em;
+        display: flex;
+        align-items: center;
+        color: #366381;
+        font-size: 16px;
+    }
+
     .navigation-menu {
         display: none;
     }
@@ -1156,7 +1177,15 @@ nav li {
         width: 224px;
         height: 256px;
         margin: auto;
-    }   
+    }
+
+    #event-guide {
+        padding-bottom: 72px;
+    }
+
+    #main-page {
+        padding-bottom: 72px;
+    }
 
     #event-guide-content {
         width: 95%;
@@ -1176,13 +1205,30 @@ nav li {
         height: 200px;
     }
 
-    #designer-element {
+    .filter p {
+        font-size: 1.5em;
+    }
+
+    .designer-element {
         width: 132px;
     }
 
-    #designer-image {
+    .designer-image {
         width: 132px;
-        height: 136px;
+        height: 138px;
+    }
+
+    .designer-text {
+        font-size: 24px;
+    }
+
+    .project-element {
+        width: 132px;
+    }
+
+    .project-image {
+        width: 132px;
+        height: 138px;
     }
 
     .footer-logo {
@@ -1196,5 +1242,11 @@ nav li {
 
     .footer-social {
         flex: 10%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-description {
+        margin-left: 24px;
     }
 }
