@@ -52,7 +52,7 @@ window.onload = () => {
 
   document.querySelector(".close-to-des").addEventListener("click", (e) => {
     closeMenu();
-})
+  })
   
   // document.querySelector("#project-filter").addEventListener("click", (e) => {
   //   generateProjectCollection();
