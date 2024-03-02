@@ -697,19 +697,19 @@ nav li {
 }
 
 #instagram-dark {
-    background-image: url("assets/instagram_dark.png");
+    background-image: url("assets/instagram_dark.svg");
 }
 
 #share-dark {
-    background-image: url("assets/share_dark.png");
+    background-image: url("assets/share_dark.svg");
 }
 
 #instagram-light {
-    background-image: url("assets/instagram-symbol.png");
+    background-image: url("assets/instagram-symbol.svg");
 }
 
 #share-light {
-    background-image: url("assets/share-symbol.png");
+    background-image: url("assets/share-symbol.svg");
 }
 
 /* Main Page */
