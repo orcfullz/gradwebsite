@@ -44,6 +44,7 @@ body {
     height: fit-content;
     font-weight: 350;
     font-size: 16px;
+    overflow: hidden;
     /* font-stretch: expanded; */
     /* letter-spacing: 1px; */
 }
@@ -1179,14 +1180,6 @@ nav li {
         margin: auto;
     }
 
-    #event-guide {
-        padding-bottom: 72px;
-    }
-
-    #main-page {
-        padding-bottom: 72px;
-    }
-
     #event-guide-content {
         width: 95%;
     }
@@ -1210,12 +1203,12 @@ nav li {
     }
 
     .designer-element {
-        width: 132px;
+        width: 140px;
     }
 
     .designer-image {
-        width: 132px;
-        height: 138px;
+        width: 140px;
+        height: 148px;
     }
 
     .designer-text {
@@ -1223,12 +1216,12 @@ nav li {
     }
 
     .project-element {
-        width: 132px;
+        width: 140px;
     }
 
     .project-image {
-        width: 132px;
-        height: 138px;
+        width: 140px;
+        height: 148px;
     }
 
     .footer-logo {
