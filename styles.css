@@ -877,9 +877,9 @@ nav li {
     #main-page-filter {
         position: -webkit-sticky; /* for Safari */
         position: sticky;
-        top: 0;
+        top: 60px;
         flex: 15%;
-        padding: 72px 0px 12px 0px;
+        padding: 12px 0px 12px 0px;
         background-color: #FBFFE1;
         width: 100%;
         display: flex;
@@ -1118,7 +1118,11 @@ nav li {
     }
 
     #main-page-filter {
-        padding-top: 100px;
+        top: 100px;
+    }
+
+    #main-page-collections {
+        margin-top: 12px;
     }
 
     .filter {
