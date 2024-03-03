@@ -487,12 +487,38 @@ nav li {
 }
 
 #rsvp-link {
-    display: flex;
-    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 56px;
+    align-items: center;
+    gap: 11px;
+    border-radius: 29.5px;
+    background: linear-gradient(270deg, #366381 0%, rgba(54, 99, 129, 0.00) 100%);
+}
+
+#rsvp-link-text {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    margin-right: 48px;
+}
+
+#rsvp-link div {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+#rsvp-link-img {
+    position: absolute;
+    right: 0;
+    height: 56px;
+    width: auto;
 }
 
 #rsvp-img {
-    width: 100%;
+    height: 56px;
+    width: 56px;
 }
 
 .schedule-item-content {
@@ -522,16 +548,12 @@ nav li {
     position: relative;
     height: 160px;
     width: 240px;
+}
+
+#google-map {
     border-radius: 10px;
 }
 
-#getting-there-link {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    bottom: 0px;
-    right: 0;
-}
 
 #getting-there-by {
     height: 60%;
@@ -755,7 +777,7 @@ nav li {
 
 .filter p {
     color: var(--font-color-blue);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 28px;
     vertical-align: middle;
 }
@@ -821,6 +843,25 @@ nav li {
     #event-guide-content {
         min-width: 90%;
     }
+
+    #rsvp-link {
+        height: 48px;
+    }
+
+    #rsvp-link-text {
+        font-size: 16px;
+        padding-left: 1em;
+    }
+    
+    #rsvp-link-img {
+        height: 48px;
+        width: auto;
+    }
+    
+    #rsvp-img {
+        height: 48px;
+        width: 48px;
+    }
 }
 
 
@@ -866,6 +907,11 @@ nav li {
 
     #diagonal-accent-event {
         height: 140px;
+    }
+
+    #rsvp-link-text {
+        font-size: 12px;
+        padding-left: 1em;
     }
 
     #main-page-content {
@@ -1007,6 +1053,17 @@ nav li {
         width: 80%;
     }
 
+    #rsvp-link-text {
+        font-size: 20px;
+        padding-left: 1em;
+        margin-right: 0px;
+    }
+
+    #rsvp-link-text {
+        width: 100%;
+        text-align: center;
+    }
+
     #getting-there {
         flex-direction: column !important;
         align-items: center;
@@ -1016,6 +1073,7 @@ nav li {
     #getting-there-content {
         width: 100%;
     }
+    
 
     #getting-there-by {
         flex-direction: column !important;
@@ -1050,8 +1108,6 @@ nav li {
     #getting-there-image {
         height: 300px;
         width: 100%;
-        background-size: cover;
-        border-radius: 0;
     }
 
     #getting-there-link {
@@ -1061,6 +1117,10 @@ nav li {
 
     #getting-there-text {
         font-weight: 400;
+    }
+
+    #google-map {
+        border-radius: 0px;
     }
 
     .by-way-images {
@@ -1200,7 +1260,6 @@ nav li {
     #getting-there-image {
         width: 100%;
         max-height: 200px;
-        background-position: center;
     }
 
     #google-map {
@@ -1209,6 +1268,7 @@ nav li {
 
     .filter p {
         font-size: 1.5em;
+        font-weight: 500;
     }
 
     .designer-element {
@@ -1222,6 +1282,7 @@ nav li {
 
     .designer-text {
         font-size: 16px;
+        font-weight: 400;
     }
 
     .project-element {
