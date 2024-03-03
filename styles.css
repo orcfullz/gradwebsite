@@ -1,24 +1,54 @@
-/* @font-face {
+@font-face {
     font-family: 'Meta Pro';
-    src: url('assets/fonts/MetaPro-CondMedium.eot');
-    src: url('assets/fonts/MetaPro-CondMedium.eot?#iefix') format('embedded-opentype'),
-         url('assets/fonts/MetaPro-CondMedium.woff') format('woff'), 
-         url('assets/fonts/MetaPro-CondMedium.ttf')  format('truetype'), 
-         url('assets/fonts/MetaPro-CondMedium.svg#svgFontName') format('svg'); 
-} */
+    src: url('assets/fonts/FFMetaProBold.ttf');
+    src: url('assets/fonts/FFMetaProBold.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/FFMetaProBold.woff') format('woff'), 
+         url('assets/fonts/FFMetaProBold.ttf')  format('truetype'), 
+         url('assets/fonts/FFMetaProBold.svg#svgFontName') format('svg');
+    font-weight: 900;
+}
 
-/* @font-face {
+@font-face {
     font-family: 'Meta Pro';
-    src: url('assets/fonts/MetaPro.eot');
-    src: url('assets/fonts/MetaPro.eot?#iefix') format('embedded-opentype'),
-         url('assets/fonts/MetaPro.woff') format('woff'), 
-         url('assets/fonts/MetaPro.ttf')  format('truetype'), 
-         url('assets/fonts/MetaPro.svg#svgFontName') format('svg'); 
-} */
+    src: url('assets/fonts/FFMetaProMedium.ttf');
+    src: url('assets/fonts/FFMetaProMedium.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/FFMetaProMedium.woff') format('woff'), 
+         url('assets/fonts/FFMetaProMedium.ttf')  format('truetype'), 
+         url('assets/fonts/FFMetaProMedium.svg#svgFontName') format('svg');
+    font-weight: 700;
+}
 
-@import url('https://fonts.cdnfonts.com/css/meta-pro?styles=70694,70693,70695,70696,70689,70690,70675,70676,70692,70691,70673,70674,70687,70671,70672');
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('assets/fonts/FFMetaProBook.ttf');
+    src: url('assets/fonts/FFMetaProBook.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/FFMetaProBook.woff') format('woff'), 
+         url('assets/fonts/FFMetaProBook.ttf')  format('truetype'), 
+         url('assets/fonts/FFMetaProBook.svg#svgFontName') format('svg');
+    font-weight: 500;
+}
 
-                
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('assets/fonts/FFMetaProRegular.ttf');
+    src: url('assets/fonts/FFMetaProRegular.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/FFMetaProRegular.woff') format('woff'), 
+         url('assets/fonts/FFMetaProRegular.ttf')  format('truetype'), 
+         url('assets/fonts/FFMetaProRegular.svg#svgFontName') format('svg');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('assets/fonts/FFMetaProLight.ttf');
+    src: url('assets/fonts/FFMetaProLight.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/FFMetaProLight.woff') format('woff'), 
+         url('assets/fonts/FFMetaProLight.ttf')  format('truetype'), 
+         url('assets/fonts/FFMetaProLight.svg#svgFontName') format('svg');
+    font-weight: 350;
+}
+
+/* @import url('https://fonts.cdnfonts.com/css/meta-pro?styles=70694,70693,70695,70696,70689,70690,70675,70676,70692,70691,70673,70674,70687,70671,70672'); */
 
 /* Variables */
 /* $main-color: var(--main-color-yellow); */
@@ -44,9 +74,27 @@ body {
     height: fit-content;
     font-weight: 350;
     font-size: 16px;
-    
-    /* font-stretch: expanded; */
-    /* letter-spacing: 1px; */
+}
+
+/* Hide the scroll bar in Chrome */
+/* Change the style of the scroll bar in Chrome */
+::-webkit-scrollbar {
+    height: 2px;
+    width: 2px; /* Width of the scroll bar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0); /* Color of the scroll bar track */
+    opacity: 0%;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scroll bar thumb */
+    border-radius: 2px; /* Border radius of the scroll bar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the scroll bar thumb on hover */
 }
 
 a {
@@ -277,6 +325,7 @@ p {
     max-width: 1080px;
     margin-right: auto;
     margin-left: auto;
+    font-weight: 500;
 }
 
 
@@ -777,7 +826,7 @@ nav li {
 
 .filter p {
     color: var(--font-color-blue);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 28px;
     vertical-align: middle;
 }
@@ -928,6 +977,7 @@ nav li {
         width: 100%;
         display: flex;
         flex-direction: row;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
     }
 
     #main-page-collections {
