@@ -20,11 +20,38 @@ window.onload = () => {
   document.querySelector(".close-to-des").addEventListener("click", (e) => {
     closeMenu();
   })
+
+  window.addEventListener('mousemove', moveCursor)
+
+  const linkArray = document.querySelectorAll("a, .clickable");
+  console.log(linkArray);
+
+  linkArray.forEach(d => {
+    d.addEventListener("mouseenter", (e) => {
+      document.querySelector(".cursor").classList.add("link");
+    })
+
+    d.addEventListener("mouseleave", (e) => {
+      document.querySelector(".cursor").classList.remove("link");
+    })
+  })
   
   // document.querySelector("#project-filter").addEventListener("click", (e) => {
   //   generateProjectCollection();
   // });
 }
+
+const cursorSmall = document.querySelector('.cursor');
+
+const moveCursor = (e)=> {
+  const mouseY = e.clientY;
+  const mouseX = e.clientX;
+
+  const width = document.getElementsByClassName('cursor')[0].offsetWidth;
+   
+  cursorSmall.style.transform = `translate3d(${mouseX-width/2}px, ${mouseY-width/2}px, 0)`;
+}
+
 
 const delta = 20;
 let startX;
