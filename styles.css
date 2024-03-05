@@ -1232,24 +1232,24 @@ nav li {
         margin: 10px;
     }
 
-    #navigation-menu-event-mobile.navigation-menu {
+    .navigation-menu-mobile {
         display: flex;
         height: 100px;
         width: 90%;
-        background-color: var(--main-color-blue);
         justify-content: space-between;
         padding: 0 5%;
         overflow: visible;
     }
 
-    #navigation-menu-main-mobile.navigation-menu {
+    #navigation-menu-event-mobile {
         display: flex;
-        height: 100px;
-        width: 90%;
+        background-color: var(--main-color-blue);
+        box-shadow: 0 2px 6px 1px rgba(0,0,0,.2);
+    }
+
+    #navigation-menu-main-mobile {
+        display: flex;
         background-color: var(--background-yellow);
-        justify-content: space-between;
-        padding: 0 5%;
-        overflow: visible;
     }
 
     #main-page-filter {

@@ -99,9 +99,9 @@ const DATA = [
       "fullName": "LUKE GOH XU JIE",
       "preferredName": "Luke Goh",
       "picture": "assets/designer-card-photos/Luke.png",
-      "description": "\nLuke, an industrial designer, merges innovation with keen detail to elevate the human experience. His work, focusing on intuitive affordance, blends the physical and digital, showcasing his commitment to enhancing life through thoughtful product design and a deep understanding of user needs.",
+      "description": "Luke, an industrial designer, merges innovation with keen detail to elevate the human experience. His work, focusing on intuitive affordance, blends the physical and digital, showcasing his commitment to enhancing life through thoughtful product design and a deep understanding of user needs.",
       "contactDetails": "lukegoh98@gmail.com",
-      "personalLinks": "https://lukegoh.myportfolio.com/\n\nwww.linkedin.com/in/lukegoh98"
+      "personalLinks": ["https://lukegoh.myportfolio.com/", "www.linkedin.com/in/lukegoh98"]
   },
   {
       "fullName": "MERKAYLA WONG (HUANG XIN'EN)",
@@ -109,7 +109,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Merkayla.png",
       "description": "Driven by an unwavering dedication to crafting seamless user experiences in both digital and physical realms, Merkayla is a passionate designer who seeks to strike a balance between creativity and functionality in her designs, enriching the lives of users. ",
       "contactDetails": "Merkayla.wong@gmail.com",
-      "personalLinks": "https://merkayla-wong.webflow.io/\n\nhttps://www.linkedin.com/in/merkayla-wong-243b92232/"
+      "personalLinks": ["https://merkayla-wong.webflow.io/", "https://www.linkedin.com/in/merkayla-wong-243b92232/"]
   },
   {
       "fullName": "NAZURAH BINTE MOHD ROHAYAT",
@@ -165,7 +165,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Celeste.png",
       "description": "Celeste is a designer who designs with research and finds joy in immersing herself in diverse contexts. She distills complex user problems and their latent emotions to create thoughtful solutions across various mediums. She is interested in the intersections between tech and people. ",
       "contactDetails": "celesteseahkweesuan@gmail.com",
-      "personalLinks": "https://www.linkedin.com/in/celeste-seah celesteseah.webflow.io"
+      "personalLinks": ["https://www.linkedin.com/in/celeste-seah", "celesteseah.webflow.io"]
   },
   {
       "fullName": "SERENE TAN SHER YUN",
@@ -189,7 +189,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Kesh.png",
       "description": "The existence of mint chocolate is like one of the top 3 mysteries in the world. Like who decided that chocolate and colgate was a good combo?",
       "contactDetails": "keshdzn@gmail.com",
-      "personalLinks": "evotions.cc\ncreativetech.wtf"
+      "personalLinks": ["evotions.cc, creativetech.wtf"]
   },
   {
       "fullName": "SYAFIQ BIN RAHIM",
@@ -237,7 +237,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Wina.png",
       "description": "Wina is a dynamic & resourceful designer, who pushes material boundaries with innovation. Her designs reflect practicality, simplicity and thoughtfulness, all underpinned by a desire to leave a meaningful and positive impact.",
       "contactDetails": "wnshta.social@gmail.com",
-      "personalLinks": "wnshta.webflow.io\nlinkedin.com/in/wnshta"
+      "personalLinks": ["wnshta.webflow.io", "linkedin.com/in/wnshta"]
   },
   {
       "fullName": "YANG JUNWEI",
