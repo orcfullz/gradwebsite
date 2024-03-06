@@ -998,7 +998,7 @@ nav li {
         width: 100%;
         display: flex;
         flex-direction: row;
-        box-shadow: 0 2px 6px 1px rgba(0,0,0,.2);
+        /* box-shadow: 0 2px 6px 1px rgba(0,0,0,.2); */
     }
 
     #main-page-collections {
@@ -1244,7 +1244,7 @@ nav li {
     #navigation-menu-event-mobile {
         display: flex;
         background-color: var(--main-color-blue);
-        box-shadow: 0 2px 6px 1px rgba(0,0,0,.2);
+        /* box-shadow: 0 2px 6px 1px rgba(0,0,0,.2); */
     }
 
     #navigation-menu-main-mobile {
