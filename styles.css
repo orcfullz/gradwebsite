@@ -88,7 +88,7 @@ body {
     width: 30px;
     height: 30px;
     transform: translate(-50%, -50%); 
-    background-color: #FFF;
+    background-color: var(--main-color-yellow);
     box-shadow: 0 0 6px 3px rgba(0,0,0,.2);
     border-radius: 50%;
 }
@@ -142,6 +142,7 @@ p {
 #welcome-page {
     height: 100vh;
     margin: 0;
+    padding: 0;
     min-height: 767px;
     width: 100vw;
     background-color: var(--main-color-blue);
@@ -412,6 +413,10 @@ nav li {
 }
 
 #navigation-mobile-main {
+    background-color: var(--font-color-blue);
+}
+
+#navigation-mobile-page {
     background-color: var(--font-color-blue);
 }
 
@@ -897,6 +902,111 @@ nav li {
     text-align: center;
 }
 
+/* Designers page */
+
+.opening-page {
+    height: calc(100vh - 64px);
+    width: 100vw;
+    margin: 0;
+    padding: 0; 
+}
+
+.designer-splash {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-image: url("assets/0-Test-Desktop-copy.png");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.designer-description {
+    height: 500px;
+    width: 750px;
+    background-color: var(--background-yellow);
+    border-radius: 108px 0 0 0;
+    /* padding: 64px 136px 0px 100px; */
+}
+
+.designer-description-content {
+    margin: 64px 136px 0px 100px;
+}
+
+.designer-name {
+    color: var(--font-color-blue);
+    font-family: "Meta Pro";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.designer-description-text {
+    color: var(--main-color-blue);
+    font-family: "Meta Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 32px;
+}
+
+.project-and-links {
+    display: flex;
+    flex-direction: row;
+    width: 441px;
+    align-items: center;
+    gap: 25px;
+}
+
+.designer-project-snippet {
+    display: flex;
+    width: 324px;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    border-radius: 37.5px;
+    background: var(--font-color-blue);
+    box-shadow: 0px 2px 20px 0px rgba(54, 99, 129, 0.25);
+}
+
+.designer-project-snippet-text {
+    color: var(--main-color-yellow);
+    text-align: right;
+    font-family: "Meta Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.designer-project-snippet-img {
+    width: 65px;
+    height: 65px;
+    flex-shrink: 0;
+    border-radius: 65px;
+    background: url("assets/project-snippet.svg"), no-repeat;
+}
+
+.designer-links {
+    height: 26px;
+    display: flex;
+    gap: 25px;
+    align-items: end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 
 @media only screen and (max-width: 1920px) {
     #welcome-page-logo {
@@ -931,6 +1041,16 @@ nav li {
     #rsvp-img {
         height: 48px;
         width: 48px;
+    }
+
+    .designer-splash {
+        background-position: center center;
+    }
+
+    .designer-description {
+        height: 450px;
+        width: 600px;
+        border-radius: 72px 0 0 0;
     }
 }
 
@@ -1250,6 +1370,10 @@ nav li {
     #navigation-menu-main-mobile {
         display: flex;
         background-color: var(--background-yellow);
+    }
+
+    #navigation-menu-page-mobile {
+        display: flex;
     }
 
     #main-page-filter {
