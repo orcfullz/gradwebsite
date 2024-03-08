@@ -37,6 +37,15 @@ window.onload = () => {
         document.querySelector(".cursor").classList.remove("link");
         })
     })
+
+    document.querySelector("#google-map").addEventListener("mouseenter", (e) => {
+        document.querySelector(".cursor").style.display = "none";
+        // document.querySelector(".small").display = "none";
+    })
+
+    document.querySelector("#google-map").addEventListener("mouseleave", (e) => {
+        document.querySelector(".cursor").style.display = "inline";
+    })
 }
 
 const cursorSmall = document.querySelector('.small');

@@ -625,7 +625,8 @@ nav li {
 
 #google-map {
     border-radius: 10px;
-    z-index: 100;
+    z-index: 1;
+    cursor: none;
 }
 
 
