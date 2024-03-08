@@ -72,7 +72,7 @@ body {
     color: #FBFFE1;
     height: fit-content;
     font-weight: 350;
-    font-size: 16px;
+    /* font-size: 16px; */
     cursor: none;
 }
 
@@ -133,7 +133,7 @@ a {
 }
 
 p {
-    font-size: 18px;
+    /* font-size: 18px; */
     margin: 4px 0;
     line-height: 150%;
 }
@@ -320,7 +320,6 @@ p {
     font-size: 18px;
     overflow: hidden;
     background: #1E3746;
-    backdrop-filter: blur(20px);
     z-index: 100;
 }
 
@@ -926,15 +925,15 @@ nav li {
 }
 
 .designer-description {
-    height: 500px;
-    width: 750px;
+    height: 480px;
+    width: 720px;
     background-color: var(--background-yellow);
     border-radius: 108px 0 0 0;
     /* padding: 64px 136px 0px 100px; */
 }
 
 .designer-description-content {
-    margin: 64px 136px 0px 100px;
+    margin: 64px 88px 0px 84px;
 }
 
 .designer-name {
@@ -1046,11 +1045,17 @@ nav li {
     .designer-splash {
         background-position: center center;
     }
-
+    
     .designer-description {
-        height: 450px;
-        width: 600px;
-        border-radius: 72px 0 0 0;
+        height: 480px;
+        width: 720px;
+        background-color: var(--background-yellow);
+        border-radius: 108px 0 0 0;
+        /* padding: 64px 136px 0px 100px; */
+    }
+    
+    .designer-description-content {
+        margin: 64px 56px 0px 64px;
     }
 }
 
@@ -1149,6 +1154,22 @@ nav li {
 
     .footer-text {
         font-size: 22px;
+    }
+
+    .designer-description {
+        height: 450px;
+        width: 640px;
+        background-color: var(--background-yellow);
+        border-radius: 108px 0 0 0;
+        /* padding: 64px 136px 0px 100px; */
+    }
+    
+    .designer-name {
+        font-size: 48px;
+    }
+    
+    .designer-description-text {
+        font-size: 16px;
     }
 }
 
@@ -1437,6 +1458,30 @@ nav li {
     .footer-social {
         flex-direction: column;
     }
+
+    .designer-description {
+        height: 450px;
+        width: 600px;
+        /* padding: 64px 136px 0px 100px; */
+    }
+    
+    .designer-name {
+        font-size: 44px;
+    }
+    
+    .designer-description-text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    #navigation-menu-page-mobile.navigation-menu {
+        background: none;
+        position: fixed;
+    }
+
+    .opening-page {
+        height: 100vh;
+    }
 }
 
 @media only screen and (max-width: 560px) {
@@ -1504,6 +1549,74 @@ nav li {
 
     .footer-social {
         flex: 10%;
+    }
+
+    .designer-splash {
+        background-image: url("assets/0-Test-Phone.png");
+        background-size: contain;
+        background-position: 0px -110px;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+    }
+
+    .designer-description {
+        height: 320px;
+        width: 100%;
+        background-color: var(--background-yellow);
+        border-radius: 0;
+        /* padding: 64px 136px 0px 100px; */
+    }
+
+    .designer-description-content {
+        margin: 32px 38px 0px 46px;
+    }
+
+    .designer-name {
+        font-size: 32px;
+    }
+
+    .designer-description-text {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .project-and-links {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .designer-project-snippet {
+        display: flex;
+        width: 60%;
+        padding: 5px;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+        border-radius: 37.5px;
+        background: var(--font-color-blue);
+        box-shadow: 0px 2px 20px 0px rgba(54, 99, 129, 0.25);
+    }
+
+    .designer-project-snippet-text {
+        color: var(--main-color-yellow);
+        text-align: right;
+        font-family: "Meta Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .designer-project-snippet-img {
+        width: 56px;
+        height: 56px;
     }
 }
 
