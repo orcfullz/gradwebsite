@@ -901,8 +901,9 @@ nav li {
     text-align: center;
 }
 
-/* Designers page */
 
+
+/* Designers page */
 .opening-page {
     height: calc(100vh - 64px);
     width: 100vw;
@@ -961,6 +962,7 @@ nav li {
     width: 441px;
     align-items: center;
     gap: 25px;
+    margin-left: 84px;
 }
 
 .designer-project-snippet {
@@ -1005,7 +1007,9 @@ nav li {
     background-repeat: no-repeat;
 }
 
-
+#short-description {
+    display: none;
+}
 
 @media only screen and (max-width: 1920px) {
     #welcome-page-logo {
@@ -1056,6 +1060,10 @@ nav li {
     
     .designer-description-content {
         margin: 64px 56px 0px 64px;
+    }
+
+    .project-and-links {
+        margin-left: 64px;
     }
 }
 
@@ -1595,7 +1603,7 @@ nav li {
     }
 
     .designer-description-text {
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 16px;
     }
 
@@ -1605,10 +1613,12 @@ nav li {
         width: 100%;
         align-items: center;
         gap: 16px;
+        margin-left: 0;
     }
 
     .designer-project-snippet {
-        width: 60%;
+        width: 50%;
+        border-radius: 0px 37.5px 37.5px 0px;
     }
 
     .designer-project-snippet-text {
@@ -1616,8 +1626,16 @@ nav li {
     }
 
     .designer-project-snippet-img {
-        width: 56px;
-        height: 56px;
+        width: 65px;
+        height: 65px;
+    }
+
+    #long-description {
+        display: none;
+    }
+
+    #short-description {
+        display: inline;
     }
 }
 
