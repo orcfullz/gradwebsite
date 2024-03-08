@@ -1157,11 +1157,8 @@ nav li {
     }
 
     .designer-description {
-        height: 450px;
+        height: 420px;
         width: 640px;
-        background-color: var(--background-yellow);
-        border-radius: 108px 0 0 0;
-        /* padding: 64px 136px 0px 100px; */
     }
     
     .designer-name {
@@ -1460,9 +1457,13 @@ nav li {
     }
 
     .designer-description {
-        height: 450px;
-        width: 600px;
-        /* padding: 64px 136px 0px 100px; */
+        height: 360px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .designer-description-content {
+        margin-top: 24px;
     }
     
     .designer-name {
@@ -1481,6 +1482,12 @@ nav li {
 
     .opening-page {
         height: 100vh;
+    }
+
+    .designer-splash {
+        background-image: url("assets/0-Test-Phone.png");
+        background-size: cover;
+        background-position: 0px -210px;
     }
 }
 
@@ -1561,14 +1568,6 @@ nav li {
         align-items: end;
     }
 
-    .designer-description {
-        height: 320px;
-        width: 100%;
-        background-color: var(--background-yellow);
-        border-radius: 0;
-        /* padding: 64px 136px 0px 100px; */
-    }
-
     .designer-description-content {
         margin: 32px 38px 0px 46px;
     }
@@ -1591,27 +1590,11 @@ nav li {
     }
 
     .designer-project-snippet {
-        display: flex;
         width: 60%;
-        padding: 5px;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 12px;
-        flex-shrink: 0;
-        border-radius: 37.5px;
-        background: var(--font-color-blue);
-        box-shadow: 0px 2px 20px 0px rgba(54, 99, 129, 0.25);
     }
 
     .designer-project-snippet-text {
-        color: var(--main-color-yellow);
-        text-align: right;
-        font-family: "Meta Pro";
         font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
     }
 
     .designer-project-snippet-img {
