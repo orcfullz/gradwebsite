@@ -73,7 +73,6 @@ body {
     height: fit-content;
     font-weight: 350;
     /* font-size: 16px; */
-    cursor: none;
 }
 
 .cursor {
@@ -1178,6 +1177,18 @@ nav li {
         display: none;
     }
 
+    .cursor {
+        display: none;
+    }
+
+    * {
+        cursor: auto;
+    }
+
+    a {
+        cursor: pointer;
+    }
+
     #welcome-page-mobile {
         display: inline;
         flex: 0 1 auto;
@@ -1457,7 +1468,7 @@ nav li {
     }
 
     .designer-description {
-        height: 360px;
+        height: 320px;
         width: 100%;
         border-radius: 0;
     }
@@ -1561,15 +1572,21 @@ nav li {
     .designer-splash {
         background-image: url("assets/0-Test-Phone.png");
         background-size: contain;
-        background-position: 0px -110px;
+        background-position: 0px -20px;
         background-repeat: no-repeat;
         display: flex;
         justify-content: flex-end;
         align-items: end;
     }
 
+    .designer-description {
+        height: 280px;
+        width: 100%;
+        border-radius: 0;
+    }
+
     .designer-description-content {
-        margin: 32px 38px 0px 46px;
+        margin: 20px 28px 20px 32px;
     }
 
     .designer-name {
@@ -1578,7 +1595,7 @@ nav li {
 
     .designer-description-text {
         font-size: 14px;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
 
     .project-and-links {
@@ -1586,7 +1603,7 @@ nav li {
         flex-direction: row;
         width: 100%;
         align-items: center;
-        gap: 18px;
+        gap: 16px;
     }
 
     .designer-project-snippet {
