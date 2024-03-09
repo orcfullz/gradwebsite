@@ -1639,7 +1639,7 @@ nav li {
     }
 
     #long-description {
-        display: none;
+        display: inline;
     }
 
     #short-description {
