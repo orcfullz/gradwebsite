@@ -60,6 +60,7 @@
 
 html {
     scroll-behavior: smooth;
+    /* font-size: 16px; */
 }
 
 * {
@@ -162,7 +163,7 @@ p {
 
 #welcome-page-content {
     width: 80%;
-    min-width: 1080px;
+    min-width: 1150px;
     margin: auto;
     color: #FEFFF8;
     /* flex: 0 1 auto; */
@@ -183,7 +184,7 @@ p {
 }
 
 #title-text {
-    font-size: 84px;
+    font-size: 5.25rem;
     font-style: normal;
     font-weight: 500;
     font-stretch: expanded;
@@ -192,24 +193,28 @@ p {
 
 .how-to {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 #title-details {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 24px;
-    margin-top: 20px;
-    gap: 16px;
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
+    gap: 1rem;
 }
 
 #title-details-location {
     margin-right: 96px;
+    width: 26.5rem;
+    max-width: 500px;
 }
 
 #title-details-datetime {
     margin-right: 48px;
+    width: 11rem;
+    max-width: 250px;
 }
 
 .subtitle {
@@ -316,7 +321,7 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.125rem;
     overflow: hidden;
     background: #1E3746;
     z-index: 100;
@@ -1075,7 +1080,7 @@ nav li {
     }
 
     #welcome-page-content {
-        min-width: 720px;
+        min-width: 90%;
     }
 
     #welcome-page-logo {
@@ -1097,10 +1102,12 @@ nav li {
 
     #title-details {
         font-size: 20px;
+        gap: 0.5rem;
     };
 
     #title-details-location {
         margin: 20px 0px;
+        width: 24rem;
     }
 
     #title-details-datetime {
