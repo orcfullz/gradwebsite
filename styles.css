@@ -1589,7 +1589,8 @@ nav li {
     }
 
     .designer-description {
-        height: 280px;
+        height: fit-content;
+        padding-bottom: 24px;
         width: 100%;
         border-radius: 0;
     }
@@ -1635,7 +1636,7 @@ nav li {
     }
 
     #short-description {
-        display: inline;
+        display: none;
     }
 }
 
