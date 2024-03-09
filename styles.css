@@ -1596,7 +1596,8 @@ nav li {
     }
 
     .designer-description {
-        height: 280px;
+        height: fit-content;
+        padding-bottom: 24px;
         width: 100%;
         border-radius: 0;
     }
@@ -1638,11 +1639,11 @@ nav li {
     }
 
     #long-description {
-        display: none;
+        display: inline;
     }
 
     #short-description {
-        display: inline;
+        display: none;
     }
 }
 
