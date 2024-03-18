@@ -755,6 +755,7 @@ nav li {
 .footer-description {
     flex: 50%;
     display: flex;
+    width: 30em;
     height: 60%;
     justify-content: space-around;
     align-items: center;
@@ -846,18 +847,17 @@ nav li {
     padding-left: 2em;
     display: flex;
     align-items: center;
-    color: #366381;
+    color: var(--font-color-blue);
 }
 
 .filter-active {
     background-color: var(--main-color-yellow);
-    color: #1E3746 !important;
+    color: #1E3746;
 }
 
 .filter p {
-    color: var(--font-color-blue);
-    font-weight: 500;
-    font-size: 28px;
+    font-weight: 700;
+    font-size: 1.75em;
     vertical-align: middle;
 }
 
@@ -902,7 +902,7 @@ nav li {
 .designer-text {
     color: var(--font-color-blue);
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.25em;
     text-align: center;
 }
 
@@ -1579,7 +1579,6 @@ nav li {
 
     .filter p {
         font-size: 1.5em;
-        font-weight: 500;
     }
 
     .designer-element {
