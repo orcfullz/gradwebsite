@@ -84,6 +84,16 @@ body {
     transition: width 100ms ease, height 100ms ease;
 }
 
+.trail {
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%); 
+    background-color: var(--main-color-yellow);
+    opacity: 0.5;
+    border-radius: 50%;
+    transition: all 200ms ease;
+}
+
 .small {
     width: 30px;
     height: 30px;

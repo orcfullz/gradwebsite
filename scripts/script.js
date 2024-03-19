@@ -28,11 +28,11 @@ window.onload = () => {
 
   linkArray.forEach(d => {
     d.addEventListener("mouseenter", (e) => {
-      document.querySelector(".cursor").classList.add("link");
+      document.querySelector(".cursor.small").classList.add("link");
     })
 
     d.addEventListener("mouseleave", (e) => {
-      document.querySelector(".cursor").classList.remove("link");
+      document.querySelector(".cursor.small").classList.remove("link");
     })
   })
   
@@ -41,7 +41,8 @@ window.onload = () => {
   // });
 }
 
-const cursorSmall = document.querySelector('.cursor');
+const cursor = document.querySelector('.cursor.small');
+const cursorTrail = document.querySelector('.trail');
 
 const moveCursor = (e)=> {
   const mouseY = e.clientY;
@@ -49,7 +50,8 @@ const moveCursor = (e)=> {
 
   const width = document.getElementsByClassName('cursor')[0].offsetWidth;
    
-  cursorSmall.style.transform = `translate3d(${mouseX-width/2}px, ${mouseY-width/2}px, 0)`;
+  cursor.style.transform = `translate3d(${mouseX-width/2}px, ${mouseY-width/2}px, 0)`;
+  cursorTrail.style.transform = `translate3d(${mouseX-width/2}px, ${mouseY-width/2}px, 0)`;
 }
 
 
