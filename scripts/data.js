@@ -3,7 +3,7 @@ const DATA = [
       "fullName": "CHAN HUI YING SARAH",
       "preferredName": "Sarah Chan",
       "picture": "assets/designer-card-photos/Sarah.png",
-      "description": "Rooted in industrial design, Sarah sees design as a bridge that connects people with a shared vision. Designing for progress sparks joy for her, be it solving problems in a product\u00e2\u20ac\u2122s user experience or finding novel ways to do storytelling.",
+      "description": "Rooted in industrial design, Sarah sees design as a bridge that connects people with a shared vision. Designing for progress sparks joy for her, be it solving problems in a product's user experience or finding novel ways to do storytelling.",
       "contactDetails": "",
       "personalLinks": ""
   },
@@ -13,7 +13,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Wing.png",
       "description": "Wing's love for design is driven by an innate curiosity for the world and the people in it. She believes in simplicity, humour, and the growth mindset.",
       "contactDetails": "111.sarah.chan@gmail.com",
-      "personalLinks": "https://www.linkedin.com/in/sarcha"
+      "personalLinks": {"linkedin": "https://www.linkedin.com/in/sarcha"}
   },
   {
       "fullName": "CHEN YUXUAN (KALINDA)",
@@ -21,7 +21,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Kalinda.png",
       "description": "\nKalinda is a soft-spoken adventurer with a curiosity for the unconventional. Inspired by nature, she transforms its feminine and expressive forms into her creations, characterized by flowing curves and organic shapes that captivate with generosity and allure, inviting viewers to ponder their intricacies.",
       "contactDetails": "chan.wing@gmail.com",
-      "personalLinks": "https://www.linkedin.com/in/kalinda-chen/"
+      "personalLinks": {"linkedin": "https://www.linkedin.com/in/kalinda-chen/"}
   },
   {
       "fullName": "CHEW SHI YUN (KARIN)",
@@ -29,7 +29,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Karin.png",
       "description": "Karin enjoys unravelling the nuances of human behaviour, to design delightful human experiences that resonate with her users. With an interest in service and experience design, she strives to spark a positive impact through her creations, however big or subtle.",
       "contactDetails": "kalinda.officialsg@gmail.com",
-      "personalLinks": "https://www.linkedin.com/in/karinchewsy/"
+      "personalLinks": {"linkedin": "https://www.linkedin.com/in/karinchewsy/"}
   },
   {
       "fullName": "FRONDA KEN BRADLEY CATAMPATAN",
@@ -37,7 +37,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Ken.png",
       "description": "The designer's mindset unlocks many doors; the key is communication. Designer to me finds its best use in the in-betweens. Being a designer means making sense of chaos. At the end of the day, don't take yourself too seriously.",
       "contactDetails": "karinchewsy@gmail.com",
-      "personalLinks": "https://www.linkedin.com/in/ken-bradley-fronda-958b1a199/"
+      "personalLinks": {"linkedin": "https://www.linkedin.com/in/ken-bradley-fronda-958b1a199/"}
   },
   {
       "fullName": "JONATHAN LOW KAI YI",
@@ -45,7 +45,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Kaiyi.png",
       "description": "Kai Yi is an introspective designer with a broad range of passions and is interested in understanding how humans interact with the world around them. He believes in the potential of design to bring people together, and its restorative power for social good.",
       "contactDetails": "fkenbc@gmail.com",
-      "personalLinks": "https://www.behance.net/jonathanlow5"
+      "personalLinks": {"behance": "https://www.behance.net/jonathanlow5"}
   },
   {
       "fullName": "KENT TIMOTHY LIMANZA",
@@ -53,7 +53,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Kent.png",
       "description": "Kent is a multidisciplinary designer driven by a passion for crafting distinctive products, services, and experiences. His strength lies at the intersection of design and technology, where he wields technology as both a material and a tool.",
       "contactDetails": "lowkaiyi@u.nus.edu",
-      "personalLinks": "https://www.linkedin.com/in/kent-timothy/"
+      "personalLinks": {"linkedin": "https://www.linkedin.com/in/kent-timothy/"}
   },
   {
       "fullName": "KWANG YUHANG",
@@ -101,7 +101,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Luke.png",
       "description": "Luke, an industrial designer, merges innovation with keen detail to elevate the human experience. His work, focusing on intuitive affordance, blends the physical and digital, showcasing his commitment to enhancing life through thoughtful product design and a deep understanding of user needs.",
       "contactDetails": "lukegoh98@gmail.com",
-      "personalLinks": ["https://lukegoh.myportfolio.com/", "www.linkedin.com/in/lukegoh98"]
+      "personalLinks": {"linkedin": "https://www.linkedin.com/in/lukegoh98", "website": "https://lukegoh.myportfolio.com/"}
   },
   {
       "fullName": "MERKAYLA WONG (HUANG XIN'EN)",
@@ -109,7 +109,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Merkayla.png",
       "description": "Driven by an unwavering dedication to crafting seamless user experiences in both digital and physical realms, Merkayla is a passionate designer who seeks to strike a balance between creativity and functionality in her designs, enriching the lives of users. ",
       "contactDetails": "Merkayla.wong@gmail.com",
-      "personalLinks": ["https://merkayla-wong.webflow.io/", "https://www.linkedin.com/in/merkayla-wong-243b92232/"]
+      "personalLinks": {"linkedin": "https://www.linkedin.com/in/merkayla-wong-243b92232/", "website":"https://merkayla-wong.webflow.io/"}
   },
   {
       "fullName": "NAZURAH BINTE MOHD ROHAYAT",
@@ -125,7 +125,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Nicole.png",
       "description": "Nicole is a versatile designer who enjoys blending fun, creativity and problem-solving through design, facilitated by a genuine empathy for the user. Focused on product and service design, she believes in driving meaningful change through thoughtful design.",
       "contactDetails": "nicole.tme@gmail.com",
-      "personalLinks": "https://www.linkedin.com/in/ni-colehh"
+      "personalLinks": {"linkedin": "https://www.linkedin.com/in/ni-colehh"}
   },
   {
       "fullName": "NG KENG WEI",
@@ -165,7 +165,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Celeste.png",
       "description": "Celeste is a designer who designs with research and finds joy in immersing herself in diverse contexts. She distills complex user problems and their latent emotions to create thoughtful solutions across various mediums. She is interested in the intersections between tech and people. ",
       "contactDetails": "celesteseahkweesuan@gmail.com",
-      "personalLinks": ["https://www.linkedin.com/in/celeste-seah", "celesteseah.webflow.io"]
+      "personalLinks": {"linkedin": "https://www.linkedin.com/in/celeste-seah", "website":"https://celesteseah.webflow.io"}
   },
   {
       "fullName": "SERENE TAN SHER YUN",
@@ -189,7 +189,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Kesh.png",
       "description": "The existence of mint chocolate is like one of the top 3 mysteries in the world. Like who decided that chocolate and colgate was a good combo?",
       "contactDetails": "keshdzn@gmail.com",
-      "personalLinks": ["evotions.cc, creativetech.wtf"]
+      "personalLinks": {"website":"https://evotions.cc", "website-1":"https://creativetech.wtf"}
   },
   {
       "fullName": "SYAFIQ BIN RAHIM",
@@ -229,7 +229,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Tanya.png",
       "description": "Tanya is a versatile industrial designer with a passion for transforming ideas into tangible experiences. With a diverse skill set spanning across UI/UX, interaction design, and product design, she thrives on crafting innovative solutions that merge functionality with aesthetics.",
       "contactDetails": "tanya.verma.nus@gmail.com",
-      "personalLinks": "https://tanya.zyrosite.com/"
+      "personalLinks": {"website": "https://tanya.zyrosite.com/"}
   },
   {
       "fullName": "WINA NASHITA RAKANA ADISETYA",
@@ -237,7 +237,7 @@ const DATA = [
       "picture": "assets/designer-card-photos/Wina.png",
       "description": "Wina is a dynamic & resourceful designer, who pushes material boundaries with innovation. Her designs reflect practicality, simplicity and thoughtfulness, all underpinned by a desire to leave a meaningful and positive impact.",
       "contactDetails": "wnshta.social@gmail.com",
-      "personalLinks": ["wnshta.webflow.io", "linkedin.com/in/wnshta"]
+      "personalLinks": {"linkedin": "https://linkedin.com/in/wnshta", "website": "https://wnshta.webflow.io"}
   },
   {
       "fullName": "YANG JUNWEI",

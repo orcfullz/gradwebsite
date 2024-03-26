@@ -423,6 +423,7 @@ nav li {
     gap: 22px;
     align-items: center;
     height: 87.5vh;
+    transition: all ease 300ms, display 0s;
 }
 
 #navigation-mobile-main {
@@ -1011,7 +1012,7 @@ nav li {
     flex-direction: row;
     width: 441px;
     align-items: center;
-    gap: 25px;
+    gap: 32px;
     margin-left: 84px;
 }
 
@@ -1052,12 +1053,11 @@ nav li {
     display: flex;
     gap: 25px;
     align-items: end;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-
+.designer-link-logo {
+    height: 26px;
+}
 
 @media only screen and (max-width: 1920px) {
     #welcome-page-logo {
@@ -1601,7 +1601,8 @@ nav li {
     }
 
     .designer-text {
-        font-size: 16px;
+        color: #000;
+        font-size: 1em;
         font-weight: 400;
     }
 
@@ -1619,7 +1620,7 @@ nav li {
     }
 
     .footer-description {
-        flex: 75%;
+        flex: 80%;
         margin-left: 48px;
     }
 

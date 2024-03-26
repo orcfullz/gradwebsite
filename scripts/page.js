@@ -1,4 +1,15 @@
+import { DATA } from "./data.js"
+
 window.onload = () => {
+    const params = new URLSearchParams(window.location.search);
+    let index = 0;
+
+    if (params.get("id")) {
+        index = parseInt(params.get("id").split("-")[1]);
+    }
+
+    loadContent(index);
+
     document.querySelector(".menu-icon").addEventListener("click", (e) => {
         openMenu();
     })
@@ -58,4 +69,37 @@ const moveCursor = (e)=> {
     const width = document.getElementsByClassName('cursor')[0].offsetWidth;
      
     cursorSmall.style.transform = `translate3d(${mouseX-width/2}px, ${mouseY-width/2}px, 0)`;
-  }
+}
+
+const loadContent = (index) => {
+    const linkImg = {
+        "linkedin": "assets/linkedin.svg",
+        "website": "assets/website.png",
+        "website-1": "assets/website.png",
+        "behance": "assets/Behance.svg"
+    }
+
+    const name = document.querySelector(".designer-name")
+    name.innerHTML = DATA[index].preferredName;
+
+    const description = document.querySelector(".designer-description-text").querySelector("p")
+    description.innerHTML = DATA[index].description;
+
+    const links = document.querySelector(".designer-links");
+    const designerLinks = DATA[index].personalLinks;
+    console.log(designerLinks)
+
+    if (designerLinks) {
+        for (const property in designerLinks) {
+            const link = document.createElement("a");
+            const img = document.createElement("img");
+            img.id = property + index;
+            img.src = linkImg[property];
+            img.classList.add("designer-link-logo");
+            link.href = `${designerLinks[property]}`;
+            link.target = "_blank";
+            link.append(img);
+            links.append(link);
+        }
+    }
+}

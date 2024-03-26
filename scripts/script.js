@@ -1,7 +1,5 @@
 import { DATA } from "./data.js"
 
-console.log("javascript loaded")
-
 window.onload = () => {
   generateDesignerCollection();
 
@@ -23,7 +21,7 @@ window.onload = () => {
 
   window.addEventListener('mousemove', moveCursor)
 
-  const linkArray = document.querySelectorAll("a, .clickable");
+  const linkArray = document.querySelectorAll("a, .clickable, .designer-element");
   console.log(linkArray);
 
   linkArray.forEach(d => {
@@ -108,7 +106,7 @@ const generateDesignerCollection = () => {
   DATA.forEach((d, i) => {
     const container = document.createElement('div');
     container.classList.add("designer-element");
-    container.id = d.preferredName;
+    container.id = d.preferredName.split(" ")[0] + "-" + i;
 
     const image_div = document.createElement("div");
     image_div.classList.add("designer-image");
@@ -117,6 +115,10 @@ const generateDesignerCollection = () => {
     const text_div = document.createElement("div");
     text_div.classList.add("designer-text");
     text_div.innerHTML = d.preferredName;
+
+    container.addEventListener("click", (e) => {
+        window.location.href = `./page.html?id=${container.id}`;
+    });
 
     container.append(image_div, text_div);
     collections.append(container)
