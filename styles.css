@@ -962,7 +962,6 @@ nav li {
 .designer-description::before {
     content: "";
     position: absolute;
-
     background-color: transparent;
     right: 0px;
     top: -200px;
@@ -975,7 +974,6 @@ nav li {
 .designer-description::after {
     content: "";
     position: absolute;
-
     background-color: transparent;
     left: -150px;
     bottom: 0px;
@@ -992,7 +990,7 @@ nav li {
 .designer-name {
     color: var(--font-color-blue);
     font-family: "Meta Pro";
-    font-size: 56px;
+    font-size: 3.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1001,7 +999,7 @@ nav li {
 .designer-description-text {
     color: var(--main-color-blue);
     font-family: "Meta Pro";
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1019,7 +1017,7 @@ nav li {
 
 .designer-project-snippet {
     display: flex;
-    width: 324px;
+    width: 324px; /* change with rem */
     padding: 5px;
     flex-direction: row;
     justify-content: flex-end;
@@ -1035,7 +1033,7 @@ nav li {
     color: var(--main-color-yellow);
     text-align: right;
     font-family: "Meta Pro";
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -1114,16 +1112,7 @@ nav li {
     
     .designer-description {
         border-radius: 108px 0 0 0;
-        /* padding: 64px 136px 0px 100px; */
     }
-    
-    /* .designer-description-content {
-        margin: 64px 56px 0px 64px;
-    }
-
-    .project-and-links {
-        margin-left: 64px;
-    } */
 }
 
 
@@ -1182,14 +1171,49 @@ nav li {
         margin-left: 0px !important;
         width: 20rem;
     }
-/* 
+
     #diagonal-accent-event {
         height: 140px;
-    } */
+    }
 
     #rsvp-link-text {
         font-size: 12px;
         padding-left: 1em;
+    }
+
+    #main-page-content {
+        gap: 16px;
+    }
+
+    .footer-text {
+        font-size: 22px;
+    }
+
+    .designer-description {
+        height: 48vh;
+        width: 640px;
+    }
+    
+    .designer-name {
+        font-size: 3rem;
+    }
+    
+    .designer-description-text {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .cursor {
+        display: none;
+    }
+
+    * {
+        cursor: auto;
+    }
+
+    a {
+        cursor: pointer;
     }
 
     #main-page-content {
@@ -1214,10 +1238,6 @@ nav li {
         padding-top: 0;
     }
 
-    #main-page-content {
-        gap: 24px;
-    }
-
     .filter {
         width: 50%;
     }
@@ -1233,37 +1253,6 @@ nav li {
 
     #designer-filter.filter-active {
         border-radius: 0px 2em 2em 0px;
-    }
-
-    .footer-text {
-        font-size: 22px;
-    }
-
-    .designer-description {
-        height: 48vh;
-        width: 640px;
-    }
-    
-    .designer-name {
-        font-size: 48px;
-    }
-    
-    .designer-description-text {
-        font-size: 16px;
-    }
-}
-
-@media only screen and (max-width: 1080px) {
-    .cursor {
-        display: none;
-    }
-
-    * {
-        cursor: auto;
-    }
-
-    a {
-        cursor: pointer;
     }
 }
 
@@ -1690,7 +1679,7 @@ nav li {
     }
 
     .designer-description-content {
-        margin: 20px 28px 20px 32px;
+        margin: 20px 28px 20px 36px;
     }
 
     .designer-description::before {
