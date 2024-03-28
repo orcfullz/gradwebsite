@@ -184,7 +184,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 48px;
-    padding-right: 48px;
+    padding-right: 3em;
     padding-bottom: 24px;
 }
 
@@ -942,7 +942,8 @@ nav li {
 }
 
 .designer-description {
-    height: 480px;
+    height: 50vh;
+    min-height: 15rem;
     width: 720px;
     background-color: var(--background-yellow);
     border-radius: 108px 0 0 0;
@@ -1067,6 +1068,19 @@ nav li {
 }
 
 @media only screen and (max-width: 1560px) {
+    #welcome-page-content {
+        min-width: 90%;
+    }
+
+    #welcome-page-logo {
+        width: 330px;
+        height: 373px;
+    }
+
+    #welcome-page-arrow {
+        margin-top: 24px;
+    }
+
     .text-width {
         width: 100%;
     }
@@ -1099,27 +1113,24 @@ nav li {
     }
     
     .designer-description {
-        height: 480px;
-        width: 720px;
-        background-color: var(--background-yellow);
         border-radius: 108px 0 0 0;
         /* padding: 64px 136px 0px 100px; */
     }
     
-    .designer-description-content {
+    /* .designer-description-content {
         margin: 64px 56px 0px 64px;
     }
 
     .project-and-links {
         margin-left: 64px;
-    }
+    } */
 }
 
 
 /* for tablets */
 @media only screen and (max-width: 1200px) {
     #title-text {
-        font-size: 64px;
+        font-size: 4rem;
     }
 
     #welcome-page-content {
@@ -1131,8 +1142,20 @@ nav li {
         height: 343px;
     }
 
+    #arrow-down {
+        width: 108px;
+    }
+
     #welcome-page-arrow {
-        margin-top: 24px;
+        width: 108px;
+    }
+    
+    #arrow-down-drag {
+        border-radius: 54px;
+    }
+
+    #title-logo {
+        padding-right: 0;
     }
 
     .subtitle {
@@ -1145,22 +1168,24 @@ nav li {
 
     #title-details {
         font-size: 20px;
-        gap: 0.5rem;
+        gap: 2rem;
     };
 
     #title-details-location {
         margin: 20px 0px;
-        width: 24rem;
+        max-width: 24rem;
+        width: fit-content;
     }
 
     #title-details-datetime {
         margin: 20px 0px;
         margin-left: 0px !important;
+        width: 20rem;
     }
-
+/* 
     #diagonal-accent-event {
         height: 140px;
-    }
+    } */
 
     #rsvp-link-text {
         font-size: 12px;
@@ -1215,7 +1240,7 @@ nav li {
     }
 
     .designer-description {
-        height: 420px;
+        height: 48vh;
         width: 640px;
     }
     
@@ -1228,14 +1253,7 @@ nav li {
     }
 }
 
-
-/* for mobile */
-
-@media only screen and (max-width: 840px) {
-    #welcome-page-content {
-        display: none;
-    }
-
+@media only screen and (max-width: 1080px) {
     .cursor {
         display: none;
     }
@@ -1246,6 +1264,15 @@ nav li {
 
     a {
         cursor: pointer;
+    }
+}
+
+
+/* for mobile */
+
+@media only screen and (max-width: 840px) {
+    #welcome-page-content {
+        display: none;
     }
 
     #welcome-page-mobile {
@@ -1534,6 +1561,15 @@ nav li {
 
     .designer-description-content {
         margin-top: 24px;
+        max-width: 28rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-and-links {
+        max-width: 28rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .designer-name {
@@ -1558,6 +1594,14 @@ nav li {
         background-image: url("assets/0-Test-Phone.png");
         background-size: cover;
         background-position: 0px -210px;
+    }
+
+    .designer-description::before {
+        top: -150px;
+        height: 150px;
+        width: 75px;
+        border-bottom-right-radius: 75px;
+        box-shadow: 0 75px 0 0 var(--background-yellow);
     }
 }
 
