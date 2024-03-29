@@ -404,26 +404,28 @@ nav li {
 }
 
 #navigation-list-mobile {
-    display: none;
-    height: 0vh;
-    transition: all ease 300ms, display 0s; 
-}
-
-#navigation-list-mobile.active {
-    display: flex;
+    /* display: none; */
     position: fixed;
-    top: 0;
+    visibility: hidden;
+    display: flex;
+    height: 0vh;
     right: 0;
-    max-width: 360px;
-    width: 60vw;
+    top: 0;
     align-self: flex-start;
     z-index: 999;
     flex-direction: column;
     justify-items: space-between;
     gap: 22px;
     align-items: center;
+    max-width: 360px;
+    width: 60vw;
+    transition: height 400ms ease, display 0s, visibility 300ms step-end; 
+}
+
+#navigation-list-mobile.active {
+    visibility: inherit;
     height: 87.5vh;
-    transition: all ease 300ms, display 0s;
+    transition: height 400ms ease, display 0s, visibility 0ms step-end;
 }
 
 #navigation-mobile-main {
@@ -859,6 +861,7 @@ nav li {
     display: flex;
     align-items: center;
     color: var(--font-color-blue);
+    min-width: 12em;
 }
 
 .filter-active {
@@ -942,10 +945,11 @@ nav li {
 }
 
 .designer-description {
+    min-height: 400px;
     height: 50vh;
-    min-height: fit-content;
     width: 720px;
     max-width: 45vw;
+    min-width: 40em;
     background-color: var(--background-yellow);
     border-radius: 108px 0 0 0;
     position: relative;
@@ -986,7 +990,7 @@ nav li {
     font-family: "Meta Pro";
     font-size: 3.5rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: normal;
 }
 
@@ -1199,6 +1203,7 @@ nav li {
     .designer-description {
         height: 48vh;
         width: 640px;
+        font-size: 16px;
     }
     
     .designer-name {
@@ -1541,7 +1546,9 @@ nav li {
     .designer-description {
         height: 320px;
         width: 100%;
+        min-height: auto;
         max-width: 100%;
+        min-width: auto;
         border-radius: 0;
     }
 
@@ -1565,6 +1572,7 @@ nav li {
     .designer-description-text {
         font-size: 16px;
         margin-bottom: 20px;
+        min-width: auto;
     }
 
     #navigation-menu-page-mobile.navigation-menu {
