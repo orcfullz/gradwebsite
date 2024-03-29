@@ -703,6 +703,17 @@ nav li {
     font-size: 16px;
 }
 
+.event-image {
+    scale: 0.8; opacity: 0;
+    animation: fade-in 1s linear forwards;
+    animation-timeline: view();
+    animation-range: entry 200px;
+}
+
+@keyframes fade-in {
+    to { scale:1; opacity:1;}
+}
+
 #footer-event {
     background-color: var(--secondary-blue);
 }
@@ -1121,6 +1132,10 @@ nav li {
         display: none;
     }
 
+    .trail {
+        display: none;
+    }
+
     * {
         cursor: auto;
     }
@@ -1202,7 +1217,6 @@ nav li {
 
     .designer-description {
         height: 48vh;
-        width: 640px;
         font-size: 16px;
     }
     
@@ -1544,7 +1558,7 @@ nav li {
     }
 
     .designer-description {
-        height: 320px;
+        height: fit-content;
         width: 100%;
         min-height: auto;
         max-width: 100%;
@@ -1731,5 +1745,18 @@ nav li {
 @media only screen and (max-width: 480px) {
     .footer-description {
         margin-left: 24px;
+    }
+}
+
+@media (prefers-reduced-motion: no-preferences) {
+    .event-image {
+        scale: 0.8; opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        /* animation-range-start: entry; */
+    }
+
+    @keyframes fade-in {
+        to { scale:1; opacity:1;}
     }
 }
