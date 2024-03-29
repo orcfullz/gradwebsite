@@ -943,7 +943,7 @@ nav li {
 
 .designer-description {
     height: 50vh;
-    min-height: 15rem;
+    min-height: fit-content;
     width: 720px;
     max-width: 45vw;
     background-color: var(--background-yellow);
@@ -952,13 +952,6 @@ nav li {
     /* padding: 64px 136px 0px 100px; */
 }
 
-/* .accent-1 {
-    position: relative;
-    height: 100px;
-    width: 325px;
-    background-color: #F66969;
-    border-radius: 25px 25px 25px 0;
-} */
 
 .designer-description::before {
     content: "";
@@ -1014,6 +1007,7 @@ nav li {
     align-items: center;
     gap: 32px;
     margin-left: 84px;
+    margin-bottom: 24px;
 }
 
 .designer-project-snippet {
