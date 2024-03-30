@@ -165,7 +165,7 @@ p {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 160px;
+    /* height: 160px; */
     max-height: 160px;
     margin: 0;
     flex: 1 1 auto;
@@ -278,7 +278,7 @@ p {
 }
 
 #welcome-page-mobile-arrow {
-    margin-bottom: 64px;
+    margin-bottom: 108px;
 }
 
 #welcome-page-mobile .ellipse-accent {
@@ -1149,10 +1149,6 @@ nav li {
         font-size: 4rem;
     }
 
-    #welcome-page-content {
-        min-width: 90%;
-    }
-
     #welcome-page-logo {
         width: 300px;
         height: 343px;
@@ -1284,15 +1280,18 @@ nav li {
 
     #welcome-page-mobile {
         display: inline;
-        flex: 0 1 auto;
         overflow: hidden;
-        padding-bottom: 100px;
+        flex: 0 1 auto;
+        /* padding-bottom: 100px; */
+        height: fit-content;
     }
 
     #welcome-page-content-mobile {
         display: flex;
         flex-direction: column;
         width: 90%;
+        height: fit-content;
+        justify-content: space-between;
         margin: 24px auto 24px auto;
     }
 
@@ -1302,8 +1301,10 @@ nav li {
     }
 
     #welcome-page-mobile-logo {
-        width: 250px;
-        height: 300px;
+        min-width: 250px;
+        min-height: 300px;
+        width: 40vw;
+        height: 48vw;
         margin: auto;
     }
 
@@ -1462,7 +1463,7 @@ nav li {
 
     .footer-description .mobile{
         display: flex;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 18px;
     }
 
@@ -1747,7 +1748,13 @@ nav li {
 
 @media only screen and (max-width: 480px) {
     .footer-description {
-        margin-left: 24px;
+        margin-left: 1.5rem;
+    }
+
+    .logo-footer {
+        width: 60px;
+        height: 66px;
+        margin-left: 1em;
     }
 }
 
