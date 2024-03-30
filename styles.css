@@ -1,45 +1,45 @@
 @font-face {
     font-family: 'Meta Pro';
-    src: url('/assets/fonts/FFMetaProBold.ttf');
-    src: url('/assets/fonts/FFMetaProBold.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fonts/FFMetaProBold.ttf')  format('truetype'), 
-         url('/assets/fonts/FFMetaProBold.svg#svgFontName') format('svg');
+    src: url('./assets/fonts/FFMetaProBold.ttf');
+    src: url('./assets/fonts/FFMetaProBold.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/FFMetaProBold.ttf')  format('truetype'), 
+         url('./assets/fonts/FFMetaProBold.svg#svgFontName') format('svg');
     font-weight: 900;
 }
 
 @font-face {
     font-family: 'Meta Pro';
-    src: url('/assets/fonts/FFMetaProMedium.ttf');
-    src: url('/assets/fonts/FFMetaProMedium.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fonts/FFMetaProMedium.ttf')  format('truetype'), 
-         url('/assets/fonts/FFMetaProMedium.svg#svgFontName') format('svg');
+    src: url('./assets/fonts/FFMetaProMedium.ttf');
+    src: url('./assets/fonts/FFMetaProMedium.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/FFMetaProMedium.ttf')  format('truetype'), 
+         url('./assets/fonts/FFMetaProMedium.svg#svgFontName') format('svg');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Meta Pro';
-    src: url('/assets/fonts/FFMetaProBook.ttf');
-    src: url('/assets/fonts/FFMetaProBook.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fonts/FFMetaProBook.ttf')  format('truetype'), 
-         url('/assets/fonts/FFMetaProBook.svg#svgFontName') format('svg');
+    src: url('./assets/fonts/FFMetaProBook.ttf');
+    src: url('./assets/fonts/FFMetaProBook.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/FFMetaProBook.ttf')  format('truetype'), 
+         url('./assets/fonts/FFMetaProBook.svg#svgFontName') format('svg');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Meta Pro';
-    src: url('/assets/fonts/FFMetaProRegular.ttf');
-    src: url('/assets/fonts/FFMetaProRegular.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fonts/FFMetaProRegular.ttf')  format('truetype'), 
-         url('/assets/fonts/FFMetaProRegular.svg#svgFontName') format('svg');
+    src: url('./assets/fonts/FFMetaProRegular.ttf');
+    src: url('./assets/fonts/FFMetaProRegular.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/FFMetaProRegular.ttf')  format('truetype'), 
+         url('./assets/fonts/FFMetaProRegular.svg#svgFontName') format('svg');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Meta Pro';
-    src: url('/assets/fonts/FFMetaProLight.ttf');
-    src: url('/assets/fonts/FFMetaProLight.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fonts/FFMetaProLight.ttf')  format('truetype'), 
-         url('/assets/fonts/FFMetaProLight.svg#svgFontName') format('svg');
+    src: url('./assets/fonts/FFMetaProLight.ttf');
+    src: url('./assets/fonts/FFMetaProLight.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/FFMetaProLight.ttf')  format('truetype'), 
+         url('./assets/fonts/FFMetaProLight.svg#svgFontName') format('svg');
     font-weight: 350;
 }
 
@@ -162,13 +162,13 @@ p {
 }
 
 .diagonal-accent {
-    background-image: url("assets/diagonal.png");
+    background-image: url("./assets/diagonal.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: bottom;
     height: 160px;
     margin: 0;
-    /* flex: 1 1 auto; */
+    flex: 1 1 auto;
 }
 
 #welcome-page-content {
@@ -176,7 +176,7 @@ p {
     min-width: 1150px;
     margin: auto;
     color: #FEFFF8;
-    /* flex: 0 1 auto; */
+    flex: 0 1 auto;
 }
 
 #title-logo {
@@ -748,11 +748,11 @@ nav li {
 }
 
 #logo-footer-main {
-    background-image: url("assets/logo_dark.png");
+    background-image: url("./assets/logo_dark.png");
 }
 
 #logo-footer-event {
-    background-image: url("assets/logo_footer.png");
+    background-image: url("./assets/logo_footer.png");
 }
 
 .logo-footer {
@@ -824,19 +824,19 @@ nav li {
 }
 
 #instagram-dark {
-    background-image: url("assets/instagram_dark.svg");
+    background-image: url("./assets/instagram_dark.svg");
 }
 
 #share-dark {
-    background-image: url("assets/share_dark.svg");
+    background-image: url("./assets/share_dark.svg");
 }
 
 #instagram-light {
-    background-image: url("assets/instagram-symbol.svg");
+    background-image: url("./assets/instagram-symbol.svg");
 }
 
 #share-light {
-    background-image: url("assets/share-symbol.svg");
+    background-image: url("./assets/share-symbol.svg");
 }
 
 /* Main Page */
@@ -910,7 +910,7 @@ nav li {
 .project-image {
     width: 178px;
     height: 185px;
-    background-image: url("assets/landscape-placeholder\ 1.png");
+    background-image: url("./assets/landscape-placeholder\ 1.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 12px;
@@ -946,7 +946,7 @@ nav li {
     width: 100%;
     bottom: 0;
     right: 0;
-    background-image: url("assets/0-Test-Desktop-copy.png");
+    background-image: url("./assets/0-Test-Desktop-copy.png");
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
@@ -1054,7 +1054,7 @@ nav li {
     height: 65px;
     flex-shrink: 0;
     border-radius: 65px;
-    background: url("assets/project-snippet.svg"), no-repeat;
+    background: url("./assets/project-snippet.svg"), no-repeat;
 }
 
 .designer-links {
@@ -1535,11 +1535,11 @@ nav li {
     }
 
     #logo-footer-main {
-        background-image: url("assets/logo-dark-mobile.png");
+        background-image: url("./assets/logo-dark-mobile.png");
     }
 
     #logo-footer-event {
-        background-image: url("assets/logo-light-mobile.png");
+        background-image: url("./assets/logo-light-mobile.png");
     }
 
     .footer-text {
@@ -1599,7 +1599,7 @@ nav li {
     }
 
     .designer-splash {
-        background-image: url("assets/0-Test-Phone.png");
+        background-image: url("./assets/0-Test-Phone.png");
         background-size: cover;
         background-position: 0px -210px;
     }
@@ -1681,7 +1681,7 @@ nav li {
     }
 
     .designer-splash {
-        background-image: url("assets/0-Test-Phone.png");
+        background-image: url("./assets/0-Test-Phone.png");
         background-size: contain;
         background-position: 0px -20px;
         background-repeat: no-repeat;
