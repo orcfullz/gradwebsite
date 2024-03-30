@@ -1,45 +1,45 @@
 @font-face {
     font-family: 'Meta Pro';
-    src: url('assets/fonts/FFMetaProBold.ttf');
-    src: url('assets/fonts/FFMetaProBold.eot?#iefix') format('embedded-opentype'),
-         url('assets/fonts/FFMetaProBold.ttf')  format('truetype'), 
-         url('assets/fonts/FFMetaProBold.svg#svgFontName') format('svg');
+    src: url('/assets/fonts/FFMetaProBold.ttf');
+    src: url('/assets/fonts/FFMetaProBold.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/FFMetaProBold.ttf')  format('truetype'), 
+         url('/assets/fonts/FFMetaProBold.svg#svgFontName') format('svg');
     font-weight: 900;
 }
 
 @font-face {
     font-family: 'Meta Pro';
-    src: url('assets/fonts/FFMetaProMedium.ttf');
-    src: url('assets/fonts/FFMetaProMedium.eot?#iefix') format('embedded-opentype'),
-         url('assets/fonts/FFMetaProMedium.ttf')  format('truetype'), 
-         url('assets/fonts/FFMetaProMedium.svg#svgFontName') format('svg');
+    src: url('/assets/fonts/FFMetaProMedium.ttf');
+    src: url('/assets/fonts/FFMetaProMedium.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/FFMetaProMedium.ttf')  format('truetype'), 
+         url('/assets/fonts/FFMetaProMedium.svg#svgFontName') format('svg');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Meta Pro';
-    src: url('assets/fonts/FFMetaProBook.ttf');
-    src: url('assets/fonts/FFMetaProBook.eot?#iefix') format('embedded-opentype'),
-         url('assets/fonts/FFMetaProBook.ttf')  format('truetype'), 
-         url('assets/fonts/FFMetaProBook.svg#svgFontName') format('svg');
+    src: url('/assets/fonts/FFMetaProBook.ttf');
+    src: url('/assets/fonts/FFMetaProBook.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/FFMetaProBook.ttf')  format('truetype'), 
+         url('/assets/fonts/FFMetaProBook.svg#svgFontName') format('svg');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Meta Pro';
-    src: url('assets/fonts/FFMetaProRegular.ttf');
-    src: url('assets/fonts/FFMetaProRegular.eot?#iefix') format('embedded-opentype'),
-         url('assets/fonts/FFMetaProRegular.ttf')  format('truetype'), 
-         url('assets/fonts/FFMetaProRegular.svg#svgFontName') format('svg');
+    src: url('/assets/fonts/FFMetaProRegular.ttf');
+    src: url('/assets/fonts/FFMetaProRegular.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/FFMetaProRegular.ttf')  format('truetype'), 
+         url('/assets/fonts/FFMetaProRegular.svg#svgFontName') format('svg');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Meta Pro';
-    src: url('assets/fonts/FFMetaProLight.ttf');
-    src: url('assets/fonts/FFMetaProLight.eot?#iefix') format('embedded-opentype'),
-         url('assets/fonts/FFMetaProLight.ttf')  format('truetype'), 
-         url('assets/fonts/FFMetaProLight.svg#svgFontName') format('svg');
+    src: url('/assets/fonts/FFMetaProLight.ttf');
+    src: url('/assets/fonts/FFMetaProLight.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/FFMetaProLight.ttf')  format('truetype'), 
+         url('/assets/fonts/FFMetaProLight.svg#svgFontName') format('svg');
     font-weight: 350;
 }
 
