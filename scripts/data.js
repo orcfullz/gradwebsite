@@ -4,23 +4,23 @@ const DATA = [
       "preferredName": "Sarah Chan",
       "picture": "https://i.postimg.cc/QMvgyn34/Sarah.png",
       "description": "Rooted in industrial design, Sarah sees design as a bridge that connects people with a shared vision. Designing for progress sparks joy for her, be it solving problems in a product's user experience or finding novel ways to do storytelling.",
-      "contactDetails": "",
-      "personalLinks": ""
+      "contactDetails": "111.sarah.chan@gmail.com",
+      "personalLinks": {"linkedin": "https://www.linkedin.com/in/sarcha"}
   },
   {
       "fullName": "CHAN WING",
       "preferredName": "Chan Wing",
       "picture": "https://i.postimg.cc/hj9m3DMv/Wing.png",
       "description": "Wing's love for design is driven by an innate curiosity for the world and the people in it. She believes in simplicity, humour, and the growth mindset.",
-      "contactDetails": "111.sarah.chan@gmail.com",
-      "personalLinks": {"linkedin": "https://www.linkedin.com/in/sarcha"}
+      "contactDetails": "chan.wing@gmail.com",
+      "personalLinks": ""
   },
   {
       "fullName": "CHEN YUXUAN (KALINDA)",
       "preferredName": "Kalinda Chen",
       "picture": "https://i.postimg.cc/X7K2y3bV/Kalinda.png",
       "description": "Kalinda is a soft-spoken adventurer with a curiosity for the unconventional. Inspired by nature, she transforms its feminine and expressive forms into her creations, characterized by flowing curves and organic shapes that captivate with generosity and allure, inviting viewers to ponder their intricacies.",
-      "contactDetails": "chan.wing@gmail.com",
+      "contactDetails": "kalinda.officialsg@gmail.com",
       "personalLinks": {"linkedin": "https://www.linkedin.com/in/kalinda-chen/"}
   },
   {
@@ -28,7 +28,7 @@ const DATA = [
       "preferredName": "Karin Chew",
       "picture": "https://i.postimg.cc/3xKtX682/Karin.png",
       "description": "Karin enjoys unravelling the nuances of human behaviour, to design delightful human experiences that resonate with her users. With an interest in service and experience design, she strives to spark a positive impact through her creations, however big or subtle.",
-      "contactDetails": "kalinda.officialsg@gmail.com",
+      "contactDetails": "karinchewsy@gmail.com",
       "personalLinks": {"linkedin": "https://www.linkedin.com/in/karinchewsy/"}
   },
   {
@@ -36,7 +36,7 @@ const DATA = [
       "preferredName": "Ken Fronda",
       "picture": "https://i.postimg.cc/Njppp4FS/Ken.png",
       "description": "The designer's mindset unlocks many doors; the key is communication. Designer to me finds its best use in the in-betweens. Being a designer means making sense of chaos. At the end of the day, don't take yourself too seriously.",
-      "contactDetails": "karinchewsy@gmail.com",
+      "contactDetails": "fkenbc@gmail.com",
       "personalLinks": {"linkedin": "https://www.linkedin.com/in/ken-bradley-fronda-958b1a199/"}
   },
   {
@@ -44,7 +44,7 @@ const DATA = [
       "preferredName": "Low Kai Yi",
       "picture": "https://i.postimg.cc/zXYtBv4t/Kaiyi.png",
       "description": "Kai Yi is an introspective designer with a broad range of passions and is interested in understanding how humans interact with the world around them. He believes in the potential of design to bring people together, and its restorative power for social good.",
-      "contactDetails": "fkenbc@gmail.com",
+      "contactDetails": "lowkaiyi@u.nus.edu",
       "personalLinks": {"behance": "https://www.behance.net/jonathanlow5"}
   },
   {
@@ -52,7 +52,7 @@ const DATA = [
       "preferredName": "Kent Limanza",
       "picture": "https://i.postimg.cc/D0kg8ppJ/Kent.png",
       "description": "Kent is a multidisciplinary designer driven by a passion for crafting distinctive products, services, and experiences. His strength lies at the intersection of design and technology, where he wields technology as both a material and a tool.",
-      "contactDetails": "lowkaiyi@u.nus.edu",
+      "contactDetails": "kent.limanza@gmail.com",
       "personalLinks": {"linkedin": "https://www.linkedin.com/in/kent-timothy/"}
   },
   {
@@ -60,7 +60,7 @@ const DATA = [
       "preferredName": "Yu Hang",
       "picture": "https://i.postimg.cc/7h92wKFy/Yuhan.png",
       "description": "",
-      "contactDetails": "kent.limanza@gmail.com",
+      "contactDetails": "kwang.y.h.1999@gmail.com",
       "personalLinks": ""
   },
   {
@@ -68,7 +68,7 @@ const DATA = [
       "preferredName": "De Wei",
       "picture": "https://i.postimg.cc/Twy7yDRS/Dewei.png",
       "description": "",
-      "contactDetails": "kwang.y.h.1999@gmail.com",
+      "contactDetails": "leedewei44@gmail.com",
       "personalLinks": ""
   },
   {
@@ -76,7 +76,7 @@ const DATA = [
       "preferredName": "Leong Jo Yie",
       "picture": "https://i.postimg.cc/hjHCVtvG/Joyie.png",
       "description": "",
-      "contactDetails": "leedewei44@gmail.com ",
+      "contactDetails": "",
       "personalLinks": ""
   },
   {
