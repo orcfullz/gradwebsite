@@ -1275,75 +1275,13 @@ nav li {
 /* for mobile */
 
 @media only screen and (max-width: 840px) {
-    #welcome-page-content {
-        display: none;
-    }
-
-    #welcome-page-mobile {
-        display: inline;
-        overflow: hidden;
-        flex: 0 1 auto;
-        /* padding-bottom: 100px; */
-        height: fit-content;
-    }
-
-    #welcome-page-content-mobile {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        height: fit-content;
-        justify-content: space-between;
-        margin: 24px auto 24px auto;
-    }
-
-    #welcome-page-content-mobile div {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #welcome-page-mobile-logo {
-        min-width: 250px;
-        min-height: 300px;
-        width: 45vw;
-        height: 54vw;
-        margin: auto;
-    }
-
-    #welcome-page-mobile-title {
-        font-size: 4rem;
-        font-weight: 700;
-        margin: 24px auto;
-    }
-
-    #welcome-page-mobile-content {
-        font-size: 1.5rem;
-    }
-
-    #welcome-page-mobile-content p {
-        text-align: center;
-        color: #FEFFF8;
-    }
-
-    #welcome-page-mobile-how {
-        font-size: 1.125rem;
-        font-weight: 500;
-        z-index: 2;
-    }
-
-    #welcone-page-mobile-arrow {
-        /* position: absolute;
-        right: 128px; */
-        margin-bottom: 48px;
-        height: 84px;
-        width: 200px;
-        border-radius: 42px;
-        background-color: #001;
-        /* background-image: linear-gradient(to left, var(--main-color-yellow) 2.48%, rgba(235, 255, 107, 0.00) 18.81%); */
-        
-    }
-
     .how-to {
         font-size: 1rem;
+    }
+
+    #welcome-page-logo {
+        width: 25vw;
+        height: 30vw;
     }
 
     #diagonal-accent-event {
@@ -1612,6 +1550,75 @@ nav li {
         width: 75px;
         border-bottom-right-radius: 75px;
         box-shadow: 0 75px 0 0 var(--background-yellow);
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #welcome-page-content {
+        display: none;
+    }
+
+    #welcome-page-mobile {
+        display: inline;
+        overflow: hidden;
+        flex: 0 1 auto;
+        /* padding-bottom: 100px; */
+        height: fit-content;
+    }
+
+    #welcome-page-content-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: fit-content;
+        justify-content: space-between;
+        margin: 24px auto 24px auto;
+    }
+
+    #welcome-page-content-mobile div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #welcome-page-mobile-logo {
+        min-width: 250px;
+        min-height: 300px;
+        width: 45vw;
+        height: 54vw;
+        margin: auto;
+    }
+
+    #welcome-page-mobile-title {
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 24px auto;
+    }
+
+    #welcome-page-mobile-content {
+        font-size: 1.5rem;
+    }
+
+    #welcome-page-mobile-content p {
+        text-align: center;
+        color: #FEFFF8;
+    }
+
+    #welcome-page-mobile-how {
+        font-size: 1.125rem;
+        font-weight: 500;
+        z-index: 2;
+    }
+
+    #welcone-page-mobile-arrow {
+        /* position: absolute;
+        right: 128px; */
+        margin-bottom: 48px;
+        height: 84px;
+        width: 200px;
+        border-radius: 42px;
+        background-color: #001;
+        /* background-image: linear-gradient(to left, var(--main-color-yellow) 2.48%, rgba(235, 255, 107, 0.00) 18.81%); */
+        
     }
 }
 
