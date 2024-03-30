@@ -1,44 +1,44 @@
 @font-face {
     font-family: 'Meta Pro';
-    src: url('fonts/FFMetaProBold.ttf');
+    src: url('fonts/FFMetaProBold.TTF');
     src: url('fonts/FFMetaProBold.eot?#iefix') format('embedded-opentype'),
-         url('fonts/FFMetaProBold.ttf')  format('truetype'), 
+         url('fonts/FFMetaProBold.TTF')  format('truetype'), 
          url('fonts/FFMetaProBold.svg#svgFontName') format('svg');
     font-weight: 900;
 }
 
 @font-face {
     font-family: 'Meta Pro';
-    src: url('fonts/FFMetaProMedium.ttf');
+    src: url('fonts/FFMetaProMedium.TTF');
     src: url('fonts/FFMetaProMedium.eot?#iefix') format('embedded-opentype'),
-         url('fonts/FFMetaProMedium.ttf')  format('truetype'), 
+         url('fonts/FFMetaProMedium.TTF')  format('truetype'), 
          url('fonts/FFMetaProMedium.svg#svgFontName') format('svg');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Meta Pro';
-    src: url('fonts/FFMetaProBook.ttf');
+    src: url('fonts/FFMetaProBook.TTF');
     src: url('fonts/FFMetaProBook.eot?#iefix') format('embedded-opentype'),
-         url('fonts/FFMetaProBook.ttf')  format('truetype'), 
+         url('fonts/FFMetaProBook.TTF')  format('truetype'), 
          url('fonts/FFMetaProBook.svg#svgFontName') format('svg');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Meta Pro';
-    src: url('fonts/FFMetaProRegular.ttf');
+    src: url('fonts/FFMetaProRegular.TTF');
     src: url('fonts/FFMetaProRegular.eot?#iefix') format('embedded-opentype'),
-         url('fonts/FFMetaProRegular.ttf')  format('truetype'), 
+         url('fonts/FFMetaProRegular.TTF')  format('truetype'), 
          url('fonts/FFMetaProRegular.svg#svgFontName') format('svg');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Meta Pro';
-    src: url('fonts/FFMetaProLight.ttf');
+    src: url('fonts/FFMetaProLight.TTF');
     src: url('fonts/FFMetaProLight.eot?#iefix') format('embedded-opentype'),
-         url('fonts/FFMetaProLight.ttf')  format('truetype'), 
+         url('fonts/FFMetaProLight.TTF')  format('truetype'), 
          url('fonts/FFMetaProLight.svg#svgFontName') format('svg');
     font-weight: 350;
 }
@@ -153,7 +153,6 @@ p {
     height: 100vh;
     margin: 0;
     padding: 0;
-    min-height: 767px;
     width: 100vw;
     background-color: var(--main-color-blue);
     display: flex;
@@ -167,12 +166,15 @@ p {
     background-repeat: no-repeat;
     background-position: bottom;
     height: 160px;
+    max-height: 160px;
+    min-height: 40px;
     margin: 0;
     flex: 1 1 auto;
 }
 
 #welcome-page-content {
     width: 80%;
+    height: fit-content;
     min-width: 1150px;
     margin: auto;
     color: #FEFFF8;
@@ -190,7 +192,7 @@ p {
 
 #title-description {
     margin-top: 24px;
-    padding-right: 48px;
+    /* padding-right: 48px; */
 }
 
 #title-text {
@@ -212,17 +214,17 @@ p {
     justify-content: space-between;
     font-size: 1.5rem;
     margin-top: 1.25rem;
-    gap: 1rem;
+    gap: 5rem;
 }
 
 #title-details-location {
-    margin-right: 96px;
+    /* margin-right: 96px; */
     width: 26.5rem;
     max-width: 500px;
 }
 
 #title-details-datetime {
-    margin-right: 48px;
+    /* margin-right: 48px; */
     width: 11rem;
     max-width: 250px;
 }
@@ -1184,18 +1186,16 @@ nav li {
     #title-details {
         font-size: 20px;
         gap: 2rem;
+        margin-right: 2em;
     };
 
     #title-details-location {
         margin: 20px 0px;
-        max-width: 24rem;
-        width: fit-content;
     }
 
     #title-details-datetime {
         margin: 20px 0px;
         margin-left: 0px !important;
-        width: 20rem;
     }
 
     #diagonal-accent-event {
@@ -1230,6 +1230,10 @@ nav li {
 }
 
 @media only screen and (max-width: 1080px) {
+    #title-details-location {
+        margin: 20px 0px;
+        width: 18rem;
+    }
 
     #main-page-content {
         flex-direction: column;
