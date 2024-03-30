@@ -167,7 +167,6 @@ p {
     background-position: bottom;
     height: 160px;
     max-height: 160px;
-    min-height: 40px;
     margin: 0;
     flex: 1 1 auto;
 }
