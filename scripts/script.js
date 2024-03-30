@@ -69,12 +69,12 @@ let startY;
 let element = document.getElementById("arrow-down");
 let navMenu = document.getElementById("navigation-menu");
 
-document.querySelector("#arrow-down").addEventListener('click', function (e) {
-    navMenu.style.display = "flex";
-    alert("unlocked");
-    element.classList.add("move-down")
-    document.querySelector("#main-page").scrollIntoView({behavior: "smooth"});
-})
+// document.querySelector("#arrow-down").addEventListener('click', function (e) {
+//     navMenu.style.display = "flex";
+//     alert("unlocked");
+//     element.classList.add("move-down")
+//     document.querySelector("#main-page").scrollIntoView({behavior: "smooth"});
+// })
 
 element.addEventListener('mousedown', function (event) {
   startY = event.pageY;
