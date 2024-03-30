@@ -450,7 +450,7 @@ nav li {
     align-items: end;
     justify-content: center;
     padding-bottom: 3em;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 500;
 }
 
@@ -510,7 +510,7 @@ nav li {
 }
 
 .title {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 20px;
     font-style: normal;
@@ -518,7 +518,7 @@ nav li {
 }
 
 .subtitle-1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 550;
     margin-bottom: 20px;
     font-style: normal;
@@ -526,7 +526,7 @@ nav li {
 }
 
 .subtitle-2 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     font-style: normal;
     line-height: 110%;
@@ -534,7 +534,7 @@ nav li {
 }
 
 .text {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -543,7 +543,7 @@ nav li {
 }
 
 .bus-stop {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -592,7 +592,7 @@ nav li {
     width: 100%;
     text-align: center;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-right: 48px;
 }
 
@@ -701,7 +701,7 @@ nav li {
 }
 
 .bus-images {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .event-image {
@@ -772,7 +772,7 @@ nav li {
 }
 
 .footer-text {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 110%;
 }
@@ -784,7 +784,7 @@ nav li {
     height: 60%;
     justify-content: space-around;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     flex-direction: column;
     margin-left: 0;
 }
@@ -795,7 +795,7 @@ nav li {
 
 .webpage {
     font-weight: 350;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
 }
 
@@ -1104,7 +1104,7 @@ nav li {
     }
 
     #rsvp-link-text {
-        font-size: 16px;
+        font-size: 1rem;
         padding-left: 1em;
     }
     
@@ -1172,15 +1172,15 @@ nav li {
     }
 
     .subtitle {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     p.welcome {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     #title-details {
-        font-size: 20px;
+        font-size: 1.25rem;
         gap: 2rem;
         margin-right: 2em;
     };
@@ -1199,7 +1199,7 @@ nav li {
     }
 
     #rsvp-link-text {
-        font-size: 12px;
+        font-size: 0.75rem;
         padding-left: 1em;
     }
 
@@ -1208,12 +1208,12 @@ nav li {
     }
 
     .footer-text {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .designer-description {
         height: 48vh;
-        font-size: 16px;
+        font-size: 1rem;
     }
     
     .designer-name {
@@ -1221,7 +1221,7 @@ nav li {
     }
     
     .designer-description-text {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
@@ -1325,7 +1325,7 @@ nav li {
     }
 
     #welcome-page-mobile-how {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 500;
         z-index: 2;
     }
@@ -1343,7 +1343,7 @@ nav li {
     }
 
     .how-to {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     #diagonal-accent-event {
@@ -1373,12 +1373,9 @@ nav li {
     }
 
     #rsvp-link-text {
-        font-size: 20px;
+        font-size: 1.25rem;
         padding-left: 1em;
         margin-right: 0px;
-    }
-
-    #rsvp-link-text {
         width: 100%;
         text-align: center;
     }
@@ -1464,7 +1461,7 @@ nav li {
 
     .footer-description .mobile{
         display: flex;
-        font-size: 12px;
+        font-size: 0.875rem;
         line-height: 18px;
     }
 
@@ -1516,7 +1513,7 @@ nav li {
         display: flex;
         align-items: center;
         color: #366381;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .navigation-menu {
@@ -1585,11 +1582,11 @@ nav li {
     }
     
     .designer-name {
-        font-size: 44px;
+        font-size: 2.75rem;
     }
     
     .designer-description-text {
-        font-size: 16px;
+        font-size: 1rem;
         margin-bottom: 20px;
         min-width: auto;
     }
@@ -1729,11 +1726,11 @@ nav li {
     }
 
     .designer-name {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .designer-description-text {
-        font-size: 16px;
+        font-size: 1rem;
         margin-bottom: 16px;
     }
 
@@ -1752,7 +1749,7 @@ nav li {
     }
 
     .designer-project-snippet-text {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .designer-project-snippet-img {
@@ -1770,6 +1767,10 @@ nav li {
         width: 60px;
         height: 66px;
         margin-left: 1em;
+    }
+
+    #rsvp-link-text {
+        font-size: 1rem;
     }
 }
 
