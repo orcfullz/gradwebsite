@@ -1654,8 +1654,12 @@ nav li {
         height: 200px;
     }
 
+    .filter {
+        height: 2.5rem;
+    }
+
     .filter p {
-        font-size: 1.5em;
+        font-size: 1.25rem;
     }
 
     .designer-element {
@@ -1698,7 +1702,7 @@ nav li {
     .designer-splash {
         background-image: url("./assets/0-Test-Phone.png");
         background-size: contain;
-        background-position: 0px -20px;
+        background-position: 0px 0px;
         background-repeat: no-repeat;
         display: flex;
         justify-content: flex-end;
