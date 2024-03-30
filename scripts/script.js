@@ -109,8 +109,11 @@ const generateDesignerCollection = () => {
     container.id = d.preferredName.split(" ")[0] + "-" + i;
 
     const image_div = document.createElement("div");
+    const filter_div = document.createElement("div");
     image_div.classList.add("designer-image");
     image_div.style.backgroundImage = `url(${d.picture})`;
+    filter_div.classList.add("designer-image-filter")
+    image_div.append(filter_div);
 
     const text_div = document.createElement("div");
     text_div.classList.add("designer-text");
