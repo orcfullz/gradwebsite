@@ -45,11 +45,29 @@ window.onload = () => {
   let navMenu = document.getElementById("navigation-menu");
 
   document.querySelector("#arrow-down").addEventListener('click', function (e) {
-      document.querySelector("#main-page").scrollIntoView({behavior: "smooth"});
-  })
+    document.querySelector("#arrow-down-drag").classList.add("move-down");
+    setTimeout(function () {
+      document.querySelector("#main-page").scrollIntoView({behavior: "smooth"}); //will redirect to your blog page (an ex: blog.html)
+    }, 300); //will call the function after 2 secs.
+    setTimeout(function () {
+    document.querySelector("#arrow-down-drag").classList.remove("move-down");
+    }, 300)
+    // setTimeout(function () {
+    //   document.querySelector(".animated-circle").classList.add("enlarge");
+    // }, 300)
+    // setTimeout(function () {
+    //   document.querySelector(".animated-circle").classList.remove("enlarge");
+    // }, 800)
+});
 
   document.querySelector("#arrow-right").addEventListener('click', function (e) {
-    document.querySelector("#main-page").scrollIntoView({behavior: "smooth"});
+    document.querySelector("#arrow-right-drag").style.marginLeft = 0;
+    setTimeout(function () {
+      document.querySelector("#main-page").scrollIntoView({behavior: "smooth"}); //will redirect to your blog page (an ex: blog.html)
+    }, 300); //will call the function after 2 secs.
+    setTimeout(function () {
+      document.querySelector("#arrow-right-drag").style.marginLeft = "-260px";
+    }, 350)
 })
 }
 
@@ -121,6 +139,8 @@ const generateDesignerCollection = () => {
   DATA.forEach((d, i) => {
     const container = document.createElement('div');
     container.classList.add("designer-element");
+    container.classList.add("designer-element-animation");
+    // container.classList.add("event-image");
     container.id = d.preferredName.split(" ")[0] + "-" + i;
 
     const image_div = document.createElement("div");
