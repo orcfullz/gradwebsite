@@ -64,7 +64,7 @@
 } */
 
 * {
-    cursor: none;
+    
 }
 
 body {
@@ -73,19 +73,20 @@ body {
     color: #FBFFE1;
     height: fit-content;
     font-weight: 350;
+    cursor: none;
     /* font-size: 16px; */
 }
 
 .cursor {
     position: fixed;
-    z-index: 1000; /* this is to make sure this is the top most element make this bigger if the cursor is going under other elements */
+    z-index: 100000; /* this is to make sure this is the top most element make this bigger if the cursor is going under other elements */
     cursor: none; /* this is to hide the default cursor */
     pointer-events: none; /* this is to make it so that the cursor can still interact with elements */
     transition: width 100ms ease, height 100ms ease;
 }
 
 .small {
-    z-index: 2000;
+    z-index: 2000000;
 }
 
 .trail {
@@ -143,6 +144,14 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #555; /* Color of the scroll bar thumb on hover */
+}
+
+.a2a_i {
+    cursor: pointer;
+}
+
+.a2a_fullheader {
+    cursor: default !important;
 }
 
 a {
