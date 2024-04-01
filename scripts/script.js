@@ -61,12 +61,12 @@ window.onload = () => {
 });
 
   document.querySelector("#arrow-right").addEventListener('click', function (e) {
-    document.querySelector("#arrow-right-drag").style.marginLeft = 0;
+    document.querySelector("#arrow-right-drag").classList.add("move-right");
     setTimeout(function () {
       document.querySelector("#main-page").scrollIntoView({behavior: "smooth"}); //will redirect to your blog page (an ex: blog.html)
     }, 300); //will call the function after 2 secs.
     setTimeout(function () {
-      document.querySelector("#arrow-right-drag").style.marginLeft = "-260px";
+      document.querySelector("#arrow-right-drag").classList.remove("move-right");
     }, 350)
 })
 }

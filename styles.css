@@ -157,6 +157,7 @@ body {
 a {
     text-decoration: none !important;
     overflow: hidden;
+    cursor: none;
 }
 
 .headings {
@@ -331,6 +332,10 @@ p {
 
 .move-down {
     top: 200px !important;
+}
+
+#arrow-right-drag.move-right {
+    margin-left: calc(-260px + 50vw - 80px);
 }
 
 .animated-circle {
@@ -760,6 +765,7 @@ nav li {
     opacity: 0.5;
     animation: fade-in-half 500ms linear forwards;
     animation-timeline: view();
+    animation-range: entry 200px;
 }
 
 @keyframes fade-in-half {
@@ -914,6 +920,7 @@ nav li {
     align-self: flex-start;   
     flex: 15%;
     padding-top: 200px;
+    z-index: 100;
 }
 
 .filter {
