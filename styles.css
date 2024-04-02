@@ -762,6 +762,7 @@ nav li {
 @keyframes fade-in {
     to { scale:1; opacity:1;}
 }
+*/
 
 .designer-element {
     opacity: 0.5;
@@ -772,7 +773,7 @@ nav li {
 
 @keyframes fade-in-half {
     to { opacity:1;}
-} */
+} 
 
 #footer-event {
     background-color: var(--secondary-blue);
