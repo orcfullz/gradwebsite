@@ -342,9 +342,9 @@ p {
     position: absolute;
     opacity: 0.4;
     background: var(--main-color-yellow);
-    width: 20px;
-    height: 20px;
-    border-radius: 100% 100% 0% 0%;
+    width: 0px;
+    height: 0px;
+    border-radius: 100% 100% 100% 100%;
     bottom: 0;
     left: -200px;
     transition: width 1000ms ease, height 1000ms ease, opacity 500ms ease;
@@ -1355,7 +1355,6 @@ nav li {
 
     #welcome-page-mobile {
         display: inline;
-        overflow: hidden;
         flex: 0 1 auto;
         /* padding-bottom: 100px; */
         height: fit-content;
@@ -1413,6 +1412,21 @@ nav li {
         border-radius: 42px;
         background-color: #001;
         /* background-image: linear-gradient(to left, var(--main-color-yellow) 2.48%, rgba(235, 255, 107, 0.00) 18.81%); */  
+    }
+
+    .animated-circle {
+        top: calc(100vh - 108px);
+        left: 50vw;
+        background: var(--main-color-yellow);
+        transition: all 1000ms ease, opacity 300ms ease;
+    }
+
+    .enlarge {
+        top: 108px;
+        left: -50vh;
+        width: 200vh;
+        height: 200vh;
+        opacity: 1;
     }
 
     .how-to {

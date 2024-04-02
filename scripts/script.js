@@ -47,28 +47,34 @@ window.onload = () => {
   document.querySelector("#arrow-down").addEventListener('click', function (e) {
     document.querySelector("#arrow-down-drag").classList.add("move-down");
     setTimeout(function () {
-      document.querySelector("#main-page").scrollIntoView(); 
-    }, 1000); 
-    setTimeout(function () {
-    document.querySelector("#arrow-down-drag").classList.remove("move-down");
-    }, 700)
-    setTimeout(function () {
-      document.querySelector(".animated-circle").classList.add("enlarge");
-    }, 300)
-    setTimeout(function () {
-      document.querySelector(".animated-circle").classList.remove("enlarge");
-    }, 1000)
+      document.querySelector("#arrow-down-drag").classList.remove("move-down");
+    }, 700);
+    welcomePageAnimation();
 });
 
   document.querySelector("#arrow-right").addEventListener('click', function (e) {
     document.querySelector("#arrow-right-drag").classList.add("move-right");
     setTimeout(function () {
-      document.querySelector("#main-page").scrollIntoView({behavior: "smooth"});
-    }, 300); 
-    setTimeout(function () {
       document.querySelector("#arrow-right-drag").classList.remove("move-right");
-    }, 350)
+    }, 700);
+    welcomePageAnimation();
 })
+}
+
+function welcomePageAnimation() {
+  setTimeout(function () {
+    document.querySelector("#main-page").scrollIntoView();
+  }, 1000);
+  setTimeout(function () {
+    document.querySelectorAll(".animated-circle").forEach(d => {
+      d.classList.add("enlarge");
+    });
+  }, 300)
+  setTimeout(function () {
+    document.querySelectorAll(".animated-circle").forEach(d => {
+      d.classList.remove("enlarge");
+    });
+  }, 1000)
 }
 
 const cursor = document.querySelector('.cursor.small');
