@@ -1035,8 +1035,8 @@ nav li {
 }
 
 .designer-description {
-    min-height: 400px;
-    height: 50vh;
+    max-height: fit-content;
+    min-height: 50vh;
     width: 720px;
     max-width: 45vw;
     min-width: 40em;
@@ -1290,7 +1290,7 @@ nav li {
     }
 
     .designer-description {
-        height: 48vh;
+        max-height: 48vh;
         font-size: 1rem;
     }
     
