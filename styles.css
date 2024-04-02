@@ -753,10 +753,9 @@ nav li {
     font-size: 1rem;
 }
 
-.event-image {
+/* .event-image {
     scale: 0.8; opacity: 0;
     animation: fade-in 1s linear forwards;
-    /* animation-timeline: view(); */
     animation-range: entry 200px;
 }
 
@@ -773,7 +772,7 @@ nav li {
 
 @keyframes fade-in-half {
     to { opacity:1;}
-}
+} */
 
 #footer-event {
     background-color: var(--secondary-blue);
@@ -1904,28 +1903,5 @@ nav li {
     
     .designer-link-logo {
         height: 20px;
-    }
-}
-
-@media (prefers-reduced-motion: no-preferences) {
-    .event-image {
-        scale: 0.8; opacity: 0;
-        animation: fade-in linear forwards;
-        animation-timeline: view();
-    }
-
-    .designer-element {
-        opacity: 0.5;
-        animation: fade-in-half linear forwards;
-        animation-timeline: view();
-        /* animation-range-start: entry; */
-    }
-
-    @keyframes fade-in {
-        to { scale:1; opacity:1;}
-    }
-
-    @keyframes fade-in-half {
-        to { opacity:1;}
     }
 }
