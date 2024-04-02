@@ -47,24 +47,24 @@ window.onload = () => {
   document.querySelector("#arrow-down").addEventListener('click', function (e) {
     document.querySelector("#arrow-down-drag").classList.add("move-down");
     setTimeout(function () {
-      document.querySelector("#main-page").scrollIntoView({behavior: "smooth"}); //will redirect to your blog page (an ex: blog.html)
-    }, 300); //will call the function after 2 secs.
+      document.querySelector("#main-page").scrollIntoView(); 
+    }, 1000); 
     setTimeout(function () {
     document.querySelector("#arrow-down-drag").classList.remove("move-down");
+    }, 700)
+    setTimeout(function () {
+      document.querySelector(".animated-circle").classList.add("enlarge");
     }, 300)
-    // setTimeout(function () {
-    //   document.querySelector(".animated-circle").classList.add("enlarge");
-    // }, 300)
-    // setTimeout(function () {
-    //   document.querySelector(".animated-circle").classList.remove("enlarge");
-    // }, 800)
+    setTimeout(function () {
+      document.querySelector(".animated-circle").classList.remove("enlarge");
+    }, 1000)
 });
 
   document.querySelector("#arrow-right").addEventListener('click', function (e) {
     document.querySelector("#arrow-right-drag").classList.add("move-right");
     setTimeout(function () {
-      document.querySelector("#main-page").scrollIntoView({behavior: "smooth"}); //will redirect to your blog page (an ex: blog.html)
-    }, 300); //will call the function after 2 secs.
+      document.querySelector("#main-page").scrollIntoView({behavior: "smooth"});
+    }, 300); 
     setTimeout(function () {
       document.querySelector("#arrow-right-drag").classList.remove("move-right");
     }, 350)
@@ -116,6 +116,7 @@ element.addEventListener('mouseup', function (event) {
 
 const openMenu = () => {
   const navMobile = document.querySelector("#navigation-list-mobile");
+  navMobile.scrollIntoView({behavior: "smooth"});
   navMobile.classList.add("active")
 }
 

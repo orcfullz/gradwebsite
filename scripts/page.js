@@ -52,8 +52,9 @@ const moveCursor = (e)=> {
 
 const openMenu = () => {
     const navMobile = document.querySelector("#navigation-list-mobile");
+    navMobile.scrollIntoView({behavior: "smooth"});
     navMobile.classList.add("active")
-}
+  }
 
 const closeMenu = () => {
     const navMobile = document.querySelector("#navigation-list-mobile");
