@@ -1,4 +1,4 @@
-const DATA = [
+[
     {
         "fullName": "CHAN HUI YING SARAH",
         "preferredName": "Sarah Chan",
@@ -316,41 +316,4 @@ const DATA = [
         "personalLinks": "",
         "desktopPic": "https://i.postimg.cc/6QnpxxjR/Grace.png"
     }
-];
-
-// var imageLinks = [
-//   { name: "Canice", link: "assets/designer-card-photos/Canice.png" },
-//   { name: "Celeste", link: "assets/designer-card-photos/Celeste.png" },
-//   { name: "Cunjia", link: "assets/designer-card-photos/Cunjia.png" },
-//   { name: "Dewei", link: "assets/designer-card-photos/Dewei.png" },
-//   { name: "Grace", link: "assets/designer-card-photos/Grace.png" },
-//   { name: "Joseph", link: "assets/designer-card-photos/Joseph.png" },
-//   { name: "Joyie", link: "assets/designer-card-photos/Joyie.png" },
-//   { name: "Junwei", link: "assets/designer-card-photos/Junwei.png" },
-//   { name: "Kaiyi", link: "assets/designer-card-photos/Kaiyi.png" },
-//   { name: "Kalinda", link: "assets/designer-card-photos/Kalinda.png" },
-//   { name: "Karin", link: "assets/designer-card-photos/Karin.png" },
-//   { name: "Ken", link: "assets/designer-card-photos/Ken.png" },
-//   { name: "Kengwei", link: "assets/designer-card-photos/Kengwei.png" },
-//   { name: "Kent", link: "assets/designer-card-photos/Kent.png" },
-//   { name: "Kesh", link: "assets/designer-card-photos/Kesh.png" },
-//   { name: "Luke", link: "assets/designer-card-photos/Luke.png" },
-//   { name: "Merkayla", link: "assets/designer-card-photos/Merkayla.png" },
-//   { name: "Nazurah", link: "assets/designer-card-photos/Nazurah.png" },
-//   { name: "Nicole", link: "assets/designer-card-photos/Nicole.png" },
-//   { name: "Ria", link: "assets/designer-card-photos/Ria.png" },
-//   { name: "Sarah", link: "assets/designer-card-photos/Sarah.png" },
-//   { name: "Serene", link: "assets/designer-card-photos/Serene.png" },
-//   { name: "Sheryl", link: "assets/designer-card-photos/Sheryl.png" },
-//   { name: "Stacy", link: "assets/designer-card-photos/Stacy.png" },
-//   { name: "Syafiq", link: "assets/designer-card-photos/Syafiq.png" },
-//   { name: "Tanya", link: "assets/designer-card-photos/Tanya.png" },
-//   { name: "Travis", link: "assets/designer-card-photos/Travis.png" },
-//   { name: "Valerie", link: "assets/designer-card-photos/Valerie.png" },
-//   { name: "Wina", link: "assets/designer-card-photos/Wina.png" },
-//   { name: "Wing", link: "assets/designer-card-photos/Wing.png" },
-//   { name: "Yuhang", link: "assets/designer-card-photos/Yuhan.png" },
-//   { name: "Zhi-Hui", link: "assets/designer-card-photos/Zhi-Hui.png" }
-// ];  
-
-export { DATA };
+]

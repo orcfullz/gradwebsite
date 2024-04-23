@@ -1025,7 +1025,7 @@ nav li {
     width: 100%;
     bottom: 0;
     right: 0;
-    background-image: url("./assets/0-Test-Desktop-copy.png");
+    /* background-image: url("./assets/0-Test-Desktop-copy.png"); */
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
@@ -1697,7 +1697,7 @@ nav li {
     }
 
     .designer-splash {
-        background-image: url("./assets/0-Test-Phone.png");
+        /* background-image: url("./assets/0-Test-Phone.png"); */
         background-size: cover;
         background-position: 0px -210px;
     }
@@ -1803,7 +1803,7 @@ nav li {
     }
 
     .designer-splash {
-        background-image: url("./assets/0-Test-Phone.png");
+        /* background-image: url("./assets/0-Test-Phone.png"); */
         background-size: contain;
         background-position: 0px 0px;
         background-repeat: no-repeat;

@@ -1,8 +1,8 @@
-import { DATA } from "./data.js"
+import { DATA } from "./data.js";
+let index = 0;
 
 window.onload = () => {
     const params = new URLSearchParams(window.location.search);
-    let index = 0;
 
     if (params.get("id")) {
         index = parseInt(params.get("id").split("-")[1]);
@@ -22,6 +22,8 @@ window.onload = () => {
         closeMenu();
     })
 
+    window.addEventListener("resize", handlePicResize);
+
     window.addEventListener('mousemove', moveCursor);
 
     const linkArray = document.querySelectorAll("a, .clickable");
@@ -36,6 +38,7 @@ window.onload = () => {
         })
     })
 }
+
 
 const cursor = document.querySelector('.cursor.small');
 // const cursorTrail = document.querySelector('.trail');
@@ -91,6 +94,18 @@ const loadContent = (index) => {
             link.append(img);
             links.append(link);
         }
+    }
+}
+
+const handlePicResize = (e) => {
+    const mQuery = window.matchMedia('(max-width: 840px)');
+
+    const designerPic = document.querySelector(".designer-splash");
+
+    if (mQuery.matches) {
+        designerPic.style.backgroundImage = `url("./assets/0-Test-Phone.png")`;
+    } else {
+        designerPic.style.backgroundImage = `url(${DATA[index].desktopPic})`;
     }
 }
 
