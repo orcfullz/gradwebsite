@@ -80,7 +80,8 @@ const DATA = [
         "picture": "https://i.postimg.cc/7h92wKFy/Yuhan.png",
         "description": "",
         "contactDetails": "kwang.y.h.1999@gmail.com",
-        "personalLinks": ""
+        "personalLinks": "",
+        "desktopPic": "https://i.postimg.cc/TP6XmL0L/Yuhang.png"
     },
     {
         "fullName": "LEE DE WEI",
@@ -264,7 +265,8 @@ const DATA = [
         "picture": "https://i.postimg.cc/5ybChhk3/Zhi-Hui.png",
         "description": "Zhi Hui is a dedicated designer with a passion for infusing joy into retail experiences. Excels in crafting unique customer journeys that align seamlessly with brand values. Specialized in retail design, visual merchandising, and visual design, bringing creativity and enthusiasm to elevate brand experiences.",
         "contactDetails": "zhihuitanzht@gmail.com",
-        "personalLinks": ""
+        "personalLinks": "",
+        "desktopPic": "https://i.postimg.cc/FFq83ksr/Zhi-hui.png"
     },
     {
         "fullName": "VALERIE NG",

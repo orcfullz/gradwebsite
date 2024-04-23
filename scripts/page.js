@@ -22,6 +22,8 @@ window.onload = () => {
         closeMenu();
     })
 
+    handlePicResize();
+
     window.addEventListener("resize", handlePicResize);
 
     window.addEventListener('mousemove', moveCursor);
