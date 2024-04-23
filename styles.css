@@ -64,7 +64,7 @@
 } */
 
 * {
-    
+    font-family: "Meta Pro", sans-serif;
 }
 
 body {
@@ -592,7 +592,7 @@ nav li {
 }
 
 .text-width {
-    width: 80%;
+    width: 100%;
 }
 
 .bus-stop {
@@ -670,10 +670,20 @@ nav li {
     margin-bottom: 0px !important;
 }
 
-#event-guide-direction {
-    margin-left: 96px;
+#event-direction-merch {
     flex: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 96px;
     margin-bottom: inherit;
+}
+
+#event-guide-direction {
+    display: flex;
+    flex-direction: row;
+    flex: 30%;
+    gap: 2rem;
 }
 
 #getting-there {
@@ -681,18 +691,19 @@ nav li {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    flex: 30%;
 }
 
 #getting-there-text {
     margin-top: 8px;
     font-weight: 500;
+    min-width: 11rem;
 }
 
-#getting-there-image {
+#getting-there-map {
     position: relative;
-    height: 160px;
-    width: 240px;
+    height: 209px;
+    max-width: 300px;
+    min-width: 120px;
 }
 
 #google-map {
@@ -703,27 +714,15 @@ nav li {
 
 
 #getting-there-by {
-    height: 60%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     gap: 32px;
 }
 
-#getting-there-by .by-way {
-    flex: 25%;
-}
-
-.by-way-images {
-    width: auto;
-    height: 300px;
-}
-
-.by-way-text {
-    width: 80%;
-}
-
-.second-content {
-    margin-top: 12px;
-    margin-bottom: 0px;
+#getting-there-by-text{
+    max-width: 24rem;
+    min-width: 10rem;
 }
 
 #nearest-bus-stop {
@@ -733,51 +732,53 @@ nav li {
 .by-way-images {
     border-radius: 10px;
     width: 100%;
-    height: 180px;
+    min-width: 120px;
+    max-width: 201px;
+    height: 209px;
     object-fit: cover;
 }
 
-#by-bus-second {
-    max-height: 180px;
+#by-bus-images.by-way-images {
+    width: 201px;
 }
 
-#by-bus-images {
-    justify-content: space-between;
-    gap: 16px;
-    margin-top: 12px;
+.tab {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid #ccc; */
+    /* background-color: #f1f1f1; */
 }
 
-.by-bus-img {
-    border-radius: 10px;
-    width: 100%;
-    object-fit: cover;
+.tab button {
+    color: #FFFFFF;
+    text-align: left;
+    padding: 0px 1rem 0 0;
+    background: none;
+    transition: 0.3s;
+    border: none;
 }
 
-.bus-images {
-    font-size: 1rem;
+    /* Change background color of buttons on hover */
+.tab button:hover {
+    color: var(--font-color-blue);
 }
 
-/* .event-image {
-    scale: 0.8; opacity: 0;
-    animation: fade-in 1s linear forwards;
-    animation-range: entry 200px;
+    /* Create an active/current tablink class */
+.tab button.active {
+    color: var(--main-color-yellow);
 }
 
-@keyframes fade-in {
-    to { scale:1; opacity:1;}
-}
-*/
-
-.designer-element {
-    opacity: 0.5;
-    animation: fade-in-half 500ms linear forwards;
-    /* animation-timeline: view(); */
-    /* animation-range: entry 200px; */
+    /* Style the tab content */
+.tabcontent {
+    display: none;
+    border-top: none;
 }
 
-@keyframes fade-in-half {
-    to { opacity:1;}
-} 
+#merch-splash {
+    height: 100%;
+    width: 50px;
+    background-color: #000;
+}
 
 #footer-event {
     background-color: var(--secondary-blue);
@@ -1169,10 +1170,6 @@ nav li {
         margin-top: 24px;
     }
 
-    .text-width {
-        width: 100%;
-    }
-
     #event-guide-content {
         min-width: 90%;
     }
@@ -1463,9 +1460,13 @@ nav li {
         width: 80%;
     }
 
-    #event-guide-direction {
+    #event-direction-merch {
         margin-left: 0px;
         width: 80%;
+    }
+
+    #event-guide-direction {
+        flex-direction: column;
     }
 
     #rsvp-link-text {
@@ -1477,7 +1478,7 @@ nav li {
     }
 
     #getting-there {
-        flex-direction: column !important;
+        flex-direction: column;
         align-items: center;
         margin-top: 24px;
     }
@@ -1486,14 +1487,13 @@ nav li {
         width: 100%;
     }
     
-
     #getting-there-by {
-        flex-direction: column !important;
+        flex-direction: column;
         margin-top: 24px;
     }
 
-    #getting-there-by div {
-        margin-top: 12px;
+    #getting-there-by-text{
+        max-width: 100%;
     }
 
     #google-map {
@@ -1501,30 +1501,15 @@ nav li {
         height: 300px;
     }
 
-    .first-content {
-        width: 100%;
-        margin: 0px auto;
-    }
-
     .by-way {
         align-items: center;
         /* flex-direction: column;/ */
     }
 
-    #by-bus .second-content {
-        margin: 0px auto;
-        border-radius: 0;
-        height: fit-content;
-    }
-
-    #getting-there-image {
+    #getting-there-map {
         height: 300px;
+        max-width: 840px;
         width: 100%;
-    }
-
-    #getting-there-link {
-        width: 10%;
-        height: auto;
     }
 
     #getting-there-text {
@@ -1536,11 +1521,12 @@ nav li {
     }
 
     .by-way-images {
-        height: 300px;
+        height: fit-content;
+        max-height: 300px;
         background-size: cover;
         border-radius: 0;
-        margin: 0px auto;
-        width: 100%;
+        max-width: 100%;
+        text-align: left;
     }
 
     #event-guide {
@@ -1748,9 +1734,9 @@ nav li {
         max-height: 200px;
     }
 
-    #getting-there-image {
+    #getting-there-map {
         width: 100%;
-        max-height: 200px;
+        max-height: 209px;
     }
 
     #google-map {
