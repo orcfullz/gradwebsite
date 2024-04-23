@@ -11,6 +11,22 @@ window.onload = () => {
         closeMenu();
     })
 
+    document.querySelector(".close-to-des").addEventListener("click", (e) => {
+        closeMenu();
+    })
+
+    document.querySelector("#by-car-button").addEventListener("click", (e) => {
+        openWay(e, "by-car");
+    })
+
+    document.querySelector("#by-train-button").addEventListener("click", (e) => {
+        openWay(e, "by-train");
+    })
+
+    document.querySelector("#by-bus-button").addEventListener("click", (e) => {
+        openWay(e, "by-bus");
+    })
+
     window.addEventListener('mousemove', moveCursor);
 
     const linkArray = document.querySelectorAll("a, .clickable");
@@ -41,6 +57,8 @@ window.onload = () => {
             d.style.display = "inline";
         })
     })
+
+    document.querySelector(".defaultOpen").click();
 }
 
 const cursor = document.querySelector('.cursor.small');
@@ -65,6 +83,34 @@ const openMenu = () => {
 const closeMenu = () => {
     const navMobile = document.querySelector("#navigation-list-mobile");
     navMobile.classList.remove("active")
+}
+
+const openWay = (e, cityName) => {
+    // Declare all variables
+    var i, tabcontent, tablinks, activeContent;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active");
+    }
+
+    console.log(cityName +"-content")
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    activeContent = document.getElementsByClassName(cityName);
+    console.log(activeContent)
+    for (i = 0; i < activeContent.length; i++) {
+        activeContent[i].style.display = "block";
+      }
+    console.log("test")
+    e.currentTarget.classList.add("active");
 }
 
 // The Dot object used to scaffold the dots
