@@ -70,7 +70,7 @@
 body {
     margin: 0;
     font-family: "Meta Pro", sans-serif;
-    color: #FBFFE1;
+    color: #FFFFFF;
     height: fit-content;
     font-weight: 350;
     cursor: none;
@@ -611,20 +611,21 @@ nav li {
 #event-guide-content {
     width: 80%;
     min-width: 1454px;
-    margin: 48px auto 48px auto;
+    margin: auto;
     height: fit-content;
 }
 
 #event-guide-details {
     flex: 20%;
+    gap: 1rem;
 }
 
 #event-guide-details div {
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
 }
 
 #event-guide-rsvp {
-    height: 25%;
+    min-height: 209px;
 }
 
 #event-guide-schedule {
@@ -674,7 +675,7 @@ nav li {
     flex: 80%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     margin-left: 96px;
     margin-bottom: inherit;
 }
@@ -682,8 +683,8 @@ nav li {
 #event-guide-direction {
     display: flex;
     flex-direction: row;
-    flex: 30%;
     gap: 2rem;
+    margin-bottom: 1rem;
 }
 
 #getting-there {
@@ -774,10 +775,60 @@ nav li {
     border-top: none;
 }
 
-#merch-splash {
+#event-merch-splash {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+    gap: 2rem;
+}
+
+#event-merch-splash img {
+    width: 100%;
     height: 100%;
-    width: 50px;
-    background-color: #000;
+    object-fit: cover;
+}
+
+#event-merch-text {
+    flex: 20%;
+}
+
+#event-merch-text .text {
+    max-width: 12rem;
+}
+
+#event-merch-images {
+    flex: 80%;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+}
+
+#event-merch-block-ironon {
+    display: flex;
+    flex-direction: column;
+    height: 300px;   
+}
+
+#event-merch-block {
+    display: flex;
+    flex-direction: row;
+    height: 140px;   
+}
+
+#event-merch-ironon {
+    display: flex;
+    flex-direction: row;
+    height: 160px;
+    width: 100%;   
+}
+
+#event-merch-ironon1 {
+    width: 40%;   
+}
+
+#event-merch-ironon2 {
+    width: 60%;   
 }
 
 #footer-event {
@@ -1174,6 +1225,10 @@ nav li {
         min-width: 90%;
     }
 
+    #by-bus-images.by-way-images {
+        width: fit-content;
+    }
+
     #rsvp-link {
         height: 48px;
     }
@@ -1445,14 +1500,12 @@ nav li {
 
     #event-guide {
         height: fit-content;
-        color: var(--secondary-text-yellow);
     }
-    
 
     #event-guide-content {
         flex-direction: column !important;
         width: 90%;
-        padding-bottom: 48px;
+        margin-bottom: 48px;
         align-items: center;
     }
 
@@ -1531,6 +1584,14 @@ nav li {
 
     #event-guide {
         height: fit-content;
+    }
+
+    #event-merch-splash {
+        flex-direction: column;
+    }
+
+    #event-merch-images {
+        flex-direction: column;
     }
 
     #arrow-right {

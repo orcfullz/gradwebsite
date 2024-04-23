@@ -2,7 +2,7 @@ window.onload = () => {
     document.querySelector(".menu-icon").addEventListener("click", (e) => {
         openMenu();
     })
-nd-con
+
     document.querySelector(".navigation-button").addEventListener("click", (e) => {
         closeMenu();
     })
