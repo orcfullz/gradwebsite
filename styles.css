@@ -1200,6 +1200,78 @@ nav li {
     height: 26px;
 }
 
+#about-us {
+    background-color: #11212B;
+    background-image: url("assets/about-us-background.png");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#about-us-content {
+    padding: calc(64px + 10vh) 0 0 0;
+    height: calc(80vh - 64px);
+    display: flex;
+    flex-direction: row;
+}
+
+.about-us-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+#about-us-content .title-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 50vw;
+    margin-left: 2.5vw;
+}
+
+.circle-accent {
+    display: flex;
+    border-radius: 99999px;
+    opacity: 1;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+#circle-accent-horizontal {
+    width: 291px;
+    height: 31px;
+    background: linear-gradient(270deg, rgba(235, 255, 107, 0.50) 0%, rgba(235, 255, 107, 0.00) 100%);
+}
+
+#circle-accent-vertical {
+    width: 31px;
+    height: 291px;
+    background: linear-gradient(0deg, rgba(235, 255, 107, 0.50) 0%, rgba(235, 255, 107, 0.00) 100%);
+}
+
+.yellow-circle {
+    width: 31px;
+    height: 31px;
+    border-radius: 16px;
+    background-color: var(--main-color-yellow);
+}
+
+#about-our-batch .text {
+    width: 13rem;
+}
+
+#about-our-course {
+    align-items: end;
+}
+
+#about-our-course .text {
+    max-width: 32rem;
+}
+
+#about-us-content-mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 1920px) {
     #welcome-page-logo {
         width: 400px;
@@ -1756,15 +1828,13 @@ nav li {
         border-bottom-right-radius: 75px;
         box-shadow: 0 75px 0 0 var(--background-yellow);
     }
-}
-
-@media only screen and (max-height: 480px) {
-    #welcome-page-content {
-        display: inline;
+    
+    #about-us-content {
+        display: none;
     }
 
-    #welcome-page-mobile {
-        display: none;
+    #about-us-content-mobile {
+        display: flex;
     }
 }
 
@@ -1910,6 +1980,11 @@ nav li {
         width: 65px;
         height: 65px;
     }
+
+    #about-us {
+        background-image: url("assets/about-us-background-phone.png");
+        background-position: center bottom;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1925,6 +2000,14 @@ nav li {
 
     #rsvp-link-text {
         font-size: 1rem;
+    }
+
+    #welcome-page-content {
+        display: inline;
+    }
+
+    #welcome-page-mobile {
+        display: none;
     }
 }
 
