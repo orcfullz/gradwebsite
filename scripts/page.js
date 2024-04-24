@@ -179,10 +179,10 @@ addEventListener("mousemove", function(event) {
 
 // animate() calls draw() then recursively calls itself
 // everytime the screen repaints via requestAnimationFrame().
-function animate() {
-    draw();
-    requestAnimationFrame(animate);
-}
+// function animate() {
+//     draw();
+//     requestAnimationFrame(animate);
+// }
 
-// And get it started by calling animate().
-animate();
+// // And get it started by calling animate().
+// animate();

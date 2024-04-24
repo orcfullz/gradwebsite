@@ -16,15 +16,15 @@ window.onload = () => {
     })
 
     document.querySelector("#by-car-button").addEventListener("click", (e) => {
-        openWay(e, "by-car");
+        openOption(e, "by-car");
     })
 
     document.querySelector("#by-train-button").addEventListener("click", (e) => {
-        openWay(e, "by-train");
+        openOption(e, "by-train");
     })
 
     document.querySelector("#by-bus-button").addEventListener("click", (e) => {
-        openWay(e, "by-bus");
+        openOption(e, "by-bus");
     })
 
     window.addEventListener('mousemove', moveCursor);
@@ -85,7 +85,7 @@ const closeMenu = () => {
     navMobile.classList.remove("active")
 }
 
-const openWay = (e, cityName) => {
+const openOption = (e, cityName) => {
     // Declare all variables
     var i, tabcontent, tablinks, activeContent;
   
@@ -178,10 +178,10 @@ addEventListener("mousemove", function(event) {
 
 // animate() calls draw() then recursively calls itself
 // everytime the screen repaints via requestAnimationFrame().
-function animate() {
-    draw();
-    requestAnimationFrame(animate);
-}
+// function animate() {
+//     draw();
+//     requestAnimationFrame(animate);
+// }
 
-// And get it started by calling animate().
-animate();
+// // And get it started by calling animate().
+// animate();
