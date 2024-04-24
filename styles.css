@@ -759,12 +759,10 @@ nav li {
     border: none;
 }
 
-    /* Change background color of buttons on hover */
 .tab button:hover {
     color: var(--font-color-blue);
 }
 
-    /* Create an active/current tablink class */
 .tab button.active {
     color: var(--main-color-yellow);
 }
@@ -1272,6 +1270,23 @@ nav li {
     display: none;
 }
 
+.more-information {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.more-information > div {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.about-us-arrow {
+    margin-top: 3px;
+}
+
 @media only screen and (max-width: 1920px) {
     #welcome-page-logo {
         width: 400px;
@@ -1341,7 +1356,7 @@ nav li {
     }
 
     * {
-        cursor: auto;
+        cursor: default;
     }
 
     a {
@@ -1828,6 +1843,12 @@ nav li {
         border-bottom-right-radius: 75px;
         box-shadow: 0 75px 0 0 var(--background-yellow);
     }
+
+    #about-us {
+        background-image: url("assets/about-us-background-phone.png");
+        background-position: center bottom;
+        object-fit: cover;
+    }
     
     #about-us-content {
         display: none;
@@ -1835,6 +1856,35 @@ nav li {
 
     #about-us-content-mobile {
         display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin: 2rem auto;
+    }
+
+    #our-batch-text {
+        width: 13rem;
+    }
+
+    #our-course-text {
+        width: 17rem;
+        margin-bottom: 1rem;
+    }
+    
+    #about-us-content-mobile > div {
+        margin-bottom: 1rem;
+    }
+
+    #about-us-content-mobile .tab button {
+        color: rgba(254, 251, 251, 0.3);
+        padding: 0px 2rem 0 0;
+    }
+
+    #about-us-content-mobile .tab button:hover {
+        color: var(--font-color-blue);
+    }
+    
+    #about-us-content-mobile .tab button.active {
+        color: #FEFBFB;
     }
 }
 
@@ -1981,10 +2031,7 @@ nav li {
         height: 65px;
     }
 
-    #about-us {
-        background-image: url("assets/about-us-background-phone.png");
-        background-position: center bottom;
-    }
+    
 }
 
 @media only screen and (max-width: 480px) {
