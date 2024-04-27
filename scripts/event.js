@@ -42,20 +42,28 @@ window.onload = () => {
     })
 
     document.querySelector("#google-map").addEventListener("mouseenter", (e) => {
-        document.querySelector(".cursor.small").style.display = "none";
-        document.querySelectorAll(".cursor.trail-array").forEach(d => {
-            d.style.display = "none";
-        })
+        const mQuery = window.matchMedia("(max-width: 1280px)");
+
+        if (!mQuery.matches) {
+            document.querySelector(".cursor.small").style.display = "none";
+            document.querySelectorAll(".cursor.trail-array").forEach(d => {
+                d.style.display = "none";
+            })
+        
         // document.querySelector(".cursor.trail").style.display = "none";
         // document.querySelector(".small").display = "none";
-    })
+    }})
 
     document.querySelector("#google-map").addEventListener("mouseleave", (e) => {
-        document.querySelector(".cursor.small").style.display = "inline";
-        // document.querySelector(".cursor.trail").style.display = "none";
-        document.querySelectorAll(".cursor.trail-array").forEach(d => {
-            d.style.display = "inline";
-        })
+        const mQuery = window.matchMedia("(max-width: 1280px)");
+
+        if (!mQuery.matches) {
+            document.querySelector(".cursor.small").style.display = "inline";
+            // document.querySelector(".cursor.trail").style.display = "none";
+            document.querySelectorAll(".cursor.trail-array").forEach(d => {
+                d.style.display = "inline";
+            })
+        }
     })
 
     document.querySelector(".defaultOpen").click();
