@@ -355,4 +355,6 @@ const DATA = [
 //   { name: "Zhi-Hui", link: "assets/designer-card-photos/Zhi-Hui.png" }
 // ];  
 
-export { DATA };
+const cardImages = ["./assets/card-photo-2.png","./assets/card-photo-1.jpeg", ""]
+
+export { DATA, cardImages };

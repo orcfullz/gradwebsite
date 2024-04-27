@@ -77,6 +77,10 @@ body {
     /* font-size: 16px; */
 }
 
+button {
+    cursor: none;
+}
+
 .cursor {
     position: fixed;
     z-index: 100000; /* this is to make sure this is the top most element make this bigger if the cursor is going under other elements */
@@ -638,16 +642,17 @@ nav li {
     height: 56px;
     align-items: center;
     gap: 11px;
-    border-radius: 29.5px;
+    border-radius: 0 29.5px 29.5px 0;
     background: linear-gradient(270deg, #366381 0%, rgba(54, 99, 129, 0.00) 100%);
 }
 
 #rsvp-link-text {
     width: 100%;
-    text-align: center;
+    text-align: right;
     font-weight: 400;
-    font-size: 1.125rem;
-    margin-right: 48px;
+    font-size: 1.5rem;
+    margin-right: 64px;
+    padding-right: 24px;
 }
 
 #rsvp-link div {
@@ -1205,6 +1210,7 @@ nav li {
     background-position: center;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 #about-us-content {
@@ -1212,6 +1218,7 @@ nav li {
     height: calc(80vh - 64px);
     display: flex;
     flex-direction: row;
+    gap: 8vw;
 }
 
 .about-us-title {
@@ -1223,7 +1230,6 @@ nav li {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    width: 50vw;
     margin-left: 2.5vw;
 }
 
@@ -1236,9 +1242,10 @@ nav li {
 }
 
 #circle-accent-horizontal {
-    width: 291px;
+    max-width: 291px;
     height: 31px;
     background: linear-gradient(270deg, rgba(235, 255, 107, 0.50) 0%, rgba(235, 255, 107, 0.00) 100%);
+    flex: auto;
 }
 
 #circle-accent-vertical {
@@ -1258,8 +1265,21 @@ nav li {
     width: 13rem;
 }
 
+#about-our-batch {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+
+#about-our-batch-title-text {
+    height: fit-content;
+    flex: 0 1 auto;
+    margin-bottom: 24px;
+}
+
 #about-our-course {
     align-items: end;
+    flex: 0.5;
 }
 
 #about-our-course .text {
@@ -1285,6 +1305,86 @@ nav li {
 
 .about-us-arrow {
     margin-top: 3px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    flex: 1 1 auto;
+    position: relative;
+}
+
+  
+.flip-card-inner {
+    position: absolute;
+    right:0;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.shadow-card-1 {
+    position: absolute;
+    right: -2.5%;
+    bottom: 12%;
+    width: 46%;
+    height: 85%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transform: rotate(5deg);
+    background-color: #777;
+    border-radius: 20px;
+}
+
+.shadow-card-2 {
+    position: absolute;
+    right: -5%;
+    bottom: 8%;
+    width: 42%;
+    height: 85%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transform: rotate(10deg);
+    background-color: #555;
+    border-radius: 20px;
+}
+
+.flip-card-inner > div {
+    border-radius: 20px;
+}
+
+.flip-card-front {
+    /* background-image: url("./assets/card-photo-1.jpeg"); */
+    background-position: center bottom;
+    object-fit: cover;
+    background-size: cover;
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+  
+.flip-card-back {
+    background-color: var(--main-color-yellow);
+    transform: rotateY(180deg);
 }
 
 @media only screen and (max-width: 1920px) {
@@ -1321,7 +1421,7 @@ nav li {
     }
 
     #rsvp-link-text {
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding-left: 1em;
     }
     
@@ -1356,6 +1456,10 @@ nav li {
     }
 
     * {
+        cursor: default;
+    }
+
+    button {
         cursor: default;
     }
 
@@ -1439,6 +1543,10 @@ nav li {
     
     .designer-description-text {
         font-size: 1rem;
+    }
+
+    #about-us-content {
+        gap: 3vw;
     }
 }
 
@@ -1858,11 +1966,62 @@ nav li {
         display: flex;
         flex-direction: column;
         width: 80vw;
-        margin: 2rem auto;
+        margin: 2rem auto 0 auto;
+        
     }
 
     #our-batch-text {
         width: 13rem;
+    }
+
+    #our-batch-content {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        /* overflow-y: hidden; */
+    }
+
+    .flip-card-mobile {
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        perspective: 1000px;
+        flex: 1 1 auto;
+        position: relative;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        perspective: 1000px;
+        flex: 1 1 auto;
+        position: relative;
+    }
+
+    .shadow-card-2 {
+        right: 5%;
+        border-radius: 30px;
+    }
+
+    .shadow-card-1 {
+        right: 6%;
+        border-radius: 30px;
+    }
+      
+    .flip-card-inner {
+        position: absolute;
+        left: calc(-32px - 5vw);
+        width: 110%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    .flip-card-inner > div {
+        border-radius: 30px;
     }
 
     #our-course-text {
@@ -1870,7 +2029,11 @@ nav li {
         margin-bottom: 1rem;
     }
     
-    #about-us-content-mobile > div {
+    #about-us-content-mobile .text {
+        margin-bottom: 2rem;
+    }
+
+    #about-us-content-mobile .tab {
         margin-bottom: 1rem;
     }
 
