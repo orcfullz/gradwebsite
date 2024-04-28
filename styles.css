@@ -2257,7 +2257,9 @@ nav li {
     #rsvp-link-text {
         font-size: 1rem;
     }
+}
 
+@media only screen and (max-height: 480px) {
     #welcome-page-content {
         display: inline;
     }
