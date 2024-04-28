@@ -1385,7 +1385,7 @@ nav li {
     max-width: 16rem;
     color: white;
     text-align: left;
-    margin-left: 1rem
+    margin-left: 2rem;
 }
   
 .flip-card-front, .flip-card-back {
@@ -1566,6 +1566,10 @@ nav li {
 
     #about-us-content {
         gap: 3vw;
+    }
+
+    .flip-card-front p {
+        margin-left: 1rem;
     }
 }
 
