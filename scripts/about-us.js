@@ -1,6 +1,6 @@
 import { cardImages } from "./data.js";
 let cardCounter = 0;
-let currPicIndex = cardImages - 2;
+let currPicIndex = cardImages.length;
 
 window.onload = () => {
     document.querySelector(".menu-icon").addEventListener("click", (e) => {
@@ -25,6 +25,7 @@ window.onload = () => {
 
     addImageCards();
     addImageCardsMobile();
+    backgroundShadow();
 
     window.addEventListener('mousemove', moveCursor);
 
@@ -87,7 +88,7 @@ const openOption = (e, cityName) => {
     activeContent = document.getElementsByClassName(cityName);
     
     for (i = 0; i < activeContent.length; i++) {
-        activeContent[i].style.display = "block";
+        activeContent[i].style.display = "flex";
       }
     e.currentTarget.classList.add("active");
 }
@@ -96,13 +97,21 @@ const addImageCards = () => {
     const flipCardDiv = document.querySelector(".flip-card");
     const flipCardDivMobile = document.querySelector(".flip-card-mobile");
     cardImages.forEach((d, i) => {
+        console.log(d)
         const container = document.createElement('div');
         container.classList.add("flip-card-inner")
 
         const front = document.createElement('div');
         front.classList.add("flip-card-front");
         container.id = "card" + i;
-        front.style.backgroundImage = `url(${d})`;
+        front.style.backgroundImage = `url(${d["link"]})`;
+
+        const textDiv = document.createElement('div')
+        textDiv.classList.add("flip-card-text");
+        const textP = document.createElement('p');
+        textP.innerHTML = d["text"];
+        textDiv.append(textP);
+        front.append(textDiv);
         
         const back = document.createElement('div');
         back.classList.add("flip-card-back");
@@ -113,6 +122,8 @@ const addImageCards = () => {
                 container.style.transform = "rotateY(-180deg) translate(30px,0)";
                 cardCounter++;
                 container.style.zIndex = cardCounter;
+                currPicIndex--;
+                backgroundShadow();
             })
             if (i != (cardImages.length - 1)) {
                 back.addEventListener("click", (e) => {
@@ -120,6 +131,8 @@ const addImageCards = () => {
                     container.style.transform = "rotateY(0deg)";
                     cardCounter++;
                     container.style.zIndex = cardCounter;
+                    currPicIndex++;
+                    backgroundShadow();
                 })
             }
         }
@@ -138,7 +151,14 @@ const addImageCardsMobile = () => {
         const front = document.createElement('div');
         front.classList.add("flip-card-front", "flip-card-front-mobile");
         container.id = "cardmobile" + i;
-        front.style.backgroundImage = `url(${d})`;
+        front.style.backgroundImage = `url(${d["link"]})`;
+
+        const textDiv = document.createElement('div')
+        textDiv.classList.add("flip-card-text");
+        const textP = document.createElement('p');
+        textP.innerHTML = d["text"];
+        textDiv.append(textP);
+        front.append(textDiv);
         
         const back = document.createElement('div');
         back.classList.add("flip-card-back");
@@ -149,6 +169,8 @@ const addImageCardsMobile = () => {
                 container.style.transform = "rotateY(-180deg) translate(30px,0)";
                 cardCounter++;
                 container.style.zIndex = cardCounter;
+                currPicIndex--;
+                backgroundShadow();
             })
             if (i != (cardImages.length - 1)) {
                 back.addEventListener("click", (e) => {
@@ -156,6 +178,8 @@ const addImageCardsMobile = () => {
                     container.style.transform = "rotateY(0deg)";
                     cardCounter++;
                     container.style.zIndex = cardCounter;
+                    currPicIndex++;
+                    backgroundShadow();
                 })
             }
         }
@@ -165,9 +189,28 @@ const addImageCardsMobile = () => {
     document.querySelectorAll(".flip-card-front-mobile")[cardImages.length - 1].click();
 }
 
-const flipCard = (e) => {
-
+const backgroundShadow = () => {
+    console.log(currPicIndex)
+    const shadow1 = document.querySelectorAll(".shadow-card-1");
+    const shadow2 = document.querySelectorAll(".shadow-card-2");
+    shadow1.forEach((d) => {
+        if (currPicIndex - 1 >= 0) {
+            d.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0.60)), url(${cardImages[currPicIndex - 1]["link"]})`
+        } else {
+            d.style.background = "none";
+            d.style.backgroundColor = "#333";
+        }
+    })
+    shadow2.forEach((d) => {
+        if (currPicIndex - 2 >= 0) {
+            d.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0.60)), url(${cardImages[currPicIndex - 2]["link"]})`
+        } else {
+            d.style.background = "none";
+            d.style.backgroundColor = "#555";
+        }
+    })
 }
+
 
 
 

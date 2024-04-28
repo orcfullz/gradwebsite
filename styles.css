@@ -1368,6 +1368,25 @@ nav li {
     object-fit: cover;
     background-size: cover;
 }
+
+.flip-card-front > div {
+    position: absolute;
+    bottom: 0px;
+    /* max-width: 20rem; */
+    width: 100%;
+    background: linear-gradient(0deg, rgba(54, 99, 129, 0.8) 0%, rgba(54, 99, 129, 0) 100%);
+    border-radius: 20px;
+    padding: 1rem 0;
+
+}
+
+.flip-card-front p {
+    font-size: 1.125rem;
+    max-width: 16rem;
+    color: white;
+    text-align: left;
+    margin-left: 1rem
+}
   
 .flip-card-front, .flip-card-back {
     position: absolute;
@@ -1967,7 +1986,7 @@ nav li {
         flex-direction: column;
         width: 80vw;
         margin: 2rem auto 0 auto;
-        
+        height: calc(100vh - 2rem - 100px);
     }
 
     #our-batch-text {
@@ -1990,7 +2009,7 @@ nav li {
         position: relative;
     }
 
-    .flip-card {
+    .flip-card-mobile {
         background-color: transparent;
         width: 100%;
         height: 100%;
@@ -2000,12 +2019,14 @@ nav li {
     }
 
     .shadow-card-2 {
-        right: 5%;
+        right: 0%;
+        bottom: 5%;
         border-radius: 30px;
     }
 
     .shadow-card-1 {
-        right: 6%;
+        right: 1%;
+        bottom: 10%;
         border-radius: 30px;
     }
       
@@ -2013,7 +2034,6 @@ nav li {
         position: absolute;
         left: calc(-32px - 5vw);
         width: 110%;
-        height: 100%;
         text-align: center;
         transition: transform 0.6s;
         transform-style: preserve-3d;
@@ -2022,6 +2042,28 @@ nav li {
 
     .flip-card-inner > div {
         border-radius: 30px;
+    }
+
+    .flip-card-front > div {
+        position: absolute;
+        bottom: 0px;
+        /* max-width: 20rem; */
+        width: 100%;
+        background: linear-gradient(0deg, rgba(54, 99, 129, 0.8) 0%, rgba(54, 99, 129, 0) 100%);
+        border-radius: 30px;
+        padding: 1rem 0;
+    }
+    
+    .flip-card-front p {
+        font-size: 1.125rem;
+        max-width: 16rem;
+        color: white;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    #our-course-content {
+        flex-direction: column;
     }
 
     #our-course-text {
