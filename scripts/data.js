@@ -355,6 +355,22 @@ const DATA = [
 //   { name: "Zhi-Hui", link: "assets/designer-card-photos/Zhi-Hui.png" }
 // ];  
 
-const cardImages = ["./assets/card-photo-2.png","./assets/card-photo-1.jpeg", ""]
+const cardImages = [
+    {"link": "./assets/card-photo-2.png",
+    "text": "lorem ipsum dolores the sky is ble afnenioew fkasn iwhr  hfdask ei h nkn nfdsa nknf jnk dk airjeim km"},
+    
+    {"link": "./assets/card-photo-1.jpeg",
+    "text": "lorem ipsum dolores the sky is ble afnenioew fkasn iwhr  hfdask ei h nkn nfdsa nknf jnk dk airjeim km"},
+    
+    {"link": "./assets/card-photo-2.png",
+    "text": "lorem ipsum dolores the sky is ble afnenioew fkasn iwhr  hfdask ei h nkn nfdsa nknf jnk dk airjeim km"},
+    
+    {"link": "./assets/card-photo-1.jpeg",
+    "text": "lorem ipsum dolores the sky is ble afnenioew fkasn iwhr  hfdask ei h nkn nfdsa nknf jnk dk airjeim km"},
+    
+    {"link": "",
+    "text": ""}
+]
+    
 
 export { DATA, cardImages };
