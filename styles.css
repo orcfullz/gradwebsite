@@ -2025,13 +2025,13 @@ nav li {
     .shadow-card-2 {
         right: 0%;
         bottom: 5%;
-        border-radius: 30px;
+        border-radius: 40px;
     }
 
     .shadow-card-1 {
         right: 1%;
         bottom: 10%;
-        border-radius: 30px;
+        border-radius: 40px;
     }
       
     .flip-card-inner {
@@ -2045,7 +2045,7 @@ nav li {
     }
 
     .flip-card-inner > div {
-        border-radius: 30px;
+        border-radius: 0px 40px 0px 0px;
     }
 
     .flip-card-front > div {
@@ -2054,13 +2054,13 @@ nav li {
         /* max-width: 20rem; */
         width: 100%;
         background: linear-gradient(0deg, rgba(54, 99, 129, 0.8) 0%, rgba(54, 99, 129, 0) 100%);
-        border-radius: 30px;
+        border-radius: 0px 40px 0px 0px;
         padding: 1rem 0;
     }
     
     .flip-card-front p {
         font-size: 1.125rem;
-        max-width: 16rem;
+        max-width: 24rem;
         color: white;
         text-align: left;
         margin: 0 auto;
@@ -2240,7 +2240,9 @@ nav li {
         height: 65px;
     }
 
-    
+    .flip-card-front p {
+        max-width: 16rem;
+    }
 }
 
 @media only screen and (max-width: 480px) {

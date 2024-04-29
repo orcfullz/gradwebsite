@@ -108,16 +108,12 @@ const openOption = (e, cityName) => {
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].classList.remove("active");
     }
-
-    console.log(cityName +"-content")
   
     // Show the current tab, and add an "active" class to the button that opened the tab
     activeContent = document.getElementsByClassName(cityName);
-    console.log(activeContent)
     for (i = 0; i < activeContent.length; i++) {
         activeContent[i].style.display = "block";
       }
-    console.log("test")
     e.currentTarget.classList.add("active");
 }
 
