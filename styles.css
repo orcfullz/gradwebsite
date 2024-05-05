@@ -1964,7 +1964,7 @@ nav li {
     .designer-splash {
         /* background-image: url("./assets/0-Test-Phone.png"); */
         background-size: cover;
-        background-position: 0px -210px;
+        background-position: -200px -210px;
     }
 
     .designer-description::before {
@@ -2180,8 +2180,8 @@ nav li {
 
     .designer-splash {
         /* background-image: url("./assets/0-Test-Phone.png"); */
-        background-size: contain;
-        background-position: 0px 0px;
+        /* background-size: contain; */
+        /* background-position: 0px 0px; */
         background-repeat: no-repeat;
         display: flex;
         justify-content: flex-end;

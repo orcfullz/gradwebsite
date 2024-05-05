@@ -105,7 +105,7 @@ const handlePicResize = (e) => {
     const designerPic = document.querySelector(".designer-splash");
 
     if (mQuery.matches) {
-        designerPic.style.backgroundImage = `url("./assets/0-Test-Phone.png")`;
+        designerPic.style.backgroundImage = `url(${DATA[index].desktopPic})`;
     } else {
         designerPic.style.backgroundImage = `url(${DATA[index].desktopPic})`;
     }

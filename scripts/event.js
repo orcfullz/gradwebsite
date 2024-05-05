@@ -1,19 +1,4 @@
 window.onload = () => {
-    document.querySelector(".menu-icon").addEventListener("click", (e) => {
-        openMenu();
-    })
-
-    document.querySelector(".navigation-button").addEventListener("click", (e) => {
-        closeMenu();
-    })
-
-    document.querySelector(".close-to-des").addEventListener("click", (e) => {
-        closeMenu();
-    })
-
-    document.querySelector(".close-to-des").addEventListener("click", (e) => {
-        closeMenu();
-    })
 
     document.querySelector("#by-car-button").addEventListener("click", (e) => {
         openOption(e, "by-car");
@@ -27,20 +12,9 @@ window.onload = () => {
         openOption(e, "by-bus");
     })
 
-    window.addEventListener('mousemove', moveCursor);
+    // window.addEventListener('mousemove', moveCursor)
 
-    const linkArray = document.querySelectorAll("a, .clickable");
-
-    linkArray.forEach(d => {
-        d.addEventListener("mouseenter", (e) => {
-        document.querySelector(".cursor.small").classList.add("link");
-        })
-
-        d.addEventListener("mouseleave", (e) => {
-        document.querySelector(".cursor.small").classList.remove("link");
-        })
-    })
-
+    //to erase the custom cursor upon entering google map section
     document.querySelector("#google-map").addEventListener("mouseenter", (e) => {
         const mQuery = window.matchMedia("(max-width: 1280px)");
 
@@ -54,6 +28,7 @@ window.onload = () => {
         // document.querySelector(".small").display = "none";
     }})
 
+    //to add back the custom cursor upon entering google map section
     document.querySelector("#google-map").addEventListener("mouseleave", (e) => {
         const mQuery = window.matchMedia("(max-width: 1280px)");
 
@@ -65,33 +40,26 @@ window.onload = () => {
             })
         }
     })
-
-    document.querySelector(".defaultOpen").click();
 }
 
-const cursor = document.querySelector('.cursor.small');
+
+
+// const cursor = document.querySelector('.cursor.small');
 // const cursorTrail = document.querySelector('.trail');
 
-const moveCursor = (e)=> {
-  const mouseY = e.clientY;
-  const mouseX = e.clientX;
+// const cursor = document.querySelector('.cursor.small');
+// const cursorTrail = document.querySelector('.trail');
 
-  const width = document.getElementsByClassName('cursor')[0].offsetWidth;
+// const moveCursor = (e) => {
+//     console.log("huh");
+//   mouse.y = e.clientY;
+//   mouse.x = e.clientX;
+
+//   const width = document.getElementsByClassName('cursor')[0].offsetWidth;
    
-  cursor.style.transform = `translate3d(${mouseX-width/2}px, ${mouseY-width/2}px, 0)`;
-//   cursorTrail.style.transform = `translate3d(${mouseX-width/2}px, ${mouseY-width/2}px, 0)`;
-}
-
-const openMenu = () => {
-    const navMobile = document.querySelector("#navigation-list-mobile");
-    navMobile.scrollIntoView({behavior: "smooth"});
-    navMobile.classList.add("active")
-}
-
-const closeMenu = () => {
-    const navMobile = document.querySelector("#navigation-list-mobile");
-    navMobile.classList.remove("active")
-}
+//   cursor.style.transform = `translate3d(${mouse.x-width/2}px, ${mouse.y-width/2}px, 0)`;
+//   // cursorTrail.style.transform = `translate3d(${mouse.x-width/2}px, ${mouse.y-width/2}px, 0)`;
+// }
 
 const openOption = (e, cityName) => {
     // Declare all variables
