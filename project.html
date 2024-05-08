@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Designer</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="scripts/page.js" type="module"></script>
     <script src="scripts/project.js" type="module"></script>
 </head>
 <body>
@@ -28,7 +27,7 @@
                 </nav>
             </div>
         </div>
-        <div id="navigation-menu-page-mobile" class="navigation-menu navigation-menu-mobile">
+        <div id="navigation-menu-project-mobile" class="navigation-menu navigation-menu-mobile">
             <div id="navigation-logo-mobile">
                 <a href="./index.html">
                 <img src="assets/logo_navigation_blue.png" alt="logo" class="navigation-img-mobile">
@@ -55,18 +54,10 @@
         <div id="designer-welcome" class="opening-page"> 
             <div class="designer-splash">
                 <div class="designer-description">
-                    <div class="designer-description-content">
-                        <div class="designer-name"></div>
-                        <div class="designer-description-text">
+                    <div id="project-title-content" class="designer-description-content">
+                        <div id="project-title" class="designer-name"></div>
+                        <div id="project-description" class="text-block designer-description-text">
                             <p></p>
-                        </div>
-                    </div>
-                    <div class="project-and-links">
-                        <div class="designer-project-snippet">
-                            <div class="designer-project-snippet-text">Project Name</div>
-                            <div class="designer-project-snippet-img"></div>
-                        </div>
-                        <div class="designer-links">
                         </div>
                     </div>
                 </div>
@@ -79,25 +70,26 @@
                 </div>
                 <div class="project-photo-slides">
                     <div class="mySlides1 fade">
-                        <div class="numbertext">1 / 3</div>
                         <img src="./assets/img1.jpeg" style="width:100%">
-                        <div class="text">Caption Text</div>
+                        <div class="caption-text">Caption Text</div>
                     </div>
                     
                     <div class="mySlides1 fade">
-                        <div class="numbertext">2 / 3</div>
                         <img src="./assets/img2.jpeg" style="width:100%">
-                        <div class="text">Caption Two</div>
+                        <div class="caption-text">Caption Two</div>
                     </div>
                     
                     <div class="mySlides1 fade">
-                        <div class="numbertext">3 / 3</div>
                         <img src="./assets/img3.jpeg" style="width:100%">
-                        <div class="text">Caption Three</div>
+                        <div class="caption-text">Caption Three</div>
                     </div>
                     
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
+                    <a class="prev">
+                        <img src="./assets/project-arrow-prev.svg">
+                    </a>
+                    <a class="next">
+                        <img src="./assets/project-arrow-next.svg">
+                    </a>
                 </div>
             </div>
             <div class="project-text-description text-block left-align">
@@ -115,33 +107,34 @@
 
         <div class="project-section">
             <div class="project-caption-photos">
-                <div class="project-caption text-block left-align">
+                <div class="project-caption text-block right-align">
                     <p>Foreign nurses in nursing homes face language barriers & manpower crunch</p>
                 </div>
                 <div class="project-photo-slides">
                     <div class="mySlides2 fade">
-                        <div class="numbertext">1 / 3</div>
                         <img src="./assets/img1.jpeg" style="width:100%">
-                        <div class="text">Caption Text</div>
+                        <div class="caption-text">Caption Text</div>
                     </div>
                     
                     <div class="mySlides2 fade">
-                        <div class="numbertext">2 / 3</div>
                         <img src="./assets/img2.jpeg" style="width:100%">
-                        <div class="text">Caption Two</div>
+                        <div class="caption-text">Caption Two</div>
                     </div>
                     
                     <div class="mySlides2 fade">
-                        <div class="numbertext">3 / 3</div>
                         <img src="./assets/img3.jpeg" style="width:100%">
-                        <div class="text">Caption Three</div>
+                        <div class="caption-text">Caption Three</div>
                     </div>
                     
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
+                    <a class="prev">
+                        <img src="./assets/project-arrow-prev.svg">
+                    </a>
+                    <a class="next">
+                        <img src="./assets/project-arrow-next.svg">
+                    </a>
                 </div>
             </div>
-            <div class="project-text-description text-block left-align">
+            <div class="project-text-description text-block right-align">
                 <p>
                     Singapore faces manpower shortage in nursing homes, and up to 85% of the care staff are foreign workers who face language barriers with local residents. To understand workflows, I interviewed experts and connected with Kwong Wai Shiu Hospital's innovation team, which linked me with the nurses.
                 </p>
