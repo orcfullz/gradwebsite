@@ -22,6 +22,10 @@ window.onload = () => {
         closeMenu();
     })
 
+    document.querySelector(".designer-project-snippet").addEventListener("click", (e) => {
+        window.location.pathname = "./project.html"
+    })
+
     handlePicResize();
 
     window.addEventListener("resize", handlePicResize);
