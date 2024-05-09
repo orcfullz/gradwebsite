@@ -1,5 +1,9 @@
 import { DATA } from "./data.js";
 let index = 0;
+const mouse = {
+    x: 0,
+    y: 0
+  };
 
 window.onload = () => {
     const params = new URLSearchParams(window.location.search);

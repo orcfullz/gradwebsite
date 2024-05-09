@@ -1,3 +1,8 @@
+const mouse = {
+    x: 0,
+    y: 0
+};
+
 window.onload = () => {
     document.querySelector(".menu-icon").addEventListener("click", (e) => {
         openMenu();

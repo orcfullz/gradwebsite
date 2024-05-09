@@ -116,10 +116,10 @@ const handlePicResize = (e) => {
 // mouse is an object used to track the X and Y position
 // of the mouse, set with a mousemove event listener below
 // var dots = [],
-// mouse = {
-//   x: 0,
-//   y: 0
-// };
+const mouse = {
+  x: 0,
+  y: 0
+};
 const color_points = ["#11212B", "#2C3558", "#465A85", "#608FAF", "#79B4D9", "#8DCEE4", "#A1E9EF", "#B6F7F6", "#C4F9F4", "#D3FBF2", "#E1FDF0", "#EBFF6B"];
 
 // // The Dot object used to scaffold the dots
