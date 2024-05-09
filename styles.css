@@ -1093,13 +1093,14 @@ nav li {
 
 .designer-description {
     max-height: fit-content;
-    min-height: 50vh;
+    /* min-height: 50vh; */
     width: 720px;
     max-width: 45vw;
     min-width: 40em;
     background-color: var(--background-yellow);
     border-radius: 108px 0 0 0;
     position: relative;
+    padding-bottom: 4rem;
     /* padding: 64px 136px 0px 100px; */
 }
 
@@ -1415,7 +1416,9 @@ nav li {
 /* project page */
 #project-page {
     padding-bottom: 48px;
+    overflow: hidden;
 }
+
 
 
 .project-photo-slides {
@@ -1427,10 +1430,12 @@ nav li {
 /* Hide the images by default */
 .mySlides1 {
     display: none;
+    background-color: #fff;
 }
 
 .mySlides2 {
     display: none;
+    background-color: #fff;
 }
   
   /* Next & previous buttons */
@@ -1473,9 +1478,12 @@ nav li {
   
   /* Caption text */
 .caption-text {
-    background-color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
+    background-color: #fff;
+    color: var(--secondary-blue);
+    font-weight: 500;
+    font-size: 1rem;
+    font-style: italic;
+    padding: 8px 0px;
     bottom: 8px;
     width: 100%;
     text-align: center;
@@ -1643,7 +1651,7 @@ nav li {
     }
     
     .designer-name {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     .designer-description-text {
@@ -1656,6 +1664,10 @@ nav li {
 
     .flip-card-front p {
         margin-left: 1rem;
+    }
+
+    .flip-card-inner {
+        width: 65%;
     }
 }
 
@@ -1702,6 +1714,17 @@ nav li {
 
     #designer-filter.filter-active {
         border-radius: 0px 2em 2em 0px;
+    }
+
+    .designer-description {
+        min-width: 30em;
+        max-height: fit-content;
+        /* padding: 64px 136px 0px 100px; */
+    }
+
+    .project-and-links {
+        flex-direction: column;
+        align-items: start;
     }
 }
 
@@ -2018,6 +2041,7 @@ nav li {
         max-width: 100%;
         min-width: auto;
         border-radius: 0;
+        padding-bottom: 1rem;
     }
 
     .designer-description-content {
@@ -2031,6 +2055,7 @@ nav li {
         max-width: 28rem;
         margin-left: auto;
         margin-right: auto;
+        flex-direction: row;
     }
     
     .designer-name {
@@ -2101,16 +2126,8 @@ nav li {
 
     .flip-card-mobile {
         background-color: transparent;
-        width: 100%;
-        height: 100%;
-        perspective: 1000px;
-        flex: 1 1 auto;
-        position: relative;
-    }
-
-    .flip-card-mobile {
-        background-color: transparent;
-        width: 100%;
+        width: 85%;
+        left: 64px;
         height: 100%;
         perspective: 1000px;
         flex: 1 1 auto;
@@ -2140,7 +2157,7 @@ nav li {
     }
 
     .flip-card-inner > div {
-        border-radius: 0px 40px 0px 0px;
+        border-radius: 40px;
     }
 
     .flip-card-front > div {
@@ -2149,7 +2166,7 @@ nav li {
         /* max-width: 20rem; */
         width: 100%;
         background: linear-gradient(0deg, rgba(54, 99, 129, 0.8) 0%, rgba(54, 99, 129, 0) 100%);
-        border-radius: 0px 40px 0px 0px;
+        border-radius: 40px;
         padding: 1rem 0;
     }
     
@@ -2204,6 +2221,10 @@ nav li {
     .text-block p {
         width: 24rem;
         margin: 0 10vw;
+    }
+
+    .caption-text p {
+        margin: 0 auto;
     }
 
     .project-caption-photos {
@@ -2406,6 +2427,10 @@ nav li {
     .text-block p {
         width: 19.25rem;
         margin: 0 5vw;
+    }
+
+    .caption-text p {
+        margin: 0 auto;
     }
 
     .prev, .next {

@@ -26,7 +26,7 @@ window.onload = () => {
         closeMenu();
     })
 
-    // handlePicResize();
+    handlePicResize();
 
     window.addEventListener("resize", handlePicResize);
 
