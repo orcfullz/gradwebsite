@@ -1415,6 +1415,7 @@ nav li {
 /* project page */
 #project-page {
     padding-bottom: 48px;
+    overflow: hidden;
 }
 
 
@@ -1427,10 +1428,12 @@ nav li {
 /* Hide the images by default */
 .mySlides1 {
     display: none;
+    background-color: #fff;
 }
 
 .mySlides2 {
     display: none;
+    background-color: #fff;
 }
   
   /* Next & previous buttons */
@@ -1473,9 +1476,12 @@ nav li {
   
   /* Caption text */
 .caption-text {
-    background-color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
+    background-color: #fff;
+    color: var(--secondary-blue);
+    font-weight: 500;
+    font-size: 1rem;
+    font-style: italic;
+    padding: 8px 0px;
     bottom: 8px;
     width: 100%;
     text-align: center;
@@ -2206,6 +2212,10 @@ nav li {
         margin: 0 10vw;
     }
 
+    .caption-text p {
+        margin: 0 auto;
+    }
+
     .project-caption-photos {
         width: 100vw;
         height: fit-content;
@@ -2406,6 +2416,10 @@ nav li {
     .text-block p {
         width: 19.25rem;
         margin: 0 5vw;
+    }
+
+    .caption-text p {
+        margin: 0 auto;
     }
 
     .prev, .next {
