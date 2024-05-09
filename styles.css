@@ -1413,6 +1413,10 @@ nav li {
 }
 
 /* project page */
+#project-page {
+    padding-bottom: 48px;
+}
+
 
 .project-photo-slides {
     max-width: 1000px;
