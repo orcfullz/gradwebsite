@@ -75,6 +75,7 @@ body {
     font-weight: 350;
     cursor: none;
     /* font-size: 16px; */
+    background-color: var(--background-yellow);
 }
 
 button {
@@ -172,11 +173,11 @@ a {
     display: none;
 }
 
-p {
-    /* font-size: 18px; */
+/* p {
+    font-size: 18px;
     margin: 4px 0;
     line-height: 150%;
-}
+} */
 
 /* welcome page div */
 #welcome-page {
@@ -1073,6 +1074,7 @@ nav li {
     width: 100vw;
     margin: 0;
     padding: 0; 
+    overflow: hidden;
 }
 
 .designer-splash {
@@ -1138,6 +1140,10 @@ nav li {
     font-weight: 900;
     line-height: normal;
     margin-bottom: 1.125rem;
+}
+
+#project-title.designer-name {
+    color: var(--secondary-blue);
 }
 
 .designer-description-text {
@@ -1404,6 +1410,82 @@ nav li {
 .flip-card-back {
     background-color: var(--main-color-yellow);
     transform: rotateY(180deg);
+}
+
+/* project page */
+
+.project-photo-slides {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+/* Hide the images by default */
+.mySlides1 {
+    display: none;
+}
+
+.mySlides2 {
+    display: none;
+}
+  
+  /* Next & previous buttons */
+.prev, .next {
+    background-color: var(--main-color-yellow);
+    position: absolute;
+    top: 50%;
+    margin: -40px 12px 0 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    transition: 0.4s ease;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.50);
+}
+
+.next {
+    right: 0;
+}
+
+.prev > img {
+    width: 24px;
+    height: 27px;
+    padding: auto;
+}
+
+.next > img {
+    width: 24px;
+    height: 27px;
+    padding: auto;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    box-shadow: 0px 0px 30px 6px rgba(0, 0, 0, 0.55);
+}
+  
+  /* Caption text */
+.caption-text {
+    background-color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 @media only screen and (max-width: 1920px) {
@@ -1858,6 +1940,11 @@ nav li {
         display: flex;
     }
 
+    #navigation-menu-project-mobile {
+        display: flex;
+        background-color: var(--background-yellow);
+    }
+
     #main-page-filter {
         top: 100px;
     }
@@ -1952,8 +2039,12 @@ nav li {
         min-width: auto;
     }
 
-    #navigation-menu-page-mobile.navigation-menu {
+    #navigation-menu-page-mobile {
         background: none;
+        position: fixed;
+    }
+
+    #navigation-menu-project-mobile {
         position: fixed;
     }
 
@@ -2025,13 +2116,13 @@ nav li {
     .shadow-card-2 {
         right: 0%;
         bottom: 5%;
-        border-radius: 30px;
+        border-radius: 40px;
     }
 
     .shadow-card-1 {
         right: 1%;
         bottom: 10%;
-        border-radius: 30px;
+        border-radius: 40px;
     }
       
     .flip-card-inner {
@@ -2045,7 +2136,7 @@ nav li {
     }
 
     .flip-card-inner > div {
-        border-radius: 30px;
+        border-radius: 0px 40px 0px 0px;
     }
 
     .flip-card-front > div {
@@ -2054,13 +2145,13 @@ nav li {
         /* max-width: 20rem; */
         width: 100%;
         background: linear-gradient(0deg, rgba(54, 99, 129, 0.8) 0%, rgba(54, 99, 129, 0) 100%);
-        border-radius: 30px;
+        border-radius: 0px 40px 0px 0px;
         padding: 1rem 0;
     }
     
     .flip-card-front p {
         font-size: 1.125rem;
-        max-width: 16rem;
+        max-width: 24rem;
         color: white;
         text-align: left;
         margin: 0 auto;
@@ -2094,6 +2185,61 @@ nav li {
     
     #about-us-content-mobile .tab button.active {
         color: #FEFBFB;
+    }
+
+    /* project page */
+    .project-section {
+        background-color: var(--background-yellow);
+        height: fit-content; 
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-bottom: 8rem;
+    }
+
+    .text-block p {
+        width: 24rem;
+        margin: 0 10vw;
+    }
+
+    .project-caption-photos {
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .project-caption p {
+        color: var(--secondary-blue);
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 110%; /* 26.4px */
+    }
+
+    .project-text-description p {
+        color: var(--secondary-blue);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 110%; /* 26.4px */
+    }
+
+    .project-text-description > p:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .right-align {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #project-title-content.designer-description-content {
+        margin: 48px 0;
+    }
+
+    #project-title {
+        margin-left: 10vw;
     }
 }
 
@@ -2200,6 +2346,14 @@ nav li {
         margin: 20px 28px 20px 36px;
     }
 
+    #project-title-content.designer-description-content {
+        margin: 48px 0;
+    }
+
+    #project-title {
+        margin-left: 5vw;
+    }
+
     .designer-description::before {
         top: -100px;
         height: 100px;
@@ -2240,7 +2394,32 @@ nav li {
         height: 65px;
     }
 
+    .flip-card-front p {
+        max-width: 16rem;
+    }
+
+    /* project page */
+    .text-block p {
+        width: 19.25rem;
+        margin: 0 5vw;
+    }
+
+    .prev, .next {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        transition: 0.6s ease;
+    }
     
+    .prev > img {
+        width: 16px;
+        height: 18px;
+    }
+    
+    .next > img {
+        width: 16px;
+        height: 18px;
+    }
 }
 
 @media only screen and (max-width: 480px) {

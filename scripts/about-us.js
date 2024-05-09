@@ -1,6 +1,10 @@
 import { cardImages } from "./data.js";
 let cardCounter = 0;
 let currPicIndex = cardImages.length;
+const mouse = {
+    x: 0,
+    y: 0
+};
 
 window.onload = () => {
     document.querySelector(".menu-icon").addEventListener("click", (e) => {

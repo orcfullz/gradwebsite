@@ -1,4 +1,8 @@
 import { DATA } from "./data.js"
+const mouse = {
+  x: 0,
+  y: 0
+};
 
 window.onload = () => {
   generateDesignerCollection();
@@ -19,15 +23,9 @@ window.onload = () => {
     closeMenu();
   })
 
-  mouse = {
-    x: 0,
-    y: 0
-  };
-
   window.addEventListener('mousemove', moveCursor)
 
   const linkArray = document.querySelectorAll("a, .clickable, .designer-element, #arrow-down, #arrow-right");
-  console.log(linkArray);
 
   linkArray.forEach(d => {
     d.addEventListener("mouseenter", (e) => {
