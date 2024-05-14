@@ -8,9 +8,9 @@ const mouse = {
 window.onload = () => {
     const params = new URLSearchParams(window.location.search);
 
-    // if (params.get("id")) {
-    //     index = parseInt(params.get("id").split("-")[1]);
-    // }
+    if (params.get("id")) {
+        index = parseInt(params.get("id").split("-")[1]);
+    }
 
     loadContent(index);
 
