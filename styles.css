@@ -1333,6 +1333,7 @@ nav li {
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 40px;
 }
 
 .shadow-card-1 {
@@ -1419,12 +1420,56 @@ nav li {
     overflow: hidden;
 }
 
+.project-section {
+    background-color: var(--background-yellow);
+    height: fit-content; 
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 8rem auto;
+    max-width: 1000px
+}
+.caption-text p {
+    margin: 0 auto;
+}
 
+.project-caption-photos {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.project-caption p {
+    color: var(--secondary-blue);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 110%; /* 26.4px */
+}
+
+.project-text-description p {
+    color: var(--secondary-blue);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 110%; /* 26.4px */
+    max-width: 40rem;
+}
+
+.project-text-description > p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.right-align {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 
 .project-photo-slides {
     max-width: 1000px;
     position: relative;
-    margin: auto;
+    /* margin: auto; */
 }
   
 /* Hide the images by default */
@@ -1490,15 +1535,15 @@ nav li {
 }
   
 /* Fading animation */
-.fade {
-    animation-name: fade;
+/* .fade {
+    animation-name: slide;
     animation-duration: 1.5s;
 }
   
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
+    from {width: 0}
+    to {width: 100%}
+} */
 
 @media only screen and (max-width: 1920px) {
     #welcome-page-logo {
@@ -2061,6 +2106,7 @@ nav li {
         margin-left: auto;
         margin-right: auto;
         flex-direction: row;
+        align-items: center;
     }
     
     .designer-name {
@@ -2215,9 +2261,6 @@ nav li {
 
     /* project page */
     .project-section {
-        background-color: var(--background-yellow);
-        height: fit-content; 
-        display: flex;
         flex-direction: column;
         gap: 3rem;
         margin-bottom: 8rem;
@@ -2270,6 +2313,10 @@ nav li {
 
     #project-title {
         margin-left: 10vw;
+    }
+
+    .project-photo-slides {
+        margin: auto;
     }
 }
 
