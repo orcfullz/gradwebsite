@@ -23,7 +23,7 @@ window.onload = () => {
     })
 
     document.querySelector(".designer-project-snippet").addEventListener("click", (e) => {
-        window.location.href = window.location.origin + "/project.html" + (params.get("id") ? "?id=" + params.get("id") : "")
+        window.location.href = window.location.href.replace("page.html", "project.html");
     })
 
     handlePicResize();
