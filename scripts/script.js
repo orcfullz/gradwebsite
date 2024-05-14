@@ -11,6 +11,10 @@ window.onload = () => {
     generateDesignerCollection();
   });
 
+  document.querySelector("#project-filter").addEventListener("click", (e) => {
+    generateProjectCollection();
+  });
+
   document.querySelector(".menu-icon").addEventListener("click", (e) => {
     openMenu();
   })
@@ -132,10 +136,10 @@ const closeMenu = () => {
 
 const generateDesignerCollection = () => {
   const designerFilter = document.querySelector("#designer-filter");
-  // const projectFilter = document.querySelector("#project-filter");
+  const projectFilter = document.querySelector("#project-filter");
   if (!("active" in designerFilter.classList)) {
-    designerFilter.classList.add("active");
-    // projectFilter.classList.remove("active");
+    designerFilter.classList.add("filter-active");
+    projectFilter.classList.remove("filter-active");
   }
 
   const collections = document.querySelector("#main-page-collections");
@@ -168,34 +172,40 @@ const generateDesignerCollection = () => {
   })
 } 
 
-// const generateProjectCollection = () => {
-//   const designerFilter = document.querySelector("#designer-filter");
-//   const projectFilter = document.querySelector("#project-filter");
-//   if (!("active" in projectFilter.classList)) {
-//     projectFilter.classList.add("active");
-//     designerFilter.classList.remove("active");
-//   }
+const generateProjectCollection = () => {
+  const designerFilter = document.querySelector("#designer-filter");
+  const projectFilter = document.querySelector("#project-filter");
+  if (!("active" in projectFilter.classList)) {
+    projectFilter.classList.add("filter-active");
+    designerFilter.classList.remove("filter-active");
+  }
 
-//   const collections = document.querySelector("#main-page-collections");
-//   collections.innerHTML = "";
+  const collections = document.querySelector("#main-page-collections");
+  collections.innerHTML = "";
   
-//   imageLinks.forEach((d, i) => {
-//     const container = document.createElement('div');
-//     container.classList.add("project-element");
-//     container.id = d.name;
+  DATA.forEach((d, i) => {
+    const container = document.createElement('div');
+    container.classList.add("project-element");
+    // container.id = d.name;
+    container.id = d.preferredName.split(" ")[0] + "-" + i;
 
-//     const image_div = document.createElement("div");
-//     image_div.classList.add("project-image");
-//     image_div.style.backgroundImage = `url(assets/landscape-placeholder\ 1.png)`;
+    const image_div = document.createElement("div");
+    image_div.classList.add("project-image");
+    image_div.style.backgroundImage = `url(assets/landscape-placeholder\ 1.png)`;
+    image_div.style.backgroundSize = "contain";
 
-//     const text_div = document.createElement("div");
-//     text_div.classList.add("designer-text");
-//     text_div.innerHTML = "Project Name but Two Lines";
+    const text_div = document.createElement("div");
+    text_div.classList.add("designer-text");
+    text_div.innerHTML = "Project Name but Two Lines";
 
-//     container.append(image_div, text_div);
-//     collections.append(container)
-//   })
-// } 
+    container.addEventListener("click", (e) => {
+      window.location.href = `./project.html?id=${container.id}`;
+    });
+
+    container.append(image_div, text_div);
+    collections.append(container)
+  })
+} 
 
 // cursor trail 
 // dots is an array of Dot objects,
