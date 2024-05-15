@@ -371,6 +371,59 @@ const cardImages = [
     {"link": "",
     "text": ""}
 ]
+
+const TEMP_PROJECT_DATA = [
+    {
+        "linkedin": "https://www.linkedin.com/in/lukegoh98/",
+        "email": "lukegoh98@gmail.com",
+        "cover_img": {
+            "mobile": "https://i.postimg.cc/SNmfDS0R/Lightroom4-3-1-of-1.png",
+            "desktop": "https://i.postimg.cc/c4TMzpZm/Lightroom16-9-012642.png"
+        },
+        "project-title": "mammosense",
+        "project-desc": "Mammosense is a lidar-based mammogram tool that aims to enhance patient comfort by objectively reducing compression force",
+        "project-details": [
+            {
+                "heading": "mammosense was developed as part of an enhanced mammogram experience to improve patient comfort",
+                "pictures": [
+                    {
+                        "img_link": "https://i.postimg.cc/DwZd3xwK/Lightroom-5429.jpg",
+                        "caption": "mammosense being tested in a Singapore hospital"
+                    },
+                    {
+                        "img_link": "https://i.postimg.cc/g0LVnrhS/Lightroom-1-of-1-5.png",
+                        "caption": "mammosense pilot study"
+                    },
+                    {
+                        "img_link": "https://i.postimg.cc/RFRNFzgp/Slide-16-9-324.png",
+                        "caption": "mammosense operation guide"
+                    }
+                ],
+                "paragraphs": [
+                    "mammosense is a new lidar-based tool that acts as a co-pilot for radiographers during mammogram screenings. Mammogram screenings are important for breast cancer detection, yet many avoid this crucial screening due to pain during breast compression.",
+                    "mammosense aims to achieve enhanced patient comfort by objectively reducing breast compression force through analysing the characteristics of the breast to determine the optimal compression force for each unique breast.",
+                    "With this new procedure, mammosense has been shown to reduce pain by 25% and force by 34% when compared to current procedures. In the long run, I hope that mammosense will encourage more to participate in regular screenings to improve screening rates and reshape public perception of this life-saving procedure."
+                ]
+            },
+            {
+                "heading": "The things that make mammosense tick",
+                "pictures": [
+                    {
+                        "img_link": "https://i.postimg.cc/2yy8SLb3/Slide-16-9-323.png",
+                        "caption": "some of the science behind the breast sensing algorithm"
+                    }
+                ],
+                "paragraphs": [
+                    "mammosense was an engineering challenge for an industrial designer like myself, so developing it to have high-tech sensors and building the firmware from scratch was almost an impossible task. But thankfully, the internet is a resourceful place and with help from the electrical engineers from the Innovation Design Hub at NUS, I managed to construct a 2D-linear lidar array that was capable of low-resolution analysis of the breast.",
+                    "How I wish that a non-technical intervention was possible, but because the mammogram imaging uses x-rays to image the breast, many solutions aiming to cushion the breast from the compression paddle ended up adding noise to the mammogram imaging, which is not ideal.",
+                    "Lidar was chosen as a feasible method of analysis since its method of sensing was invisible to x-rays - since Lidar uses light."
+                ]
+            }
+        ]
+    }
+]
+
+
     
 
 export { DATA, cardImages };

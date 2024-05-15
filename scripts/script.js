@@ -4,6 +4,7 @@ const mouse = {
   y: 0
 };
 let filter = "designer";
+let params;
 
 window.onload = () => {
   params = new URLSearchParams(window.location.search);
