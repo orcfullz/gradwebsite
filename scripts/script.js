@@ -3,9 +3,18 @@ const mouse = {
   x: 0,
   y: 0
 };
+let filter = "designer";
 
 window.onload = () => {
-  generateDesignerCollection();
+  params = new URLSearchParams(window.location.search);
+
+  if (params) {
+    if(params.get("filter")) {
+      filter = parseInt(params.get("filter"));
+    }
+  }
+  
+  filter === "designer" ? generateDesignerCollection() : generateProjectCollection(); 
 
   document.querySelector("#designer-filter").addEventListener("click", (e) => {
     generateDesignerCollection();
