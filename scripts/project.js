@@ -85,9 +85,9 @@ const handlePicResize = (e) => {
     const designerPic = document.querySelector(".designer-splash");
 
     if (mQuery.matches) {
-        designerPic.style.backgroundImage = `url("./assets/img3.jpeg")`;
+        designerPic.style.backgroundImage = `url("https://drive.google.com/open?id=1NMrGCn8kSh-vG7c2G6HJXr7aon7mtb59")`;
     } else {
-        designerPic.style.backgroundImage = `url("./assets/img3.jpeg")`;
+        designerPic.style.backgroundImage = `url("https://drive.google.com/open?id=1NMrGCn8kSh-vG7c2G6HJXr7aon7mtb59")`;
     }
 }
 

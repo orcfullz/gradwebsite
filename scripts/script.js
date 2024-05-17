@@ -3,9 +3,19 @@ const mouse = {
   x: 0,
   y: 0
 };
+let filter = "designer";
+let params;
 
 window.onload = () => {
-  generateDesignerCollection();
+  params = new URLSearchParams(window.location.search);
+
+  if (params) {
+    if(params.get("filter")) {
+      filter = parseInt(params.get("filter"));
+    }
+  }
+  
+  filter === "designer" ? generateDesignerCollection() : generateProjectCollection(); 
 
   document.querySelector("#designer-filter").addEventListener("click", (e) => {
     generateDesignerCollection();
@@ -144,7 +154,6 @@ const generateDesignerCollection = () => {
 
   const collections = document.querySelector("#main-page-collections");
   collections.innerHTML = "";
-  
   DATA.forEach((d, i) => {
     const container = document.createElement('div');
     container.classList.add("designer-element");
@@ -164,7 +173,7 @@ const generateDesignerCollection = () => {
     text_div.innerHTML = d.preferredName;
 
     container.addEventListener("click", (e) => {
-        window.location.href = `./page.html?id=${container.id}`;
+        window.location.href = `./designer.html?id=${container.id}`;
     });
 
     container.append(image_div, text_div);
