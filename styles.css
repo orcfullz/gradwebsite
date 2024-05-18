@@ -736,6 +736,13 @@ nav li {
     margin-top: 12px;
 }
 
+#getting-there-by-image {
+    width: 100%;
+    min-width: 120px;
+    max-width: 201px;
+    height: 209px;
+}
+
 .by-way-images {
     border-radius: 10px;
     width: 100%;
@@ -747,6 +754,11 @@ nav li {
 
 #by-bus-images.by-way-images {
     width: 201px;
+}
+
+#by-bus-images p {
+    margin-top: 0px;
+    padding-top: 0.5rem;
 }
 
 .tab {
@@ -1570,10 +1582,6 @@ nav li {
         min-width: 90%;
     }
 
-    #by-bus-images.by-way-images {
-        width: fit-content;
-    }
-
     #rsvp-link {
         height: 48px;
     }
@@ -1720,6 +1728,14 @@ nav li {
     #title-details-location {
         margin: 20px 0px;
         width: 18rem;
+    }
+
+    #by-bus-images.by-way-images {
+        width: fit-content;
+    }
+
+    #event-direction-merch {
+        margin-left: 48px;
     }
 
     #main-page-content {
