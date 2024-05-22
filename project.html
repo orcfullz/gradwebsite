@@ -6,6 +6,7 @@
     <title>Designer</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="scripts/project.js" type="module"></script>
+    <script src="scripts/data.js" type="module"></script>
 </head>
 <body>
     <!-- <div class="cursor trail"></div> -->
@@ -22,7 +23,7 @@
                   <ul>
                     <li><a href="./event-guide.html" class="nav-link">Event Guide</a></li>
                     <li><a href="./index.html#main-page" class="nav-link">Designers</a></li>
-                    <li><a href="./about-us.html" target="_blank" class="nav-link">About DID</a></li>
+                    <li><a href="./about-us.html" class="nav-link">About DID</a></li>
                   </ul>
                 </nav>
             </div>
@@ -30,11 +31,13 @@
         <div id="navigation-menu-project-mobile" class="navigation-menu navigation-menu-mobile">
             <div id="navigation-logo-mobile">
                 <a href="./index.html">
-                <img src="assets/logo_navigation_blue.png" alt="logo" class="navigation-img-mobile">
+                <img src="assets/logo_navigation_blue.png" alt="logo" class="navigation-img-mobile blue">
+                <img src="assets/logo_navigation.png" alt="logo" class="navigation-img-mobile white">
                 </a>
             </div>
             <div id="menu-icon" class="menu-icon">
-                <img src="assets/menu-icon-blue.png" alt="logo" class="menu-img">
+                <img src="assets/menu-icon-blue.png" alt="logo" class="menu-img blue">
+                <img src="assets/menu-icon.png" alt="logo" class="menu-img white">
             </div>
             <div class="topnav" id="navigation-list-mobile">
                 <div id="navigation-mobile-page" class="navigation-mobile">
@@ -42,7 +45,7 @@
                         <ul>
                           <li><a href="./event-guide.html" class="nav-link-main">Event Guide</a></li>
                           <li><a href="./index.html#main-page" class="nav-link-main close-to-des">Designers</a></li>
-                          <li><a href="./about-us.html/" target="_blank" class="nav-link-main">About DID</a></li>
+                          <li><a href="./about-us.html" class="nav-link-main">About DID</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -51,19 +54,34 @@
                 </div>
             </div>
         </div>
-        <div id="designer-welcome" class="opening-page"> 
-            <div class="designer-splash">
-                <div class="designer-description">
-                    <div id="project-title-content" class="designer-description-content">
-                        <div id="project-title" class="designer-name"></div>
-                        <div id="project-description" class="text-block designer-description-text">
+        <div id="project-welcome" class="opening-page"> 
+            <div class="project-splash">
+                <div class="project-description  individual-description">
+                    <div id="project-title-content" class="project-description-content">
+                        <div id="project-title" class="project-name"></div>
+                        <div id="project-intro-description" class="project-description-text">
                             <p></p>
                         </div>
+                        <div id="supervisor-description" class="supervisor-description-text">
+                            <p></p>
+                        </div>
+                        <div class="projects-snippet designer">
+                            <div class="project-snippet-img designer"></div>
+                            <div class="project-snippet-text designer"></div>
+                        </div>
+                        <div class="projects-snippet works">
+                            <div class="project-snippet-text">Past Works</div>
+                            <div class="project-snippet-img did-archive"></div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
-        <div class="project-section">
+        <div class="project-section video">
+            <iframe class="project-video" src="https://www.youtube.com/embed/_xQTzCVGhaQ?si=anffAJwuprlFJCQu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="project-section">
             <div class="project-caption-photos">
                 <div class="project-caption text-block left-align">
                     <p>Foreign nurses in nursing homes face language barriers & manpower crunch</p>
@@ -145,7 +163,7 @@
                     Interestingly enough, nurses have good ideas to save time and manage hectic workflows. Some examples include: placing reminders near residents' headboards, efficient hacked-together trolleys and matching labels on personal-use items.
                 </p>
             </div>
-        </div>
+        </div> -->
 
         <div id="footer-main" class="footer">
             <div class="footer-logo">

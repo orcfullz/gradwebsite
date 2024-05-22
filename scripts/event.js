@@ -98,7 +98,7 @@ const closeMenu = () => {
     navMobile.classList.remove("active")
 }
 
-const openOption = (e, cityName) => {
+const openOption = (e, optionName) => {
     // Declare all variables
     var i, tabcontent, tablinks, activeContent;
   
@@ -115,7 +115,7 @@ const openOption = (e, cityName) => {
     }
   
     // Show the current tab, and add an "active" class to the button that opened the tab
-    activeContent = document.getElementsByClassName(cityName);
+    activeContent = document.getElementsByClassName(optionName);
     for (i = 0; i < activeContent.length; i++) {
         activeContent[i].style.display = "block";
       }
