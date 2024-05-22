@@ -136,7 +136,6 @@ const loadContent = (index) => {
 
     if (FINAL_DATA[index]["project-section"]) {
         FINAL_DATA[index]["project-section"].forEach((d,i) => {
-            console.log("?")
             const projectCaptionPhotos = document.createElement("div")
             projectCaptionPhotos.classList.add("project-caption-photos");
             const captionDiv = document.createElement("div")
@@ -168,19 +167,22 @@ const loadContent = (index) => {
                 photoSlides.append(slide)
             })
 
-            const prev = document.createElement("a")
-            prev.classList.add("prev")
-            const prevImg = document.createElement("img")
-            prevImg.src = "./assets/project-arrow-prev.svg"
-            prev.append(prevImg)
+            if (d["pictures"].length > 1) {
+                const prev = document.createElement("a")
+                prev.classList.add("prev")
+                const prevImg = document.createElement("img")
+                prevImg.src = "./assets/project-arrow-prev.svg"
+                prev.append(prevImg)
 
-            const next = document.createElement("a")
-            next.classList.add("next")
-            const nextImg = document.createElement("img")
-            nextImg.src = "./assets/project-arrow-next.svg"
-            next.append(nextImg)
+                const next = document.createElement("a")
+                next.classList.add("next")
+                const nextImg = document.createElement("img")
+                nextImg.src = "./assets/project-arrow-next.svg"
+                next.append(nextImg)
+                
+                photoSlides.append(prev, next)
+            }
 
-            photoSlides.append(prev, next)
             projectCaptionPhotos.append(captionDiv, photoSlides)
 
             const textDescription = document.createElement("div")
