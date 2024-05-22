@@ -1,4 +1,4 @@
-import { DATA } from "./data.js"
+import { DATA, FINAL_DATA } from "./data.js"
 const mouse = {
   x: 0,
   y: 0
@@ -51,9 +51,6 @@ window.onload = () => {
     })
   })
   
-  // document.querySelector("#project-filter").addEventListener("click", (e) => {
-  //   generateProjectCollection();
-  // });
   let navMenu = document.getElementById("navigation-menu");
 
   document.querySelector("#arrow-down").addEventListener('click', function (e) {
@@ -154,7 +151,7 @@ const generateDesignerCollection = () => {
 
   const collections = document.querySelector("#main-page-collections");
   collections.innerHTML = "";
-  DATA.forEach((d, i) => {
+  FINAL_DATA.forEach((d, i) => {
     const container = document.createElement('div');
     container.classList.add("designer-element");
     container.classList.add("designer-element-animation");
@@ -164,8 +161,8 @@ const generateDesignerCollection = () => {
     const image_div = document.createElement("div");
     const filter_div = document.createElement("div");
     image_div.classList.add("designer-image");
-    image_div.style.backgroundImage = `url(${d.picture})`;
-    filter_div.classList.add("designer-image-filter")
+    image_div.style.backgroundImage = `url(${d["thumbnailImg"]})`;
+    filter_div.classList.add("image-filter")
     image_div.append(filter_div);
 
     const text_div = document.createElement("div");
@@ -192,7 +189,7 @@ const generateProjectCollection = () => {
   const collections = document.querySelector("#main-page-collections");
   collections.innerHTML = "";
   
-  DATA.forEach((d, i) => {
+  FINAL_DATA.forEach((d, i) => {
     const container = document.createElement('div');
     container.classList.add("project-element");
     // container.id = d.name;
@@ -200,12 +197,16 @@ const generateProjectCollection = () => {
 
     const image_div = document.createElement("div");
     image_div.classList.add("project-image");
-    image_div.style.backgroundImage = `url(assets/landscape-placeholder\ 1.png)`;
-    image_div.style.backgroundSize = "contain";
+    image_div.style.backgroundImage = `url(${d["projectImgDesktop"]})`;
+    image_div.style.backgroundSize = "cover";
+
+    const filter_div = document.createElement("div");
+    filter_div.classList.add("designer-image-filter")
+    image_div.append(filter_div);
 
     const text_div = document.createElement("div");
     text_div.classList.add("designer-text");
-    text_div.innerHTML = "Project Name but Two Lines";
+    text_div.innerHTML = `${d["projectTitle"]}`;
 
     container.addEventListener("click", (e) => {
       window.location.href = `./project.html?id=${container.id}`;

@@ -1048,10 +1048,12 @@ nav li {
 
 .project-image {
     width: 178px;
-    height: 185px;
+    height: 178px;
     background-image: url("./assets/landscape-placeholder\ 1.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 89px;
     margin-bottom: 12px;
 }
 
@@ -1063,7 +1065,7 @@ nav li {
     margin-bottom: 12px;
 }
 
-.designer-image-filter {
+.image-filter {
     width: 100%;
     height: 100%;
     background-color: var(--background-yellow);
@@ -1072,7 +1074,7 @@ nav li {
     transition: all 300ms ease;
 }
 
-.designer-image-filter:hover {
+.image-filter:hover {
     opacity: 0.15;
 }
 
@@ -1213,7 +1215,9 @@ nav li {
     height: 65px;
     flex-shrink: 0;
     border-radius: 65px;
-    background: url("./assets/project-snippet.svg"), no-repeat;
+    /* background: url("./assets/project-snippet.svg"), no-repeat; */
+    background-size: cover;
+    background-position: center center;
 }
 
 .designer-links {
@@ -1224,7 +1228,7 @@ nav li {
 }
 
 .designer-link-logo {
-    height: 26px;
+    height: 32px;
 }
 
 #about-us {
@@ -1443,7 +1447,7 @@ nav li {
     bottom: 0;
     right: 0;
     background-size: cover;
-    background-position: center right;
+    background-position: -300px center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-end;
@@ -1554,10 +1558,10 @@ nav li {
 
 .project-snippet-img {
     width: 65px;
-    height: 65px;
+    height: 68px;
     flex-shrink: 0;
     border-radius: 65px;
-    background: url("./assets/project-snippet.svg"), no-repeat;
+    background-size: cover;
 }
 
 .project-snippet-img.did-archive {
@@ -1578,6 +1582,21 @@ nav li {
     margin: 0 auto 160px auto;
     max-width: 1096px;
     width: 80%;
+}
+
+.project-section.video {
+    padding-top: 45%;
+    position: relative;
+}
+
+.project-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .caption-text p {
@@ -1628,6 +1647,12 @@ nav li {
     display: none;
     background-color: #fff;
 }
+
+.mySlides3 {
+    display: none;
+    background-color: #fff;
+}
+
   
   /* Next & previous buttons */
 .prev, .next {
@@ -1856,6 +1881,10 @@ nav li {
     .flip-card-inner {
         width: 65%;
     }
+
+    .project-splash {
+        background-position: 120% center;
+    }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -1927,20 +1956,22 @@ nav li {
         margin-left: 64px;
     }
 
-    .project-description {
+    /* .project-description {
         width: 360px;
     }
     
     .project-description-content {
         margin: auto;
         width: 16rem;
-    }
+    } */
     
     .project-name {
         font-size: 2.5rem;
     }
     
-    
+    .project-splash {
+        background-position: -200px center;
+    }
 }
 
 
@@ -2277,6 +2308,10 @@ nav li {
         flex-direction: row;
         align-items: center;
     }
+
+    .designer-project-snippet {
+        width: 270px;
+    }
     
     .designer-name {
         font-size: 2.75rem;
@@ -2304,7 +2339,7 @@ nav li {
     .designer-splash {
         /* background-image: url("./assets/0-Test-Phone.png"); */
         background-size: cover;
-        background-position: 0px -210px;
+        background-position: center -110px;
     }
 
     .individual-description::before {
@@ -2429,6 +2464,12 @@ nav li {
     }
 
     /* project page */
+    .project-splash {
+        /* background-image: url("./assets/0-Test-Phone.png"); */
+        background-size: cover;
+        background-position: center -210px;
+    }
+    
     .project-description {
         height: fit-content;
         width: 100%;
@@ -2480,6 +2521,21 @@ nav li {
         gap: 3rem;
         margin-bottom: 8rem;
         width: 100%;
+    }
+
+    .project-section.video {
+        padding-top: 56.25%;
+        position: relative;
+    }
+    
+    .project-video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 
     .text-block p {
@@ -2587,7 +2643,9 @@ nav li {
 
     .project-image {
         width: 140px;
-        height: 148px;
+        height: 140px;
+        background-position: center center;
+        border-radius: 74px;
     }
 
     .footer-logo {
@@ -2678,6 +2736,15 @@ nav li {
     }
 
     /* project page */
+    .project-splash {
+        /* background-image: url("./assets/0-Test-Phone.png"); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+    }
+
     .project-description {
         padding: 2rem 0;
         min-height: calc(100vh - 150vw);
@@ -2700,6 +2767,10 @@ nav li {
     .supervisor-description-text {
         font-size: 1rem;
         margin-bottom: 4px;
+    }
+
+    .projects-snippet.designer {
+        max-width: 16rem;
     }
 
     .caption-text p {
@@ -2776,6 +2847,6 @@ nav li {
     }
     
     .designer-link-logo {
-        height: 20px;
+        height: 32px;
     }
 }

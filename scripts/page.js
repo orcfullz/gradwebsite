@@ -1,4 +1,4 @@
-import { DATA } from "./data.js";
+import { DATA, FINAL_DATA } from "./data.js";
 let index = 0;
 
 window.onload = () => {
@@ -23,7 +23,7 @@ window.onload = () => {
     })
 
     document.querySelector(".designer-project-snippet").addEventListener("click", (e) => {
-        window.location.href = window.location.href.replace("page.html", "project.html");
+        window.location.href = window.location.href.replace("designer.html", "project.html");
     })
 
     handlePicResize();
@@ -73,34 +73,46 @@ const closeMenu = () => {
 
 const loadContent = (index) => {
     const linkImg = {
-        "linkedin": "assets/linkedin.svg",
-        "website": "assets/website.png",
-        "website-1": "assets/website.png",
-        "behance": "assets/Behance.svg"
+        "linkedin": "./assets/linkedin.svg",
+        "behance": "./assets/Behance.svg",
+        "instagram": "./assets/instagram.svg",
+        "email": "./assets/email.png",
+        "portfolio": "./assets/link.png"
     }
 
     const name = document.querySelector(".designer-name")
-    name.innerHTML = DATA[index].preferredName;
+    name.innerHTML = FINAL_DATA[index].preferredName;
 
     const description = document.querySelector(".designer-description-text").querySelector("p")
-    description.innerHTML = DATA[index].description;
+    description.innerHTML = FINAL_DATA[index].description;
 
     const links = document.querySelector(".designer-links");
-    const designerLinks = DATA[index].personalLinks;
+    const designerLinks = FINAL_DATA[index];
 
-    if (designerLinks) {
-        for (const property in designerLinks) {
+    Object.getOwnPropertyNames(linkImg).forEach((k) => {
+        if (designerLinks.hasOwnProperty(k)) {
             const link = document.createElement("a");
             const img = document.createElement("img");
-            img.id = property + index;
-            img.src = linkImg[property];
+            img.src = linkImg[k];
             img.classList.add("designer-link-logo");
-            link.href = `${designerLinks[property]}`;
+            if (k === "email") {
+                link.href = `mailto:${designerLinks[k]}`;
+            } else {
+                link.href = `${designerLinks[k]}`;
+            }
             link.target = "_blank";
             link.append(img);
             links.append(link);
         }
-    }
+    })
+
+    const designerSnippetImage = document.querySelector(".designer-project-snippet-img");
+    designerSnippetImage.style.backgroundImage = `url(${FINAL_DATA[index]["projectImgDesktop"]})`
+    
+    const designerSnippetText = document.querySelector(".designer-project-snippet-text");
+    designerSnippetText.innerHTML = `${FINAL_DATA[index]["projectTitle"]}`
+    
+    
 }
 
 const handlePicResize = (e) => {
@@ -109,9 +121,9 @@ const handlePicResize = (e) => {
     const designerPic = document.querySelector(".designer-splash");
 
     if (mQuery.matches) {
-        designerPic.style.backgroundImage = `url("./assets/0-Test-Phone.png")`;
+        designerPic.style.backgroundImage = `url(${FINAL_DATA[index]["mobileImg"]})`;
     } else {
-        designerPic.style.backgroundImage = `url(${DATA[index].desktopPic})`;
+        designerPic.style.backgroundImage = `url(${FINAL_DATA[index]["desktopImg"]})`;
     }
 }
 
