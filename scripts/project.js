@@ -26,6 +26,27 @@ window.onload = () => {
         closeMenu();
     })
 
+    document.addEventListener("scroll", () => {
+        const nav = document.querySelector("#navigation-menu-project-mobile.navigation-menu");
+        if (window.scrollY > window.innerHeight - 300) {
+            nav.style.background = "#FBFFE1"
+            document.querySelectorAll(".white").forEach((d) => {
+                d.style.display = "none"
+            })
+            document.querySelectorAll(".blue").forEach((d) => {
+                d.style.display = "block"
+            })
+        } else {
+            nav.style.background = "none"
+            document.querySelectorAll(".blue").forEach((d) => {
+                d.style.display = "none"
+            })
+            document.querySelectorAll(".white").forEach((d) => {
+                d.style.display = "block"
+            })
+        }
+    })
+
     handlePicResize();
 
     window.addEventListener("resize", handlePicResize);
@@ -72,22 +93,25 @@ const closeMenu = () => {
 
 
 const loadContent = (index) => {
-    const name = document.querySelector(".designer-name")
-    name.innerHTML = "The Tinkering Toolkit";
+    const name = document.querySelector(".project-name")
+    name.innerHTML = "Project Title dolor sit amet consectetur";
 
-    const description = document.querySelector(".designer-description-text").querySelector("p")
-    description.innerHTML = "Tinkering Toolkit empowers foreign nurses in Singapore's nursing homes, providing a platform to address language barriers and work challenges.";
+    const description = document.querySelector(".project-description-text").querySelector("p")
+    description.innerHTML = "Lorem ipsum dolor sit amet consectetur. Nibh semper amet at amet. Adipiscing mi lectus ullamcorper cursus.";
+
+    const supervisor = document.querySelector(".supervisor-description-text").querySelector("p")
+    supervisor.innerHTML = "Under the guidance of Alistair Norris";
 }
 
 const handlePicResize = (e) => {
     const mQuery = window.matchMedia('(max-width: 840px)');
 
-    const designerPic = document.querySelector(".designer-splash");
+    const projectPic = document.querySelector(".project-splash");
 
     if (mQuery.matches) {
-        designerPic.style.backgroundImage = `url("https://drive.google.com/open?id=1NMrGCn8kSh-vG7c2G6HJXr7aon7mtb59")`;
+        projectPic.style.backgroundImage = `url("./assets/img3.jpeg")`;
     } else {
-        designerPic.style.backgroundImage = `url("https://drive.google.com/open?id=1NMrGCn8kSh-vG7c2G6HJXr7aon7mtb59")`;
+        projectPic.style.backgroundImage = `url("./assets/img3.jpeg")`;
     }
 }
 
@@ -98,7 +122,6 @@ showSlides(1, 0);
 showSlides(1, 1);
 
 document.querySelectorAll(".prev").forEach((d, i) => {
-    
     d.addEventListener("click", (e) => {plusSlides(-1, i)})
 })
 
