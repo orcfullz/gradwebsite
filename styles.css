@@ -65,6 +65,7 @@
 
 * {
     font-family: "Meta Pro", sans-serif;
+    text-overflow: ellipsis;
 }
 
 body {
@@ -126,8 +127,8 @@ button {
 }
 
 .link {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 /* Hide the scroll bar in Chrome */
@@ -411,7 +412,7 @@ a {
 }
 
 #navigation-img {
-    width: 40px;
+    width: 29px;
     height: 32px;
 }
 
@@ -428,6 +429,7 @@ nav > ul {
     flex-direction: row;
     justify-content: space-around;
     margin: auto 30px;
+    padding: 0;
   }
   
 nav li {
@@ -479,7 +481,7 @@ nav li {
     z-index: 999;
     flex-direction: column;
     justify-items: space-between;
-    gap: 22px;
+    gap: 32px;
     align-items: center;
     max-width: 360px;
     width: 60vw;
@@ -512,9 +514,8 @@ nav li {
     display: flex;
     align-items: end;
     justify-content: center;
-    padding-bottom: 3em;
+    padding-bottom: 56px;
     font-size: 1.875rem;
-    font-weight: 500;
 }
 
 .navigation-button-img {
@@ -542,11 +543,13 @@ nav li {
 }
 
 .nav-link-main {
-    color: #FFF;
+    color: var(--main-color-yellow);
+    font-weight: 700;
 }
 
 .nav-link-event {
-    color: var(--main-color-blue);
+    color: var(--font-color-blue);
+    font-weight: 900;
 }
 
 .nav-link:hover {
@@ -871,7 +874,7 @@ nav li {
 }
 
 #footer-main {
-    background-color: var(--secondary-yellow);
+    background-color: var(--main-color-yellow);
     margin-bottom: 0px;
 }
 
@@ -886,18 +889,18 @@ nav li {
 }
 
 #logo-footer-main {
-    background-image: url("./assets/logo_dark.png");
+    background-image: url("./assets/Logo_footer_blue.png");
 }
 
 #logo-footer-event {
-    background-image: url("./assets/logo_footer.png");
+    background-image: url("./assets/Logo_footer_yellow.png");
 }
 
 .logo-footer {
-    width: 40px;
+    width: 36px;
     height: 36px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #footer-text-event {
@@ -905,13 +908,14 @@ nav li {
 }
 
 #footer-text-main {
-    color: var(--main-color-blue);
+    color: var(--font-color-blue);
 }
 
 .footer-text {
     font-size: 1.5rem;
-    font-weight: 500;
     line-height: 110%;
+    padding-top: 4px;
+    font-weight: 700;
 }
 
 .footer-description {
@@ -924,24 +928,45 @@ nav li {
     font-size: 0.875rem;
     flex-direction: column;
     margin-left: 0;
+    padding-top: 4px;
 }
 
 #footer-description-main {
-    color: var(--main-color-blue);
+    color: var(--font-color-blue);
+    font-weight: 500;
 }
 
 .webpage {
-    font-weight: 350;
-    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.125rem;
     line-height: 20px;
 }
 
 #footer-description-event .webpage {
     color: var(--main-color-yellow);
+    font-weight: 700;
 }
 
 .footer-description .mobile {
     display: none;
+}
+
+.footer-description-location-logo {
+    margin-left: 12px;
+    width: 22px;
+    height: 1.25rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-description-location-logo.main {
+    background-image: url("./assets/location_blue.svg");
+}
+
+.footer-description-location-logo.event {
+    background-image: url("./assets/location_yellow.svg");
 }
 
 .footer-social {
@@ -962,7 +987,7 @@ nav li {
 }
 
 #instagram-dark {
-    background-image: url("./assets/instagram_dark.svg");
+    background-image: url("./assets/instagram.svg");
 }
 
 #share-dark {
@@ -1162,12 +1187,8 @@ nav li {
     margin-bottom: 1.125rem;
 }
 
-#project-title.designer-name {
-    color: var(--secondary-blue);
-}
-
 .designer-description-text {
-    color: var(--main-color-blue);
+    color: var(--secondary-blue);
     font-family: "Meta Pro";
     font-size: 1.125rem;
     font-style: normal;
@@ -1204,10 +1225,16 @@ nav li {
     color: var(--main-color-yellow);
     text-align: right;
     font-family: "Meta Pro";
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    max-height: 2lh;
 }
 
 .designer-project-snippet-img {
@@ -1221,7 +1248,7 @@ nav li {
 }
 
 .designer-links {
-    height: 26px;
+    height: fit-content;
     display: flex;
     gap: 25px;
     align-items: end;
@@ -1485,7 +1512,7 @@ nav li {
 }
 
 .project-name {
-    color: var(--Serene-Sea, #366381);
+    color: var(--font-color-blue, #366381);
     font-family: "Meta Pro";
     font-size: 3rem;
     font-style: normal;
@@ -1495,20 +1522,20 @@ nav li {
 
 
 .project-description-text {
-    color: var(--blue-200, #1E3746);
+    color: var(--secondary-blue, #1E3746);
     font-family: "Meta Pro";
     font-size: 1.25rem;
     font-style: normal;
-    font-weight: 350;
+    font-weight: 400;
     line-height: normal;
 }
 
 .supervisor-description-text {
-    color: var(--blue-200, #1E3746);
+    color: var(--secondary-blue, #1E3746);
     font-family: "Meta Pro";
     font-size: 1.25rem;
     font-style: italic;
-    font-weight: 350;
+    font-weight: 400;
     line-height: normal;
     margin-bottom: 3rem;
 }
@@ -1523,7 +1550,7 @@ nav li {
     margin-bottom: 10px;
 }
 
-.projects-snippet {
+.project-snippet {
     display: flex;
     padding: 5px;
     flex-direction: row;
@@ -1536,12 +1563,12 @@ nav li {
     margin-bottom: 10px;
 }
 
-.projects-snippet.designer {
+.project-snippet.designer {
     justify-content: flex-start;
     padding: 5px 20px 5px 5px;
 }
 
-.projects-snippet.works {
+.project-snippet.works {
     justify-content: flex-end;
     padding: 5px 5px 5px 20px
 }
@@ -1554,6 +1581,12 @@ nav li {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+    max-height: 2lh;
+    white-space: nowrap;
 }
 
 .project-snippet-img {
@@ -2122,6 +2155,11 @@ nav li {
         max-width: 100%;
     }
 
+    #getting-there-by-image {
+        max-width: 100%;
+        height: fit-content;
+    }
+
     #google-map {
         width: 100%;
         height: 300px;
@@ -2219,7 +2257,19 @@ nav li {
 
     #navigation-menu-project-mobile.navigation-menu {
         background: none;
-        transition: all ease 0.4s
+        transition: all ease 0.4s;
+    }
+
+    .dark-gradient-background {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 243px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%);
+        mix-blend-mode: luminosity;
+        z-index: -1;
     }
 
     #main-page-filter {
@@ -2467,7 +2517,7 @@ nav li {
     .project-splash {
         /* background-image: url("./assets/0-Test-Phone.png"); */
         background-size: cover;
-        background-position: center -210px;
+        background-position: center -150px;
     }
     
     .project-description {
@@ -2491,7 +2541,7 @@ nav li {
         margin-bottom: 4px;
     }
 
-    .projects-snippet {
+    .project-snippet {
         display: flex;
         padding: 5px;
         flex-direction: row;
@@ -2504,7 +2554,7 @@ nav li {
         margin-bottom: 10px;
     }
 
-    .projects-snippet.designer {
+    .project-snippet.designer {
         max-width: 20rem;
     }
 
@@ -2512,7 +2562,7 @@ nav li {
         font-size: 1.25rem;
     }
 
-    .projects-snippet.works {
+    .project-snippet.works {
         display: none;
     }
 
@@ -2616,6 +2666,7 @@ nav li {
 
     .filter {
         height: 2.5rem;
+        min-width: 0;
     }
 
     .filter p {
@@ -2673,14 +2724,14 @@ nav li {
 
     .designer-description {
         height: fit-content;
-        min-height: calc(100vh - 150vw);
+        min-height: calc(100vh - 135vw);
         padding-bottom: 24px;
         width: 100%;
         border-radius: 0;
     }
 
     .designer-description-content {
-        margin: 20px 28px 20px 36px;
+        margin: 20px 28px 20px 5vw;
     }
 
     .individual-description::before {
@@ -2715,7 +2766,11 @@ nav li {
     }
 
     .designer-project-snippet-text {
-        font-size: 1rem;
+        font-size: 1.125rem;
+    }
+
+    .project-snippet-text {
+        font-size: 1.125rem;
     }
 
     .designer-project-snippet-img {
@@ -2747,7 +2802,7 @@ nav li {
 
     .project-description {
         padding: 2rem 0;
-        min-height: calc(100vh - 150vw);
+        min-height: fit-content;
     }
 
     .project-name {
@@ -2769,7 +2824,7 @@ nav li {
         margin-bottom: 4px;
     }
 
-    .projects-snippet.designer {
+    .project-snippet.designer {
         max-width: 16rem;
     }
 
@@ -2840,9 +2895,15 @@ nav li {
         height: 48px;
         border-radius: 48px;
     }
+
+    .project-snippet-img {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+    }
     
     .designer-links {
-        height: 20px;
+        height: fit-content;
         gap: 12px;
     }
     

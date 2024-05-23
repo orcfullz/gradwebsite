@@ -31,7 +31,8 @@ window.onload = () => {
 
     document.addEventListener("scroll", () => {
         const nav = document.querySelector("#navigation-menu-project-mobile.navigation-menu");
-        if (window.scrollY > window.innerHeight - 300) {
+        const background = document.querySelector(".dark-gradient-background");
+        if (window.scrollY > window.innerHeight) {
             nav.style.background = "#FBFFE1"
             document.querySelectorAll(".white").forEach((d) => {
                 d.style.display = "none"
@@ -39,14 +40,16 @@ window.onload = () => {
             document.querySelectorAll(".blue").forEach((d) => {
                 d.style.display = "block"
             })
+            background.style.display = "none";
         } else {
-            nav.style.background = "none"
+            nav.style.background = "none";
             document.querySelectorAll(".blue").forEach((d) => {
                 d.style.display = "none"
             })
             document.querySelectorAll(".white").forEach((d) => {
                 d.style.display = "block"
             })
+            background.style.display = "block";
         }
     })
 
@@ -56,7 +59,7 @@ window.onload = () => {
     showSlides(1, 2);
 
     window.addEventListener("resize", handlePicResize);
-
+    
     window.addEventListener('mousemove', moveCursor);
 
     const linkArray = document.querySelectorAll("a, .clickable");
@@ -113,13 +116,13 @@ const loadContent = (index) => {
 
     const projectThumbnailName = document.querySelector(".project-snippet-text.designer");
     projectThumbnailName.innerHTML = `${FINAL_DATA[index]["preferredName"]}`;
-    document.querySelector(".projects-snippet.designer").classList.add("clickable");
-    document.querySelector(".projects-snippet.designer").addEventListener("click", () => {
+    document.querySelector(".project-snippet.designer").classList.add("clickable");
+    document.querySelector(".project-snippet.designer").addEventListener("click", () => {
         window.location.href = window.location.href.replace("project.html", "designer.html");
     })
 
-    document.querySelector(".projects-snippet.works").classList.add("clickable");
-    document.querySelector(".projects-snippet.works").addEventListener("click", () => {
+    document.querySelector(".project-snippet.works").classList.add("clickable");
+    document.querySelector(".project-snippet.works").addEventListener("click", () => {
         window.open(FINAL_DATA[index]["archiveLinks"]);
     })
 

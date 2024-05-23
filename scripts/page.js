@@ -76,8 +76,8 @@ const loadContent = (index) => {
         "linkedin": "./assets/linkedin.svg",
         "behance": "./assets/Behance.svg",
         "instagram": "./assets/instagram.svg",
+        "portfolio": "./assets/link.svg",
         "email": "./assets/email.png",
-        "portfolio": "./assets/link.png"
     }
 
     const name = document.querySelector(".designer-name")
@@ -98,7 +98,7 @@ const loadContent = (index) => {
             if (k === "email") {
                 link.href = `mailto:${designerLinks[k]}`;
             } else {
-                link.href = `${designerLinks[k]}`;
+                link.href = designerLinks[k];
             }
             link.target = "_blank";
             link.append(img);
