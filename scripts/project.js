@@ -113,13 +113,13 @@ const loadContent = (index) => {
 
     const projectThumbnailName = document.querySelector(".project-snippet-text.designer");
     projectThumbnailName.innerHTML = `${FINAL_DATA[index]["preferredName"]}`;
-    document.querySelector(".projects-snippet.designer").classList.add("clickable");
-    document.querySelector(".projects-snippet.designer").addEventListener("click", () => {
+    document.querySelector(".project-snippet.designer").classList.add("clickable");
+    document.querySelector(".project-snippet.designer").addEventListener("click", () => {
         window.location.href = window.location.href.replace("project.html", "designer.html");
     })
 
-    document.querySelector(".projects-snippet.works").classList.add("clickable");
-    document.querySelector(".projects-snippet.works").addEventListener("click", () => {
+    document.querySelector(".project-snippet.works").classList.add("clickable");
+    document.querySelector(".project-snippet.works").addEventListener("click", () => {
         window.open(FINAL_DATA[index]["archiveLinks"]);
     })
 
