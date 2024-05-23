@@ -619,6 +619,7 @@ nav li {
     background-color: var(--main-color-blue);
     display: flex;
     flex-direction: column;
+    gap: 4rem;
 }
 
 #event-guide-content {
@@ -853,6 +854,68 @@ nav li {
 
 #event-merch-ironon2 {
     width: 60%;   
+}
+
+#event-sponsors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    min-width: calc(1454px + (100vw - 1454px) / 2);
+    margin: 0 auto 0 0;
+    height: fit-content;
+}
+
+.event-sponsors-images {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 53px 134px;
+    margin-right: 60px;
+    flex: 1 1 auto;
+    border-radius: 0 103px 103px 0;
+    max-width: 1096px;
+}
+
+.event-sponsors-images.mobile {
+    display: none;
+}
+
+.event-sponsors-images img {
+    height: 100px;
+}
+
+.event-sponsors-images > img:not(:last-child) {
+    margin-right: 40px;
+}
+
+#event-sponsors-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    width: 18rem;
+    flex: 0 0 auto;
+}
+
+#event-support {
+    color: var(--main-color-yellow, #EBFF6B);
+    font-family: "Meta Pro";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 17.6px */
+}
+
+#event-support-text {
+    color: var(--main-color-yellow, #EBFF6B);
+    font-family: "Meta Pro";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 17.6px */
 }
 
 #footer-event {
@@ -1774,6 +1837,10 @@ nav li {
         min-width: 90%;
     }
 
+    #event-sponsors {
+        min-width: 95%;
+    }
+
     #rsvp-link {
         height: 48px;
     }
@@ -1791,6 +1858,11 @@ nav li {
     #rsvp-img {
         height: 48px;
         width: 48px;
+    }
+
+    .event-sponsors-images {
+        padding: 48px;
+        margin-right: 2rem;
     }
 
     .designer-splash {
@@ -1882,6 +1954,23 @@ nav li {
         padding-left: 1em;
     }
 
+    .event-sponsors-images {
+        padding: 48px 24px;
+        margin-right: 2rem;
+    }
+
+    .event-sponsors-images img:not(:last-child) {
+        margin-right: 32px;
+    }
+
+    #event-sponsors-text {
+        flex: 0 1 auto;
+    }
+
+    #event-sponsors-text > div{
+        text-align: right;
+    }
+
     #main-page-content {
         gap: 16px;
     }
@@ -1971,6 +2060,21 @@ nav li {
 
     #designer-filter.filter-active {
         border-radius: 0px 2em 2em 0px;
+    }
+
+    #event-sponsors-text > div{
+        text-align: left;
+    }
+
+    #event-sponsors-text {
+        align-items: flex-start;
+        margin-left: 5vw;
+    }
+
+    #event-sponsors {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 3rem;
     }
 
     .designer-description {
@@ -2110,18 +2214,18 @@ nav li {
 
     #event-guide-content {
         flex-direction: column !important;
-        width: 90%;
-        margin-bottom: 48px;
+        width: 80vw;
         align-items: center;
+        min-width: 0;
     }
 
     #event-guide-details {
-        width: 80%;
+        width: 100%;
     }
 
     #event-direction-merch {
         margin-left: 0px;
-        width: 80%;
+        width: 100%;
     }
 
     #event-guide-direction {
@@ -2201,8 +2305,52 @@ nav li {
         flex-direction: column;
     }
 
+    #event-sponsors {
+        width: 80vw;
+        min-width: 0;
+        margin: auto;
+    }
+
+    .event-sponsors-images {
+        display: none;
+    }
+
+    .event-sponsors-images.mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        min-width: 0;
+        padding: 0;
+        border-radius: 10px;
+    }
+
+    .event-sponsors-images.mobile > div {
+        width: 100%;
+    }
+
+
+    .event-sponsors-images.mobile > div:first-child {
+        margin: 2rem 2rem 0 2rem;
+    }
+
+
+    .event-sponsors-images.mobile > div:not(:first-child) > img{
+        position: relative;
+        margin: 5%;
+        height: auto;
+    }
+
     #event-merch-images {
         flex-direction: column;
+    }
+
+    #event-sponsors-text {
+        margin-left: 0;
+    }
+
+    #event-support-text {
+        color: #FFFFFF;
     }
 
     #arrow-right {
