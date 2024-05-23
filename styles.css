@@ -127,8 +127,8 @@ button {
 }
 
 .link {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 /* Hide the scroll bar in Chrome */
@@ -412,7 +412,7 @@ a {
 }
 
 #navigation-img {
-    width: 40px;
+    width: 29px;
     height: 32px;
 }
 
@@ -872,7 +872,7 @@ nav li {
 }
 
 #footer-main {
-    background-color: var(--secondary-yellow);
+    background-color: var(--main-color-yellow);
     margin-bottom: 0px;
 }
 
@@ -887,18 +887,18 @@ nav li {
 }
 
 #logo-footer-main {
-    background-image: url("./assets/logo_dark.png");
+    background-image: url("./assets/Logo_footer_blue.png");
 }
 
 #logo-footer-event {
-    background-image: url("./assets/logo_footer.png");
+    background-image: url("./assets/Logo_footer_yellow.png");
 }
 
 .logo-footer {
-    width: 40px;
+    width: 36px;
     height: 36px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #footer-text-event {
@@ -906,13 +906,14 @@ nav li {
 }
 
 #footer-text-main {
-    color: var(--main-color-blue);
+    color: var(--font-color-blue);
 }
 
 .footer-text {
     font-size: 1.5rem;
-    font-weight: 500;
     line-height: 110%;
+    padding-top: 4px;
+    font-weight: 700;
 }
 
 .footer-description {
@@ -925,24 +926,45 @@ nav li {
     font-size: 0.875rem;
     flex-direction: column;
     margin-left: 0;
+    padding-top: 4px;
 }
 
 #footer-description-main {
-    color: var(--main-color-blue);
+    color: var(--font-color-blue);
+    font-weight: 500;
 }
 
 .webpage {
-    font-weight: 350;
-    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.125rem;
     line-height: 20px;
 }
 
 #footer-description-event .webpage {
     color: var(--main-color-yellow);
+    font-weight: 700;
 }
 
 .footer-description .mobile {
     display: none;
+}
+
+.footer-description-location-logo {
+    margin-left: 12px;
+    width: 22px;
+    height: 1.25rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-description-location-logo.main {
+    background-image: url("./assets/location_blue.svg");
+}
+
+.footer-description-location-logo.event {
+    background-image: url("./assets/location_yellow.svg");
 }
 
 .footer-social {
@@ -963,7 +985,7 @@ nav li {
 }
 
 #instagram-dark {
-    background-image: url("./assets/instagram_dark.svg");
+    background-image: url("./assets/instagram.svg");
 }
 
 #share-dark {
