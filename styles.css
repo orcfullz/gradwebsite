@@ -429,6 +429,7 @@ nav > ul {
     flex-direction: row;
     justify-content: space-around;
     margin: auto 30px;
+    padding: 0;
   }
   
 nav li {
@@ -480,7 +481,7 @@ nav li {
     z-index: 999;
     flex-direction: column;
     justify-items: space-between;
-    gap: 22px;
+    gap: 32px;
     align-items: center;
     max-width: 360px;
     width: 60vw;
@@ -513,9 +514,8 @@ nav li {
     display: flex;
     align-items: end;
     justify-content: center;
-    padding-bottom: 3em;
+    padding-bottom: 56px;
     font-size: 1.875rem;
-    font-weight: 500;
 }
 
 .navigation-button-img {
@@ -543,11 +543,13 @@ nav li {
 }
 
 .nav-link-main {
-    color: #FFF;
+    color: var(--main-color-yellow);
+    font-weight: 700;
 }
 
 .nav-link-event {
-    color: var(--main-color-blue);
+    color: var(--font-color-blue);
+    font-weight: 900;
 }
 
 .nav-link:hover {
@@ -2651,6 +2653,7 @@ nav li {
 
     .filter {
         height: 2.5rem;
+        min-width: 0;
     }
 
     .filter p {

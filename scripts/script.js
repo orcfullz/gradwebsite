@@ -11,18 +11,29 @@ window.onload = () => {
 
   if (params) {
     if(params.get("filter")) {
-      filter = parseInt(params.get("filter"));
+      filter = params.get("filter");
+    } else {
+      window.history.replaceState(null, null, "?filter=designer");
     }
+  } else {
+    window.history.replaceState(null, null, "?filter=designer");
   }
+
   
   filter === "designer" ? generateDesignerCollection() : generateProjectCollection(); 
 
   document.querySelector("#designer-filter").addEventListener("click", (e) => {
     generateDesignerCollection();
+    let url = new URL(window.location.href);
+    url.searchParams.set('filter', 'designer');
+    window.history.replaceState({}, '', url);
   });
 
   document.querySelector("#project-filter").addEventListener("click", (e) => {
     generateProjectCollection();
+    let url = new URL(window.location.href);
+    url.searchParams.set('filter', 'works');
+    window.history.replaceState({}, '', url);
   });
 
   document.querySelector(".menu-icon").addEventListener("click", (e) => {
@@ -57,7 +68,7 @@ window.onload = () => {
     document.querySelector("#arrow-down-drag").classList.add("move-down");
     setTimeout(function () {
       document.querySelector("#arrow-down-drag").classList.remove("move-down");
-    }, 700);
+    }, 1000);
     welcomePageAnimation();
 });
 
@@ -65,7 +76,7 @@ window.onload = () => {
     document.querySelector("#arrow-right-drag").classList.add("move-right");
     setTimeout(function () {
       document.querySelector("#arrow-right-drag").classList.remove("move-right");
-    }, 700);
+    }, 1000);
     welcomePageAnimation();
 })
 }
@@ -83,7 +94,7 @@ function welcomePageAnimation() {
     document.querySelectorAll(".animated-circle").forEach(d => {
       d.classList.remove("enlarge");
     });
-  }, 1000)
+  }, 1100)
 }
 
 const cursor = document.querySelector('.cursor.small');
@@ -153,6 +164,7 @@ const generateDesignerCollection = () => {
   collections.innerHTML = "";
   FINAL_DATA.forEach((d, i) => {
     const container = document.createElement('div');
+    container.classList.add("clickable");
     container.classList.add("designer-element");
     container.classList.add("designer-element-animation");
     // container.classList.add("event-image");
@@ -192,6 +204,7 @@ const generateProjectCollection = () => {
   FINAL_DATA.forEach((d, i) => {
     const container = document.createElement('div');
     container.classList.add("project-element");
+    container.classList.add("clickable");
     // container.id = d.name;
     container.id = d.preferredName.split(" ")[0] + "-" + i;
 
@@ -201,7 +214,7 @@ const generateProjectCollection = () => {
     image_div.style.backgroundSize = "cover";
 
     const filter_div = document.createElement("div");
-    filter_div.classList.add("designer-image-filter")
+    filter_div.classList.add("image-filter")
     image_div.append(filter_div);
 
     const text_div = document.createElement("div");

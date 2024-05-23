@@ -56,7 +56,7 @@ window.onload = () => {
     showSlides(1, 2);
 
     window.addEventListener("resize", handlePicResize);
-
+    
     window.addEventListener('mousemove', moveCursor);
 
     const linkArray = document.querySelectorAll("a, .clickable");
