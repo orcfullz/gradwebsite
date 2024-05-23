@@ -1187,12 +1187,8 @@ nav li {
     margin-bottom: 1.125rem;
 }
 
-#project-title.designer-name {
-    color: var(--secondary-blue);
-}
-
 .designer-description-text {
-    color: var(--main-color-blue);
+    color: var(--secondary-blue);
     font-family: "Meta Pro";
     font-size: 1.125rem;
     font-style: normal;
@@ -1516,7 +1512,7 @@ nav li {
 }
 
 .project-name {
-    color: var(--Serene-Sea, #366381);
+    color: var(--font-color-blue, #366381);
     font-family: "Meta Pro";
     font-size: 3rem;
     font-style: normal;
@@ -1526,20 +1522,20 @@ nav li {
 
 
 .project-description-text {
-    color: var(--blue-200, #1E3746);
+    color: var(--secondary-blue, #1E3746);
     font-family: "Meta Pro";
     font-size: 1.25rem;
     font-style: normal;
-    font-weight: 350;
+    font-weight: 400;
     line-height: normal;
 }
 
 .supervisor-description-text {
-    color: var(--blue-200, #1E3746);
+    color: var(--secondary-blue, #1E3746);
     font-family: "Meta Pro";
     font-size: 1.25rem;
     font-style: italic;
-    font-weight: 350;
+    font-weight: 400;
     line-height: normal;
     margin-bottom: 3rem;
 }
@@ -2159,6 +2155,11 @@ nav li {
         max-width: 100%;
     }
 
+    #getting-there-by-image {
+        max-width: 100%;
+        height: fit-content;
+    }
+
     #google-map {
         width: 100%;
         height: 300px;
@@ -2256,7 +2257,19 @@ nav li {
 
     #navigation-menu-project-mobile.navigation-menu {
         background: none;
-        transition: all ease 0.4s
+        transition: all ease 0.4s;
+    }
+
+    .dark-gradient-background {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 243px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%);
+        mix-blend-mode: luminosity;
+        z-index: -1;
     }
 
     #main-page-filter {
@@ -2504,7 +2517,7 @@ nav li {
     .project-splash {
         /* background-image: url("./assets/0-Test-Phone.png"); */
         background-size: cover;
-        background-position: center -210px;
+        background-position: center -150px;
     }
     
     .project-description {
@@ -2718,7 +2731,7 @@ nav li {
     }
 
     .designer-description-content {
-        margin: 20px 28px 20px 36px;
+        margin: 20px 28px 20px 5vw;
     }
 
     .individual-description::before {
@@ -2789,7 +2802,7 @@ nav li {
 
     .project-description {
         padding: 2rem 0;
-        min-height: calc(100vh - 135vw);
+        min-height: fit-content;
     }
 
     .project-name {

@@ -76,7 +76,7 @@ const loadContent = (index) => {
         "linkedin": "./assets/linkedin.svg",
         "behance": "./assets/Behance.svg",
         "instagram": "./assets/instagram.svg",
-        "portfolio": "./assets/link.png",
+        "portfolio": "./assets/link.svg",
         "email": "./assets/email.png",
     }
 
