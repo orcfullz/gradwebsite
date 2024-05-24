@@ -634,7 +634,7 @@ nav li {
     gap: 1rem;
 }
 
-#event-guide-details div {
+#event-guide-details div:not(:last-child) {
     margin-bottom: 1rem;
 }
 
@@ -663,6 +663,7 @@ nav li {
     font-size: 1.5rem;
     margin-right: 64px;
     padding-right: 24px;
+    margin-bottom: 0 !important;
 }
 
 #rsvp-link div {
@@ -2210,6 +2211,7 @@ nav li {
 
     #event-guide {
         height: fit-content;
+        gap: 0;
     }
 
     #event-guide-content {
@@ -2217,6 +2219,9 @@ nav li {
         width: 80vw;
         align-items: center;
         min-width: 0;
+        gap: 3rem;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
     }
 
     #event-guide-details {
@@ -2226,6 +2231,7 @@ nav li {
     #event-direction-merch {
         margin-left: 0px;
         width: 100%;
+        gap: 3rem;
     }
 
     #event-guide-direction {
@@ -2238,6 +2244,10 @@ nav li {
         margin-right: 0px;
         width: 100%;
         text-align: center;
+    }
+
+    #event-guide-rsvp {
+        min-height: fit-content;
     }
 
     #getting-there {
@@ -2285,14 +2295,14 @@ nav li {
     }
 
     #google-map {
-        border-radius: 0px;
+        border-radius: 10px;
     }
 
     .by-way-images {
         height: fit-content;
         max-height: 300px;
         background-size: cover;
-        border-radius: 0;
+        border-radius: 10px;
         max-width: 100%;
         text-align: left;
     }
@@ -2305,10 +2315,23 @@ nav li {
         flex-direction: column;
     }
 
+    #event-merch-totes > img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #event-merch-ironon1 > img {
+        border-radius: 0 0 0 10px;
+    }
+
+    #event-merch-ironon2 > img {
+        border-radius: 0 0 10px 0;
+    }
+
     #event-sponsors {
         width: 80vw;
         min-width: 0;
         margin: auto;
+        margin-bottom: 4rem;
     }
 
     .event-sponsors-images {
@@ -2321,24 +2344,39 @@ nav li {
         width: 100%;
         margin: auto;
         min-width: 0;
-        padding: 0;
+        padding: 64px;
         border-radius: 10px;
+        -webkit-box-sizing: border-box; 
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        gap: 64px;
     }
 
     .event-sponsors-images.mobile > div {
         width: 100%;
     }
 
-
     .event-sponsors-images.mobile > div:first-child {
-        margin: 2rem 2rem 0 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
 
-    .event-sponsors-images.mobile > div:not(:first-child) > img{
-        position: relative;
-        margin: 5%;
-        height: auto;
+    .event-sponsors-images.mobile > div {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .event-sponsors-images.mobile > div:not(:first-child) > img {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .event-sponsors-images.mobile > div:not(:last-child) > img {
+        width: 45%;
+        height: fit-content;
     }
 
     #event-merch-images {
@@ -2351,6 +2389,11 @@ nav li {
 
     #event-support-text {
         color: #FFFFFF;
+    }
+
+    #event-support {
+        font-size: 1.5rem;
+        font-weight: 55r;
     }
 
     #arrow-right {
@@ -2794,9 +2837,15 @@ nav li {
     }
 
     #event-guide-content {
-        width: 95%;
-        padding-bottom: 24px;
         align-items: center;
+    }
+
+    /* #event-sponsors {
+    } */
+
+    .event-sponsors-images.mobile {
+        padding: 48px;
+        gap: 48px;
     }
 
     .by-way-images {
@@ -3011,6 +3060,11 @@ nav li {
 
     #rsvp-link-text {
         font-size: 1rem;
+    }
+
+    .event-sponsors-images.mobile {
+        padding: 32px;
+        gap: 32px;
     }
 }
 

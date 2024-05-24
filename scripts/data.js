@@ -998,6 +998,7 @@ const FINAL_DATA = [
         "thumbnailImg": "./assets/thumbnailImgs/Dewei.png",
         "description": "De Wei\u2019s believes the fundamental purpose of a designer is to solve problems, whilst an artist\u2019s goal is to find purpose in things. Balancing both makes for a truly inquisitive designer, elevating design to a deeper and more emotional level.",
         "archiveLinks": "https://cde.nus.edu.sg/did/archive/?mode=&item=recPnlNDBltcrl3RL&gallery=designers&filter=_year-2024",
+        "linkedin": "https://www.linkedin.com/in/lee-de-wei-4182a127a",
         "email": "leedewei44@gmail.com",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Christophe Gaubert",
@@ -1084,8 +1085,8 @@ const FINAL_DATA = [
         "portfolio": "joyie.cc",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Tiffany Loy",
-        "projectImgMobile": "https://postimg.cc/XpzH2SYj",
-        "projectImgDesktop": "https://postimg.cc/T5vNJrdr",
+        "projectImgMobile": "https://i.postimg.cc/CxF3xwyq/gradsite-mobile-portrait.png",
+        "projectImgDesktop": "https://i.postimg.cc/hvXFgrN3/thesis-hero-2.png",
         "projectTitle": "knit-morph",
         "projectDescription": "Exploring how knitted fabrics augment connections between the self and objects or spaces. ",
         "video": "https://player.vimeo.com/video/948037539?h=f7e3eb7aff",
@@ -1094,7 +1095,7 @@ const FINAL_DATA = [
                 "heading": "How Can We Connect to the Objects Around Us?",
                 "pictures": [
                     {
-                        "img_link": "https://postimg.cc/wRzFmg22",
+                        "img_link": "https://i.postimg.cc/WzFyx4JB/gradsite-1.png",
                         "caption": "Exploring connections to be made"
                     }
                 ],
@@ -1108,7 +1109,7 @@ const FINAL_DATA = [
                 "heading": "Exploring Knit as a Medium",
                 "pictures": [
                     {
-                        "img_link": "https://postimg.cc/1VKB02YQ",
+                        "img_link": "https://i.postimg.cc/J0fF8WNG/gradsite-2.png",
                         "caption": "Knitted explorations"
                     }
                 ],
@@ -1120,7 +1121,7 @@ const FINAL_DATA = [
                 "heading": "The Self and the Chair",
                 "pictures": [
                     {
-                        "img_link": "https://postimg.cc/dDKKBCSH",
+                        "img_link": "https://i.postimg.cc/44YNXbvg/gradsite-3.png",
                         "caption": "Connecting the self to a chair"
                     }
                 ],
@@ -1137,7 +1138,7 @@ const FINAL_DATA = [
         "desktopImg": "./assets/desktopImgs/Joseph.png",
         "mobileImg": "./assets/mobileImgs/Joseph.png",
         "thumbnailImg": "./assets/thumbnailImgs/Joseph.png",
-        "description": "Fascinated by technology and driven by a deep curiosity for unraveling the mysteries behind what makes them tick, Joseph has a particular interest in mechanisms and electronics. This has led him to endeavour into the realms of product usability research and human-computer interaction design. He finds joy in crafting experiences that while functional, also spark delight in others, through the intentional, measured, and imaginative use of technology. (written by pubs)",
+        "description": "Fascinated by technology and what makes it tick, Joseph is particularly fond of mechanisms and electronics, leading him to explore interaction design in HCI and product fields. He enjoys creating pragmatic, delightful experiences through intentional and measured uses of technology.",
         "archiveLinks": "https://cde.nus.edu.sg/did/archive/?mode=&item=recJZ5S78TdK2LLt5&gallery=designers&filter=_year-2024",
         "linkedin": "https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BTsiPyHFVQqKx2hHpiBoj6A%3D%3D",
         "email": "mojojozef@gmail.com",
@@ -2121,7 +2122,7 @@ const FINAL_DATA = [
                         "caption": "before and after: Attendees list from previous events vs new insights from vflow"
                     },
                     {
-                        "img_link": "https://postimg.cc/7GpM6PG3",
+                        "img_link": "https://i.postimg.cc/7hLBKfqW/Laptop-Screen-Copy.jpg",
                         "caption": "visualisation of the vFlow dashboard"
                     }
                 ],
@@ -2591,8 +2592,8 @@ const FINAL_DATA = [
         "portfolio": "https://yangdesign-504954.webflow.io/",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Hans Tan",
-        "projectImgMobile": "https://postimg.cc/rRph6vbh",
-        "projectImgDesktop": "https://postimg.cc/Th2NWDwr",
+        "projectImgMobile": "https://i.postimg.cc/brx4nPRj/Grain-Glow.jpg",
+        "projectImgDesktop": "https://i.postimg.cc/zDKs6wYP/Product-shot.jpg",
         "projectTitle": "GrainGlow",
         "projectDescription": "GrainGlow advocates for mindfulness by embracing a process-based approach Inspired by traditional remedies at home.",
         "video": "https://www.youtube.com/embed/ls5hunZUdWU?si=eFL8fXlbYu2DqEtC",
@@ -2601,7 +2602,7 @@ const FINAL_DATA = [
                 "heading": "An opportunity to be mindful in one\u2019s skin care journey",
                 "pictures": [
                     {
-                        "img_link": "https://postimg.cc/https://i.postimg.cc/6QD9L9C7/DSF7941.jpg",
+                        "img_link": "https://i.postimg.cc/6QD9L9C7/DSF7941.jpg",
                         "caption": "GrainGlow is both a mold and a mask."
                     },
                     {
