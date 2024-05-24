@@ -1137,7 +1137,7 @@ const FINAL_DATA = [
         "desktopImg": "./assets/desktopImgs/Joseph.png",
         "mobileImg": "./assets/mobileImgs/Joseph.png",
         "thumbnailImg": "./assets/thumbnailImgs/Joseph.png",
-        "description": "Fascinated by technology and driven by a deep curiosity for unraveling the mysteries behind what makes them tick, Joseph has a particular interest in mechanisms and electronics. This has led him to endeavour into the realms of product usability research and human-computer interaction design. He finds joy in crafting experiences that while functional, also spark delight in others, through the intentional, measured, and imaginative use of technology. (written by pubs)",
+        "description": "Fascinated by technology and what makes it tick, Joseph is particularly fond of mechanisms and electronics, leading him to explore interaction design in HCI and product fields. He enjoys creating pragmatic, delightful experiences through intentional and measured uses of technology.",
         "archiveLinks": "https://cde.nus.edu.sg/did/archive/?mode=&item=recJZ5S78TdK2LLt5&gallery=designers&filter=_year-2024",
         "linkedin": "https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BTsiPyHFVQqKx2hHpiBoj6A%3D%3D",
         "email": "mojojozef@gmail.com",
