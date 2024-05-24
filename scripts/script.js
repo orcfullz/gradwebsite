@@ -70,7 +70,7 @@ window.onload = () => {
       document.querySelector("#arrow-down-drag").classList.remove("move-down");
     }, 1000);
     welcomePageAnimation();
-});
+  });
 
   document.querySelector("#arrow-right").addEventListener('click', function (e) {
     document.querySelector("#arrow-right-drag").classList.add("move-right");
@@ -79,6 +79,14 @@ window.onload = () => {
     }, 1000);
     welcomePageAnimation();
 })
+
+  window.addEventListener('resize', documentHeight)
+  documentHeight();
+}
+
+const documentHeight = () => {
+  const doc = document.documentElement
+  doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
 }
 
 function welcomePageAnimation() {

@@ -43,8 +43,16 @@ window.onload = () => {
         document.querySelector(".cursor.small").classList.remove("link");
         })
     })
+
+    
+    window.addEventListener('resize', documentHeight)
+    documentHeight();
 }
 
+const documentHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+   }
 
 const cursor = document.querySelector('.cursor.small');
 // const cursorTrail = document.querySelector('.trail');

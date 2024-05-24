@@ -216,7 +216,16 @@ const loadContent = (index) => {
         d.addEventListener("click", (e) => {plusSlides(1, i)})
     })
 
+    
+    window.addEventListener('resize', documentHeight)
+    documentHeight();
+
 }
+
+const documentHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+   }
 
 const handlePicResize = (e) => {
     const mQuery = window.matchMedia('(max-width: 1080px)');

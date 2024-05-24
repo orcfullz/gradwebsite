@@ -56,6 +56,7 @@
     --secondary-yellow: #F3FFA6;
     --secondary-blue: #1E3746;
     --secondary-text-yellow: #F5FFB5;
+    --doc-height: 100%
 }
 
 /* html {
@@ -2579,6 +2580,7 @@ nav li {
 
     .opening-page {
         height: 100vh;
+        height: var(--doc-height);
     }
 
     .designer-splash {
@@ -2599,6 +2601,8 @@ nav li {
         background-image: url("assets/about-us-background-phone.png");
         background-position: center bottom;
         object-fit: cover;
+        height: var(--doc-height);
+        overflow: hidden;
     }
     
     #about-us-content {
