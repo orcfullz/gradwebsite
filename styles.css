@@ -309,13 +309,13 @@ a {
 }
 
 #arrow-right-drag {
-    margin-left: -260px;
+    left: -260px;
     width: 400.365px;
     height: 82.69px;
     flex-shrink: 0;
     background-image: linear-gradient(to left, #EBFF6B 0%, rgba(235, 255, 107, 0.00) 100%);
     border-radius: 0 42px 42px 0;
-    position: relative;
+    position: absolute;
     z-index: 2;
     transition: all 300ms ease;
 }
@@ -336,10 +336,18 @@ a {
     right: 0;
     position: absolute;
     height: 100%;
+    background-image: url("assets/arrow_right.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 82.69px;
 }
 
 #arrow-down {
     width: 128px;
+    height: 128px;
+    background-image: url("./assets/arrow_down.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .move-down {
