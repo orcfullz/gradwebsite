@@ -92,8 +92,8 @@ window.onload = () => {
     if (parseInt(arrowDown.style.top, 10) < 0) {
       arrowDown.style.top = "0px"
     }
-    if (parseInt(arrowDown.style.top, 10) > 90) {
-      arrowDown.style.top = "90px"
+    if (parseInt(arrowDown.style.top, 10) > 70) {
+      arrowDown.style.top = "70px"
       // document.querySelector("#arrow-down-drag").classList.add("move-down");
       setTimeout(function () {
         arrowDown.style.top = "0px";
@@ -219,7 +219,7 @@ function welcomePageAnimation() {
     document.querySelectorAll(".animated-circle").forEach(d => {
       d.classList.remove("enlarge");
     });
-  }, 900)
+  }, 950)
 }
 
 const cursor = document.querySelector('.cursor.small');

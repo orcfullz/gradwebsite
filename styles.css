@@ -2135,9 +2135,9 @@ nav li {
 /* for mobile */
 
 @media only screen and (max-width: 840px) {
-    #welcome-page {
+    /* #welcome-page {
         height: var(--doc-height);
-    }
+    } */
 
     #welcome-page-content {
         display: none;
