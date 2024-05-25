@@ -73,6 +73,9 @@ window.onload = () => {
         document.querySelector(".cursor.small").classList.remove("link");
         })
     })
+        
+    window.addEventListener('resize', documentHeight)
+    documentHeight();
 }
 
 
@@ -217,11 +220,6 @@ const loadContent = (index) => {
     document.querySelectorAll(".next").forEach((d, i) => {
         d.addEventListener("click", (e) => {plusSlides(1, i)})
     })
-
-    
-    window.addEventListener('resize', documentHeight)
-    documentHeight();
-
 }
 
 const documentHeight = () => {
