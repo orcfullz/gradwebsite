@@ -153,11 +153,11 @@ window.onload = () => {
     if (parseInt(arrowRight.style.left) < -260) {
       arrowRight.style.left = "-260px"
     }
-    if (parseInt(arrowRight.style.left, 10) > -70) {
-      arrowRight.style.left = "-70px"
+    if (parseInt(arrowRight.style.left, 10) > -100) {
+      arrowRight.style.left = "-100px"
       // document.querySelector("#arrow-down-drag").classList.add("move-down");
       setTimeout(function () {
-        arrowRight.style.left = "-260px";
+        arrowRight.style.left = "-100px";
       }, 1000);
       welcomePageAnimation();
     }
