@@ -157,7 +157,7 @@ window.onload = () => {
       arrowRight.style.left = "-100px"
       // document.querySelector("#arrow-down-drag").classList.add("move-down");
       setTimeout(function () {
-        arrowRight.style.left = "-100px";
+        arrowRight.style.left = "-260px";
       }, 1000);
       welcomePageAnimation();
     }
@@ -219,7 +219,7 @@ function welcomePageAnimation() {
     document.querySelectorAll(".animated-circle").forEach(d => {
       d.classList.remove("enlarge");
     });
-  }, 1100)
+  }, 900)
 }
 
 const cursor = document.querySelector('.cursor.small');
