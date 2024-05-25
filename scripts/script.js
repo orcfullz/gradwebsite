@@ -122,8 +122,8 @@ window.onload = () => {
     if (parseInt(arrowRight.style.left) < -260) {
       arrowRight.style.left = "-260px"
     }
-    if (parseInt(arrowRight.style.left, 10) > -40) {
-      arrowRight.style.left = "-40px"
+    if (parseInt(arrowRight.style.left, 10) > -70) {
+      arrowRight.style.left = "-70px"
       // document.querySelector("#arrow-down-drag").classList.add("move-down");
       setTimeout(function () {
         arrowRight.style.left = "-260px";
@@ -140,6 +140,38 @@ window.onload = () => {
 
   document.addEventListener("mouseup", () => {
     document.removeEventListener("mousemove", moveRight)
+    setTimeout(function () {
+      arrowRight.style.left = "-260px";
+    }, 100);
+  })
+
+  function moveRightTouch(e) {
+    const touch = e.touches[0];
+    console.log(arrowRight.style.left)
+    arrowRight.style.left = `${touch.clientX - offsetRightX}px`;
+    console.log(arrowRight.style.left)
+    if (parseInt(arrowRight.style.left) < -260) {
+      arrowRight.style.left = "-260px"
+    }
+    if (parseInt(arrowRight.style.left, 10) > -70) {
+      arrowRight.style.left = "-70px"
+      // document.querySelector("#arrow-down-drag").classList.add("move-down");
+      setTimeout(function () {
+        arrowRight.style.left = "-260px";
+      }, 1000);
+      welcomePageAnimation();
+    }
+  }
+
+  arrowRight.addEventListener("touchstart", (e) => {
+    const touch = e.touches[0];
+    offsetRightX = touch.clientX - arrowRight.offsetLeft;
+    document.addEventListener("touchmove", moveRightTouch);
+    console.log("yes")
+  })
+
+  document.addEventListener("touchend", () => {
+    document.removeEventListener("touchmove", moveRightTouch)
     setTimeout(function () {
       arrowRight.style.left = "-260px";
     }, 100);
