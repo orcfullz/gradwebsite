@@ -112,7 +112,7 @@ const loadContent = (index) => {
     supervisor.innerHTML = `Under the guidance of ${FINAL_DATA[index]["supervisor"]}`;
 
     const projectThumbnail = document.querySelector(".project-snippet-img.designer");
-    projectThumbnail.style.backgroundImage = `url(${FINAL_DATA[index]["thumbnailImg"]})`
+    projectThumbnail.style.backgroundImage = `url(${FINAL_DATA[index]["designerThumbnail"]})`
 
     const projectThumbnailName = document.querySelector(".project-snippet-text.designer");
     projectThumbnailName.innerHTML = `${FINAL_DATA[index]["preferredName"]}`;

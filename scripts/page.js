@@ -115,7 +115,7 @@ const loadContent = (index) => {
     })
 
     const designerSnippetImage = document.querySelector(".designer-project-snippet-img");
-    designerSnippetImage.style.backgroundImage = `url(${FINAL_DATA[index]["projectImgDesktop"]})`
+    designerSnippetImage.style.backgroundImage = `url(${FINAL_DATA[index]["projectThumbnail"]})`
     
     const designerSnippetText = document.querySelector(".designer-project-snippet-text");
     designerSnippetText.innerHTML = `${FINAL_DATA[index]["projectTitle"]}`

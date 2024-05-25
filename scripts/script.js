@@ -218,7 +218,7 @@ const generateProjectCollection = () => {
 
     const image_div = document.createElement("div");
     image_div.classList.add("project-image");
-    image_div.style.backgroundImage = `url(${d["projectImgDesktop"]})`;
+    image_div.style.backgroundImage = `url(${d["projectThumbnail"]})`;
     image_div.style.backgroundSize = "cover";
 
     const filter_div = document.createElement("div");
