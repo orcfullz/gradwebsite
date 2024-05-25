@@ -165,6 +165,8 @@ const loadContent = (index) => {
                     slideP.innerHTML = `${el["caption"]}`
                     slideCapt.append(slideP);
                     slide.append(slideCapt)
+                } else {
+                    slide.style.background = "none";
                 }
 
                 photoSlides.append(slide)
