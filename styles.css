@@ -3206,6 +3206,6 @@ nav li {
     }
 
     .footer-social {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 }
