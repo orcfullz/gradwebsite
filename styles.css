@@ -184,6 +184,7 @@ a {
 /* welcome page div */
 #welcome-page {
     height: 100vh;
+    height: var(--doc-height);
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -2675,7 +2676,6 @@ nav li {
         background-image: url("assets/about-us-background-phone.png");
         background-position: center bottom;
         object-fit: cover;
-        height: var(--doc-height);
         overflow: hidden;
     }
     
