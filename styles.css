@@ -2911,6 +2911,17 @@ nav li {
 }
 
 @media only screen and (max-width: 560px) {
+    .diagonal-accent {
+        background-image: url("./assets/diagonal.png");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        /* height: 160px; */
+        max-height: 120px;
+        margin: 0;
+        flex: 1 1 auto;
+    }
+
     #welcome-page-mobile-logo {
         min-width: 224px;
         min-height: 256px;
