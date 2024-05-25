@@ -5,6 +5,7 @@ const mouse = {
 };
 let filter = "designer";
 let params;
+let dragValue;
 
 window.onload = () => {
   params = new URLSearchParams(window.location.search);
@@ -64,30 +65,114 @@ window.onload = () => {
   
   let navMenu = document.getElementById("navigation-menu");
 
-  document.querySelector("#arrow-down").addEventListener('click', function (e) {
-    document.querySelector("#arrow-down-drag").classList.add("move-down");
-    setTimeout(function () {
-      document.querySelector("#arrow-down-drag").classList.remove("move-down");
-    }, 1000);
-    welcomePageAnimation();
-  });
+  // document.querySelector("#arrow-down").addEventListener('click', function (e) {
+  //   document.querySelector("#arrow-down-drag").classList.add("move-down");
+  //   setTimeout(function () {
+  //     document.querySelector("#arrow-down-drag").classList.remove("move-down");
+  //   }, 1000);
+  //   welcomePageAnimation();
+  // });
 
-  document.querySelector("#arrow-right").addEventListener('click', function (e) {
-    document.querySelector("#arrow-right-drag").classList.add("move-right");
-    setTimeout(function () {
-      document.querySelector("#arrow-right-drag").classList.remove("move-right");
-    }, 1000);
-    welcomePageAnimation();
-})
+  // document.querySelector("#arrow-right").addEventListener('click', function (e) {
+  //   document.querySelector("#arrow-right-drag").classList.add("move-right");
+  //   setTimeout(function () {
+  //     document.querySelector("#arrow-right-drag").classList.remove("move-right");
+  //   }, 1000);
+  //   welcomePageAnimation();
+  // })
 
-  window.addEventListener('resize', documentHeight)
+  // window.addEventListener('resize', documentHeight)
   documentHeight();
+
+  let arrowDown = document.querySelector("#arrow-down-drag")
+  let offsetY
+  function move(e) {
+    arrowDown.style.top = `${e.clientY - offsetY}px`;
+    console.log(arrowDown.style.top)
+    if (parseInt(arrowDown.style.top, 10) < 0) {
+      arrowDown.style.top = "0px"
+    }
+    if (parseInt(arrowDown.style.top, 10) > 90) {
+      arrowDown.style.top = "90px"
+      // document.querySelector("#arrow-down-drag").classList.add("move-down");
+      setTimeout(function () {
+        arrowDown.style.top = "0px";
+      }, 1000);
+      welcomePageAnimation();
+    }
+
+  }
+
+  arrowDown.addEventListener("mousedown", (e) => {
+    offsetY = e.clientY - arrowDown.offsetTop;
+    document.addEventListener("mousemove", move);
+    console.log("yes")
+  })
+
+  document.addEventListener("mouseup", () => {
+    document.removeEventListener("mousemove", move)
+  })
+
+  let arrowRight = document.querySelector("#arrow-right-drag")
+  let offsetRightX
+  function moveRight(e) {
+    console.log(arrowRight.style.left)
+    arrowRight.style.left = `${e.clientX - offsetRightX}px`;
+    console.log(arrowRight.style.left)
+    if (parseInt(arrowRight.style.left) < -260) {
+      arrowRight.style.left = "-260px"
+    }
+    if (parseInt(arrowRight.style.left, 10) > -40) {
+      arrowRight.style.left = "-40px"
+      // document.querySelector("#arrow-down-drag").classList.add("move-down");
+      setTimeout(function () {
+        arrowRight.style.left = "-260px";
+      }, 1000);
+      welcomePageAnimation();
+    }
+  }
+
+  arrowRight.addEventListener("mousedown", (e) => {
+    offsetRightX = e.clientX - arrowRight.offsetLeft;
+    document.addEventListener("mousemove", moveRight);
+    console.log("yes")
+  })
+
+  document.addEventListener("mouseup", () => {
+    document.removeEventListener("mousemove", moveRight)
+    setTimeout(function () {
+      arrowRight.style.left = "-260px";
+    }, 100);
+  })
 }
+
+
 
 const documentHeight = () => {
   const doc = document.documentElement
   doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
 }
+
+// let arrowDown = document.querySelector("#arrow-down-drag")
+// let offsetY
+// function move(e) {
+//   arrowDown.style.top = `${e.clientY - offsetY}px`;
+// }
+
+// arrowDown.addEventListener("mousedown", (e) => {
+//   offsetY = e.clientX - arrowDown.offseTop;
+//   document.addEventListener("mousemove", move);
+// })
+
+// arrowDown.addEventListener("mouseup", () => {
+//   document.removeEventListener("mousemove", move)
+// })
+
+// document.onmousemove = function(e) {
+//   let y = e.mouseX;
+
+
+// }
 
 function welcomePageAnimation() {
   setTimeout(function () {
@@ -133,18 +218,18 @@ let navMenu = document.getElementById("navigation-menu");
 //     document.querySelector("#main-page").scrollIntoView({behavior: "smooth"});
 // })
 
-element.addEventListener('mousedown', function (event) {
-  startY = event.pageY;
-});
+// element.addEventListener('mousedown', function (event) {
+//   startY = event.pageY;
+// });
 
-element.addEventListener('mouseup', function (event) {
-  const diffY = Math.abs(event.pageY - startY);
+// element.addEventListener('mouseup', function (event) {
+//   const diffY = Math.abs(event.pageY - startY);
 
-  if (diffY > delta) {
-    alert("unlocked");
-    navMenu.style.display = "flex";
-  }
-});
+//   if (diffY > delta) {
+//     alert("unlocked");
+//     navMenu.style.display = "flex";
+//   }
+// });
 
 // let designer_page = document.querySelector("designer-content");
 
