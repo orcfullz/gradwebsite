@@ -841,7 +841,7 @@ const FINAL_DATA = [
         "cluster": "Product Innovation",
         "supervisor": "Hans Tan",
         "projectImgMobile": "https://i.postimg.cc/GtM4Gkfz/brewtrack-pers-portrait-small-43.png",
-        "projectImgDesktop": "https://i.postimg.cc/SKTTj5Sv/brewtrack-pers-lanscape-small-43-2.png",
+        "projectImgDesktop": "https://i.postimg.cc/8k9c9P3H/brewtrack-pers-lanscape169-big.png",
         "projectTitle": "BrewTrack",
         "projectDescription": "Refines coffee pouring with sensor tech and web-based digital insights, ideal for all levels of enthusiasts.",
         "video": "https://www.youtube.com/embed/wjVzArsUTII?si=CV1o6n4adRhXbWAm",
