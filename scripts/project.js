@@ -74,7 +74,7 @@ window.onload = () => {
         })
     })
         
-    window.addEventListener('resize', documentHeight);
+    // window.addEventListener('resize', documentHeight);
     documentHeight();
 }
 
