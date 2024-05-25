@@ -184,7 +184,6 @@ a {
 /* welcome page div */
 #welcome-page {
     height: 100vh;
-    height: var(--doc-height);
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -2136,6 +2135,10 @@ nav li {
 /* for mobile */
 
 @media only screen and (max-width: 840px) {
+    #welcome-page {
+        height: var(--doc-height);
+    }
+
     #welcome-page-content {
         display: none;
     }
