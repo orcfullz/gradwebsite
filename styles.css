@@ -1280,6 +1280,7 @@ nav li {
     display: flex;
     width: 324px; /* change with rem */
     padding: 5px;
+    padding-left: 16px;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
