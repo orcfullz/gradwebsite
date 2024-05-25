@@ -52,7 +52,7 @@
     --main-color-blue: #11212B;
     --main-color-yellow: #EBFF6B;
     --font-color-blue: #366381;
-    --background-yellow: #FBFFE1;
+    --background-yellow: #FDFFF0;
     --secondary-yellow: #F3FFA6;
     --secondary-blue: #1E3746;
     --secondary-text-yellow: #F5FFB5;
@@ -2053,7 +2053,7 @@ nav li {
         top: 60px;
         flex: 15%;
         padding: 12px 0px 12px 0px;
-        background-color: #FBFFE1;
+        background-color: var(--background-yellow);
         width: 100%;
         display: flex;
         flex-direction: row;
