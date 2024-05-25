@@ -437,8 +437,8 @@ const FINAL_DATA = [
         "portfolio": "https://www.sarahchan.design",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Olivia Lee",
-        "projectImgMobile": "https://i.postimg.cc/3NPhmQQK/sleeper-at-loading-bay-portrait.png",
-        "projectImgDesktop": "https://i.postimg.cc/8zsPnG8X/slide-deck-hero-wide-1m14s-0-4-DOF.png",
+        "projectImgMobile": "./assets/projectImg/sleeper-at-loading-bay-portrait.png",
+        "projectImgDesktop": "./assets/projectImg/slide-deck-hero-wide-1m14s-0-4-DOF.png",
         "projectTitle": "Rested Reality",
         "projectDescription": "SOMNMOS\u2014a public sleep farm\u2014mass-produces artificial sleep in a world where sleep is commodified.",
         "video": "https://player.vimeo.com/video/935041052?h=b70deef0dc",
@@ -447,15 +447,15 @@ const FINAL_DATA = [
                 "heading": "Wouldn\u2019t it be nice if you could store your sleep and use it later?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/jS9g1r4z/3-rules-summary.png",
+                        "img_link": "./assets/projectImg/3-rules-summary.png",
                         "caption": "The world rules in Rested Reality"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/dVyqv1Lp/Source-of-sleep-visual.png",
+                        "img_link": "./assets/projectImg/Source-of-sleep-visual.png",
                         "caption": "Professional sleepers have future-proof jobs"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/hPs1kqcX/HMW-slide-visual-3.png",
+                        "img_link": "./assets/projectImg/HMW-slide-visual-3.png",
                         "caption": "How might we design a sleep-collecting ecosystem for a sleep farm?"
                     }
                 ],
@@ -467,20 +467,21 @@ const FINAL_DATA = [
                 "heading": "The sleep farm",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/1Xk1PNpK/explainer-diagram-v4.png",
+                        "img_link": "./assets/projectImg/explainer-diagram-v4.png",
                         "caption": "These four products facilitate the supply and demand of artificial sleep."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/3xXdwzK2/sleeper-near-loading-bay.png",
+                        "img_link": "./assets/projectImg/sleeper-near-loading-bay.png",
                         "caption": "Sleeper at Loading Bay 1 "
                     },
                     {
-                        "img_link": "https://i.postimg.cc/KYcBhmn1/forklift-retrieves-pod.png",
+                        "img_link": "./assets/projectImg/forklift-retrieves-pod.png",
                         "caption": "Driverless Forklift retrieves Pod C10R10"
                     }
                 ],
                 "paragraphs": [
-                    "SOMNMOS, the first sleep farm to exist, is a publicly-traded company that prioritizes efficiency and profit above all."
+                    "SOMNMOS, the first sleep farm to exist, is a publicly-traded company that prioritizes efficiency and profit above all.",
+                    "If you could live your life without sleep, what would you do?"
                 ]
             }
         ],
@@ -499,8 +500,8 @@ const FINAL_DATA = [
         "email": "chan.wing@gmail.com",
         "cluster": "Product Innovation",
         "supervisor": "Grace Tan",
-        "projectImgMobile": "https://i.postimg.cc/Qxc7pzjd/gradsite-mobile-cover.jpg",
-        "projectImgDesktop": "https://i.postimg.cc/wvStNXPN/image0.jpg",
+        "projectImgMobile": "./assets/projectImg/gradsite-mobile-cover.jpg",
+        "projectImgDesktop": "./assets/projectImg/image0.jpg",
         "projectTitle": "Tweakkit",
         "projectDescription": "Tweakkit is a no-sew kit used to modify clothes in a quick and easy way",
         "video": "",
@@ -509,11 +510,11 @@ const FINAL_DATA = [
                 "heading": "Kit components",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/g2D676X9/image2.jpg",
+                        "img_link": "./assets/projectImg/image2.jpg",
                         "caption": "The kit: what it contains"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/MGpjJKVn/image3.jpg",
+                        "img_link": "./assets/projectImg/image3.jpg",
                         "caption": "The kit when it is closed"
                     }
                 ],
@@ -529,7 +530,7 @@ const FINAL_DATA = [
                 "heading": "Instructions",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/tgvnqQN2/image1.jpg",
+                        "img_link": "./assets/projectImg/image1.jpg",
                         "caption": "Instruction page on how to wrap the fastener"
                     }
                 ],
@@ -553,8 +554,8 @@ const FINAL_DATA = [
         "behance": "https://www.behance.net/kalindachen",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Christophe Gaubert",
-        "projectImgMobile": "https://i.postimg.cc/RZccsjft/hero-interact-crop.jpg",
-        "projectImgDesktop": "https://i.postimg.cc/bvg18kmN/hero-interact.jpg",
+        "projectImgMobile": "./assets/projectImg/hero-interact-crop.jpg",
+        "projectImgDesktop": "./assets/projectImg/hero-interact.jpg",
         "projectTitle": "Celia",
         "projectDescription": "\nCelia is an air filter that uses the living mycelium of oyster mushrooms to remove air pollutants.",
         "video": "https://www.youtube.com/embed/NX6gx8iQg-I?si=VVN97bIDHcr_GUjQ",
@@ -563,11 +564,11 @@ const FINAL_DATA = [
                 "heading": "How can we authentically reconnect with nature through Biodesign?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/YSgMWB4v/mushroom.jpg",
+                        "img_link": "./assets/projectImg/mushroom.jpg",
                         "caption": "Oyster mushroom (Pleurotus ostreatus), an ordinary and accessible fungus"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/GmT1WnxX/mycelium-material.jpg",
+                        "img_link": "./assets/projectImg/mycelium-material.jpg",
                         "caption": "Mycelium material produced by Biohm"
                     }
                 ],
@@ -583,15 +584,15 @@ const FINAL_DATA = [
                 "heading": "Fostering a collaborative relationship between man and nature",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/k5fHhjtn/hero-rbg.png",
+                        "img_link": "./assets/projectImg/hero-rbg.png",
                         "caption": "Celia, an air filter powered by living mycelium. "
                     },
                     {
-                        "img_link": "https://i.postimg.cc/QtKD3GD8/hero-water-rgb.jpg",
+                        "img_link": "./assets/projectImg/hero-water-rgb.jpg",
                         "caption": "Mist the mycelium 2-3 times a day. "
                     },
                     {
-                        "img_link": "https://i.postimg.cc/NFbpCFn5/mycelium-growth.jpg",
+                        "img_link": "./assets/projectImg/mycelium-growth.jpg",
                         "caption": "Growing the mycelium from scratch."
                     }
                 ],
@@ -607,11 +608,11 @@ const FINAL_DATA = [
                 "heading": "Envisioning a circular economy of fungal products",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/MKMQFXNN/cycle-PNG.png",
+                        "img_link": "./assets/projectImg/cycle-PNG.png",
                         "caption": "User journey depicting the circular economy of fungal products."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/MTqL9CG3/3dprint.jpg",
+                        "img_link": "./assets/projectImg/3dprint.jpg",
                         "caption": "3D printing with mycelium developed by The Shape Lab Research Group."
                     }
                 ],
@@ -636,8 +637,8 @@ const FINAL_DATA = [
         "email": "karinchewsy@gmail.com",
         "cluster": "Social & Service",
         "supervisor": "Alistair Norris",
-        "projectImgMobile": "https://i.postimg.cc/vZP27sJF/hero-34.png",
-        "projectImgDesktop": "https://i.postimg.cc/PqP327HL/hero-169.jpg",
+        "projectImgMobile": "./assets/projectImg/hero-34.png",
+        "projectImgDesktop": "./assets/projectImg/hero-169.jpg",
         "projectTitle": "de-Brief",
         "projectDescription": "de-Brief is a website for caregivers of loved ones with suspected dementia that aims to empower caregivers with knowledge and confidence to seek help early.",
         "video": "",
@@ -646,15 +647,15 @@ const FINAL_DATA = [
                 "heading": "Preparing for the impact of dementia feels overwhelming for many family caregivers.",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/zBrYR5mw/problem-internet.png",
+                        "img_link": "./assets/projectImg/problem-internet.png",
                         "caption": "Caregivers who suspect their loved one may have dementia often turn to the Internet for guidance."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/xd84JYyB/problem-timeline.png",
+                        "img_link": "./assets/projectImg/problem-timeline.png",
                         "caption": "Many caregivers seek help long after discovering symptoms, when a crisis incident happens."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/d0nL5Wqy/interviews.png",
+                        "img_link": "./assets/projectImg/interviews.png",
                         "caption": "Caregivers struggle to differentiate signs of dementia from ageing, among other reasons that deter them from seeking help."
                     }
                 ],
@@ -672,15 +673,15 @@ const FINAL_DATA = [
                 "heading": "Preparing for the impact of dementia feels overwhelming for many caregivers.",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/8PRq6xkN/iterations-copy.png",
+                        "img_link": "./assets/projectImg/iterations-copy.png",
                         "caption": "Tested various versions of copy and visuals."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/TYMzhT6t/iterations-copy-eg.png",
+                        "img_link": "./assets/projectImg/iterations-copy-eg.png",
                         "caption": "Caregivers were more engaged by relatable language."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/6pBFLzTR/iterations-synthesis.png",
+                        "img_link": "./assets/projectImg/iterations-synthesis.png",
                         "caption": "Interview synthesis, informing my design principles."
                     }
                 ],
@@ -700,7 +701,7 @@ const FINAL_DATA = [
                 "heading": "A platform that makes information, services and links to the pre-diagnosis dementia community accessible to caregivers",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/yN0LYSRg/de-brief-contexthero-rgb-RRVISED.jpg",
+                        "img_link": "./assets/projectImg/de-brief-contexthero-rgb-RRVISED.jpg",
                         "caption": ""
                     }
                 ],
@@ -724,8 +725,8 @@ const FINAL_DATA = [
         "email": "fkenbc@gmail.com",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Grace Tan",
-        "projectImgMobile": "https://i.postimg.cc/g2v5P8rN/IMG-4976.jpg",
-        "projectImgDesktop": "https://i.postimg.cc/FKpBYvyS/IMG-4971.jpg",
+        "projectImgMobile": "./assets/projectImg/IMG-4976.jpg",
+        "projectImgDesktop": "./assets/projectImg/IMG-4971.jpg",
         "projectTitle": "Crossing Lines - the art of 3D printing",
         "projectDescription": "Crossing Lines explores 3D printing as craft, embracing imperfections and irregularly regular patterns created by varying plastic properties, printer instructions, and gravity. It challenges traditional views on perfection, emphasising the beauty in crafted anomalies and collaboration between human and machine.",
         "video": "https://www.youtube.com/embed/AVbUkJcsA1M?si=fkvlJeNmv9TG6rrL",
@@ -734,28 +735,16 @@ const FINAL_DATA = [
                 "heading": "Crossing Lines - The Art of 3D Printing",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/PxqFZ7yR/IMG-4977.jpg",
+                        "img_link": "./assets/projectImg/IMG-4977.jpg",
                         "caption": "playing with gravity"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/wMyf4sS5/IMG-4985.jpg",
+                        "img_link": "./assets/projectImg/IMG-4985.jpg",
                         "caption": "playing with viscosity"
                     }
                 ],
                 "paragraphs": [
                     "Crossing Lines explores 3D printing as craft, focusing on embracing imperfections and irregularly regular patterns created by varying plastic properties, printer instructions, and gravity. It challenges traditional views on perfection, emphasising the beauty in crafted anomalies and collaboration between human intent and machine execution."
-                ]
-            },
-            {
-                "heading": "I don't understand what this is for, I have nothing else to talk about.",
-                "pictures": [
-                    {
-                        "img_link": "https://i.postimg.cc/wMyf4sS5/IMG-4985.jpg",
-                        "caption": "I don't understand what this is for, I have nothing else to talk about."
-                    }
-                ],
-                "paragraphs": [
-                    "I don't understand what this is for, I have nothing else to talk about."
                 ]
             }
         ],
@@ -774,8 +763,8 @@ const FINAL_DATA = [
         "behance": "https://www.behance.net/jonathanlow5",
         "cluster": "Social & Service",
         "supervisor": "Patrick Chia",
-        "projectImgMobile": "https://i.postimg.cc/htDWkTRn/Overall-Shot-3-4.jpg",
-        "projectImgDesktop": "https://i.postimg.cc/9fRP0wtw/Game-play-16-9.jpg",
+        "projectImgMobile": "./assets/projectImg/Overall-Shot-3-4.jpg",
+        "projectImgDesktop": "./assets/projectImg/Game-play-16-9.jpg",
         "projectTitle": "In Your Shoes",
         "projectDescription": "In Your Shoes is a tabletop game that seeks to provide a safe space between parents and children to spark conversations.",
         "video": "https://www.youtube.com/embed/NgLaLd9c3KE?si=aiE2v5N7o4h_RHHP",
@@ -784,15 +773,15 @@ const FINAL_DATA = [
                 "heading": "In Your Shoes is a game that seeks to create a safe space in families to spark conversations. ",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/BnNVWzJZ/Overall-Shot-4-3.jpg",
+                        "img_link": "./assets/projectImg/Overall-Shot-4-3.jpg",
                         "caption": "In Your Shoes game components"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/7Y3R96c2/Game-play-4-3.jpg",
+                        "img_link": "./assets/projectImg/Game-play-4-3.jpg",
                         "caption": "Gameplay of In Your Shoes"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/0jC9pT1z/Gameplay.gif",
+                        "img_link": "./assets/projectImg/Gameplay.gif",
                         "caption": "Video of Gameplay of In Your Shoes"
                     }
                 ],
@@ -804,15 +793,15 @@ const FINAL_DATA = [
                 "heading": "Process - Playtesting",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/HntztxhQ/Prototype-1-2.png",
+                        "img_link": "./assets/projectImg/Prototype-1-2.png",
                         "caption": "Initial Prototypes"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/FFVsSLZ7/Reaction-Zara.gif",
+                        "img_link": "./assets/projectImg/Reaction-Zara.gif",
                         "caption": "Playtesting Reaction Video"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/zDLzvcQX/Reaction-Phoon.gif",
+                        "img_link": "./assets/projectImg/Reaction-Phoon.gif",
                         "caption": "Playtesting Reaction Video"
                     }
                 ],
@@ -824,11 +813,11 @@ const FINAL_DATA = [
                 "heading": "Future Iterations",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/XYT5p5jp/Expansion-Packs-4-3.png",
+                        "img_link": "./assets/projectImg/Expansion-Packs-4-3.png",
                         "caption": "Sample Expansion Packs"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/zvX8Jx4K/Website-mockup-4-3.png",
+                        "img_link": "./assets/projectImg/Website-mockup-4-3.png",
                         "caption": "Mock-up of Website"
                     }
                 ],
@@ -852,8 +841,8 @@ const FINAL_DATA = [
         "portfolio": "https://kentlimanza.co/",
         "cluster": "Product Innovation",
         "supervisor": "Hans Tan",
-        "projectImgMobile": "https://i.postimg.cc/GtM4Gkfz/brewtrack-pers-portrait-small-43.png",
-        "projectImgDesktop": "https://i.postimg.cc/8k9c9P3H/brewtrack-pers-lanscape169-big.png",
+        "projectImgMobile": "./assets/projectImg/brewtrack-pers-portrait-small-43.png",
+        "projectImgDesktop": "./assets/projectImg/brewtrack-pers-lanscape169-big.png",
         "projectTitle": "BrewTrack",
         "projectDescription": "Refines coffee pouring with sensor tech and web-based digital insights, ideal for all levels of enthusiasts.",
         "video": "https://www.youtube.com/embed/wjVzArsUTII?si=CV1o6n4adRhXbWAm",
@@ -862,15 +851,15 @@ const FINAL_DATA = [
                 "heading": "Bridging the Gap in Coffee Brewing Education",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/brJgHvsH/hero1-rgb-ig.png",
+                        "img_link": "./assets/projectImg/hero1-rgb-ig.png",
                         "caption": "Explore the heart of cutting-edge sensor technology that powers precision"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/mk5wdG9x/hero2-rgb-ig.png",
+                        "img_link": "./assets/projectImg/hero2-rgb-ig.png",
                         "caption": "Analyze your coffee brewing techniques with detailed digital insights"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/TPXnRcvW/Hero3-mirror-rgb-ig.png",
+                        "img_link": "./assets/projectImg/Hero3-mirror-rgb-ig.png",
                         "caption": "Seamlessly merging technology with traditional brewing to perfect your brew"
                     }
                 ],
@@ -886,11 +875,11 @@ const FINAL_DATA = [
                 "heading": "Innovative Technology Meets User-Friendly Design",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/Gp0x4CGt/Slide-16-9-13.png",
+                        "img_link": "./assets/projectImg/Slide-16-9-13.png",
                         "caption": "Discover coffee 'recipes' and replicate expert motions with BrewTrack"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/7ZJNP6Cj/Slide-16-9-14.png",
+                        "img_link": "./assets/projectImg/Slide-16-9-14.png",
                         "caption": "Track and refine your pour with BrewTrack\u2019s detailed analysis features"
                     }
                 ],
@@ -920,8 +909,8 @@ const FINAL_DATA = [
         "email": "kwang.y.h.1999@gmail.com",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Christophe Gaubert",
-        "projectImgMobile": "https://i.postimg.cc/Qx5MzRzQ/Cover-Image-Mobile.png",
-        "projectImgDesktop": "https://i.postimg.cc/vBYs0KVv/Cover-Image.png",
+        "projectImgMobile": "./assets/projectImg/Cover-Image-Mobile.png",
+        "projectImgDesktop": "./assets/projectImg/Cover-Image.png",
         "projectTitle": "The Coral Line",
         "projectDescription": "\"The Coral Line\" is a series of coral nurseries that acts as a window into the underwater garden",
         "video": "https://www.youtube.com/embed/7UypgLgghxI?si=9uWaRSStkL07Dehp",
@@ -930,15 +919,15 @@ const FINAL_DATA = [
                 "heading": "Fostering Reverence for Coastal Marine life in Singapore through Design",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/vBYs0KVv/Cover-Image.png",
+                        "img_link": "./assets/projectImg/Cover-Image.png",
                         "caption": "\"The Coral Line\" - A window into the underwater garden"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/NjQvsVNv/Frame-shot.png",
+                        "img_link": "./assets/projectImg/Frame-shot.png",
                         "caption": "A mysterious frame that leads into the sea"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/g2z1FhJY/Kwang-Yu-Hang-A0222791-E-v2.png",
+                        "img_link": "./assets/projectImg/Kwang-Yu-Hang-A0222791-E-v2.png",
                         "caption": "\"The Coral Line\" when on land; in the night; and when sea level rises"
                     }
                 ],
@@ -958,15 +947,15 @@ const FINAL_DATA = [
                 "heading": "Mineral Accretion For Corals",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/ydZbXXfT/underwater-close-up-2-ma.png",
+                        "img_link": "./assets/projectImg/underwater-close-up-2-ma.png",
                         "caption": "The metal ring that undergoes mineral accretion to form calcium carbonate"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/W11YfPWz/underwater-new-with-close-up-corals.png",
+                        "img_link": "./assets/projectImg/underwater-new-with-close-up-corals.png",
                         "caption": "\"The Coral Line\" when corals have been successfully recruited"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/MGhsTfWf/page-2.png",
+                        "img_link": "./assets/projectImg/page-2.png",
                         "caption": "Illustration of how it traps sediments"
                     }
                 ],
@@ -983,15 +972,15 @@ const FINAL_DATA = [
                 "heading": "What is the future of our shores?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/yxTnvf00/future-1.png",
+                        "img_link": "./assets/projectImg/future-1.png",
                         "caption": "Illustration of how beaches will become shorter"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/4NJWmgTP/future-2.png",
+                        "img_link": "./assets/projectImg/future-2.png",
                         "caption": "Illustration of a post land reclaimation Singapore"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/JhBq97br/future-3.png",
+                        "img_link": "./assets/projectImg/future-3.png",
                         "caption": "Process of coral recruitment and growing reefs"
                     }
                 ],
@@ -1018,8 +1007,8 @@ const FINAL_DATA = [
         "email": "leedewei44@gmail.com",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Christophe Gaubert",
-        "projectImgMobile": "https://i.postimg.cc/cCr8JfG3/Mobile-Shot.png",
-        "projectImgDesktop": "https://i.postimg.cc/52qW6G3B/Washroom-external.png",
+        "projectImgMobile": "./assets/projectImg/Mobile-Shot.png",
+        "projectImgDesktop": "./assets/projectImg/Washroom-external.png",
         "projectTitle": "WC",
         "projectDescription": "WC is a take on redesigning future gender neutral toilets ",
         "video": "",
@@ -1028,11 +1017,11 @@ const FINAL_DATA = [
                 "heading": "What if everything is neutral?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/t4XVcsBF/Week-6-Interim-70.png",
+                        "img_link": "./assets/projectImg/Week-6-Interim-70.png",
                         "caption": "Droplet vs Split Gender Representation"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/52qW6G3B/Washroom-external.png",
+                        "img_link": "./assets/projectImg/Washroom-external.png",
                         "caption": "Signage situated in the space"
                     }
                 ],
@@ -1048,15 +1037,15 @@ const FINAL_DATA = [
                 "heading": "Fostering Tolerance through Sharing ",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/x8C4gfWQ/Sink-shot-2.png",
+                        "img_link": "./assets/projectImg/Sink-shot-2.png",
                         "caption": "Overview of the communal sink"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/XNGKKBPJ/Shared-use5.png",
+                        "img_link": "./assets/projectImg/Shared-use5.png",
                         "caption": "Depiction of intended sharing between different genders"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/4dw0z72w/Prototype.jpg",
+                        "img_link": "./assets/projectImg/Prototype.jpg",
                         "caption": "Prototyping the sink to find suitable dimensions"
                     }
                 ],
@@ -1070,15 +1059,15 @@ const FINAL_DATA = [
                 "heading": "A Private Act in a Public Space",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/5tkmSBqP/Overallstalls.png",
+                        "img_link": "./assets/projectImg/Overallstalls.png",
                         "caption": "View of stalls without flush toilets installed"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/Jhghq0y3/Inner-stall-1.png",
+                        "img_link": "./assets/projectImg/Inner-stall-1.png",
                         "caption": "Inner view of the frosting effect to the next stall"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/zX5PBkdW/Hero-Shots-Draft-draft-3.png",
+                        "img_link": "./assets/projectImg/Hero-Shots-Draft-draft-3.png",
                         "caption": "Rough illustration showing the potential scenario between two users"
                     }
                 ],
@@ -1103,8 +1092,8 @@ const FINAL_DATA = [
         "portfolio": "joyie.cc",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Tiffany Loy",
-        "projectImgMobile": "https://i.postimg.cc/CxF3xwyq/gradsite-mobile-portrait.png",
-        "projectImgDesktop": "https://i.postimg.cc/hvXFgrN3/thesis-hero-2.png",
+        "projectImgMobile": "./assets/projectImg/gradsite-mobile-portrait.png",
+        "projectImgDesktop": "./assets/projectImg/thesis-hero-2.png",
         "projectTitle": "knit-morph",
         "projectDescription": "Exploring how knitted fabrics augment connections between the self and objects or spaces. ",
         "video": "https://player.vimeo.com/video/948037539?h=f7e3eb7aff",
@@ -1113,7 +1102,7 @@ const FINAL_DATA = [
                 "heading": "How Can We Connect to the Objects Around Us?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/WzFyx4JB/gradsite-1.png",
+                        "img_link": "./assets/projectImg/gradsite-1.png",
                         "caption": "Exploring connections to be made"
                     }
                 ],
@@ -1127,7 +1116,7 @@ const FINAL_DATA = [
                 "heading": "Exploring Knit as a Medium",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/J0fF8WNG/gradsite-2.png",
+                        "img_link": "./assets/projectImg/gradsite-2.png",
                         "caption": "Knitted explorations"
                     }
                 ],
@@ -1139,7 +1128,7 @@ const FINAL_DATA = [
                 "heading": "The Self and the Chair",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/44YNXbvg/gradsite-3.png",
+                        "img_link": "./assets/projectImg/gradsite-3.png",
                         "caption": "Connecting the self to a chair"
                     }
                 ],
@@ -1164,8 +1153,8 @@ const FINAL_DATA = [
         "email": "mojojozef@gmail.com",
         "cluster": "Product Innovation",
         "supervisor": "Yen Ching Chiuan",
-        "projectImgMobile": "https://i.postimg.cc/FscdVPk4/Gradsite-mobile-3-4.png",
-        "projectImgDesktop": "https://i.postimg.cc/MZnjvZWX/Gradsite-desktop-16-9.png",
+        "projectImgMobile": "./assets/projectImg/Gradsite-mobile-3-4.png",
+        "projectImgDesktop": "./assets/projectImg/Gradsite-desktop-16-9.png",
         "projectTitle": "FallGuard",
         "projectDescription": "A fall detection system for seniors, leveraging technology provided by HPB's National Step Challenge",
         "video": "https://www.youtube.com/embed/UV3vSIbzhP0?si=SHcyXtCEJ6wmB873",
@@ -1174,7 +1163,7 @@ const FINAL_DATA = [
                 "heading": "FallGuard's operating framework (fall detected)",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/4d0z0m1H/Gradsite-mobile-3-4-pic2.png",
+                        "img_link": "./assets/projectImg/Gradsite-mobile-3-4-pic2.png",
                         "caption": ""
                     }
                 ],
@@ -1190,7 +1179,7 @@ const FINAL_DATA = [
                 "heading": "FallGuard's operating framework (motionlessness detected)",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/K8gY2QyY/Gradsite-mobile-3-4-pic3.png",
+                        "img_link": "./assets/projectImg/Gradsite-mobile-3-4-pic3.png",
                         "caption": "FallGuard's operating framework (motionlessness detected)"
                     }
                 ],
@@ -1216,8 +1205,8 @@ const FINAL_DATA = [
         "instagram": "https://www.instagram.com/sssttacy/",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Olivia Lee",
-        "projectImgMobile": "https://i.postimg.cc/B6fLXTdy/IMG-8260.jpg",
-        "projectImgDesktop": "https://i.postimg.cc/NFp5JW5q/IMG-8254.jpg",
+        "projectImgMobile": "./assets/projectImg/IMG-8260.jpg",
+        "projectImgDesktop": "./assets/projectImg/IMG-8254.jpg",
         "projectTitle": "\u00c9pini\u00e8re",
         "projectDescription": "\u00c9pini\u00e8re is a collection of self soothing accessories, reminiscent of skeletal forms.",
         "video": "",
@@ -1226,15 +1215,15 @@ const FINAL_DATA = [
                 "heading": "Chain and Link Mechanism",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/7YrkdBSj/IMG-8268.jpg",
+                        "img_link": "./assets/projectImg/IMG-8268.jpg",
                         "caption": "Pressure on the epidermis skin layer"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/zBPfTTM8/IMG-8098-2.jpg",
+                        "img_link": "./assets/projectImg/IMG-8098-2.jpg",
                         "caption": "Close up of Necklace "
                     },
                     {
-                        "img_link": "https://i.postimg.cc/B6fLXTdy/IMG-8260.jpg",
+                        "img_link": "./assets/projectImg/IMG-8260.jpg",
                         "caption": "Bracelet chain pulled"
                     }
                 ],
@@ -1248,7 +1237,7 @@ const FINAL_DATA = [
                 "heading": "Alleviating Stress and Anxiety",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/KYkpZb2f/IMG-8282.jpg",
+                        "img_link": "./assets/projectImg/IMG-8282.jpg",
                         "caption": "Ear Cuff"
                     }
                 ],
@@ -1274,8 +1263,8 @@ const FINAL_DATA = [
         "email": "lukegoh98@gmail.com",
         "cluster": "Social & Service",
         "supervisor": "Yen Ching Chiuan",
-        "projectImgMobile": "https://i.postimg.cc/SNmfDS0R/Lightroom4-3-1-of-1.png",
-        "projectImgDesktop": "https://i.postimg.cc/c4TMzpZm/Lightroom16-9-012642.png",
+        "projectImgMobile": "./assets/projectImg/Lightroom4-3-1-of-1.png",
+        "projectImgDesktop": "./assets/projectImg/Lightroom16-9-012642.png",
         "projectTitle": "mammosense",
         "projectDescription": "Mammosense is a lidar-based mammogram tool that aims to enhance patient comfort by objectively reducing compression force",
         "video": "",
@@ -1284,15 +1273,15 @@ const FINAL_DATA = [
                 "heading": "mammosense was developed as part of an enhanced mammogram experience to improve patient comfort",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/DwZd3xwK/Lightroom-5429.jpg",
+                        "img_link": "./assets/projectImg/Lightroom-5429.jpg",
                         "caption": "mammosense being tested in a Singapore hospital"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/g0LVnrhS/Lightroom-1-of-1-5.png",
+                        "img_link": "./assets/projectImg/Lightroom-1-of-1-5.png",
                         "caption": "mammosense pilot study"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/RFRNFzgp/Slide-16-9-324.png",
+                        "img_link": "./assets/projectImg/Slide-16-9-324.png",
                         "caption": "mammosense operation guide"
                     }
                 ],
@@ -1308,7 +1297,7 @@ const FINAL_DATA = [
                 "heading": "The things that make mammosense tick",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/2yy8SLb3/Slide-16-9-323.png",
+                        "img_link": "./assets/projectImg/Slide-16-9-323.png",
                         "caption": "some of the science behind the breast sensing algorithm"
                     }
                 ],
@@ -1336,8 +1325,8 @@ const FINAL_DATA = [
         "portfolio": "http://merkayla-wong.webflow.io/",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Yen Ching Chiuan",
-        "projectImgMobile": "https://i.postimg.cc/fbdb95ym/Main-pic-gradsite-3.png",
-        "projectImgDesktop": "https://i.postimg.cc/s2TT5PLf/main-pic-gradsite.png",
+        "projectImgMobile": "./assets/projectImg/Main-pic-gradsite-3.png",
+        "projectImgDesktop": "./assets/projectImg/main-pic-gradsite.png",
         "projectTitle": "HydroForm Raincoat",
         "projectDescription": "The HydroForm Raincoat uses moisture to reveal textures and extend its hem, turning rain into delight.",
         "video": "https://player.vimeo.com/video/948101442?h=cb75d27d74",
@@ -1346,11 +1335,11 @@ const FINAL_DATA = [
                 "heading": "How can moisture be used as a medium for 3D transformation?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/8PhQM3m1/SECOND-PIC-BIGGER.png",
+                        "img_link": "./assets/projectImg/SECOND-PIC-BIGGER.png",
                         "caption": "The fabric reacts to moisture, making hidden patterns emerge on the sleeves and hood."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/wv03qM3G/gif-for-gradsite-part-3.gif",
+                        "img_link": "./assets/projectImg/gif-for-gradsite-part-3.gif",
                         "caption": "The raincoat\u2019s  hem utilizes swelling to prevent it from sticking to user's body."
                     }
                 ],
@@ -1368,15 +1357,15 @@ const FINAL_DATA = [
                 "heading": "Exploration of 4D Structures with the swelling of Sodium Polyacrylate.",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/JnnBvvQJ/image-for-gradsite-2.png",
+                        "img_link": "./assets/projectImg/image-for-gradsite-2.png",
                         "caption": "Sodium Polyacrylate becomes a formless gel-like substance after absorbing water."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/0N9SdbMV/image-for-gradsite.png",
+                        "img_link": "./assets/projectImg/image-for-gradsite.png",
                         "caption": "Created membranes to house the inactivated granules using fusible web."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/htc8MCN8/audio-2024-05-03-02-38-27-1.gif",
+                        "img_link": "./assets/projectImg/audio-2024-05-03-02-38-27-1.gif",
                         "caption": "Gif of the transformation to create unexpected textures triggered by mositure."
                     }
                 ],
@@ -1394,11 +1383,11 @@ const FINAL_DATA = [
                 "heading": "Can this liquid-driven transformation offer more than just visual appeal?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/CMbftGGc/Screenshot-2024-05-20-082702.png",
+                        "img_link": "./assets/projectImg/Screenshot-2024-05-20-082702.png",
                         "caption": "Stiff PVC attached to the swelling fabric created an exaggerated movement."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/sDyZRMKs/Screenshot-2024-05-20-082754.png",
+                        "img_link": "./assets/projectImg/Screenshot-2024-05-20-082754.png",
                         "caption": "Stiff PVC attached to the swelling fabric created an exaggerated movement."
                     }
                 ],
@@ -1424,8 +1413,8 @@ const FINAL_DATA = [
         "portfolio": "https://nazurahrohayat.super.site/",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Olivia Lee",
-        "projectImgMobile": "https://i.postimg.cc/CLzNYjFW/mobile-4by3.png",
-        "projectImgDesktop": "https://i.postimg.cc/k5FJHTTx/Nazurah-Hero-Image-1.jpg",
+        "projectImgMobile": "./assets/projectImg/mobile-4by3.png",
+        "projectImgDesktop": "./assets/projectImg/Nazurah-Hero-Image-1.jpg",
         "projectTitle": "Tapestree",
         "projectDescription": "Tapestree celebrates and unifies Singapore's cultures with tradition and AI",
         "video": "https://player.vimeo.com/video/947255067?h=d3e3ac0fb3",
@@ -1434,11 +1423,11 @@ const FINAL_DATA = [
                 "heading": "Exploring Traditional Cultures to Design a Multicultural Motif",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/vm99K2pM/Screenshot-2024-05-18-at-12-56-46-AM.png",
+                        "img_link": "./assets/projectImg/Screenshot-2024-05-18-at-12-56-46-AM.png",
                         "caption": "Visiting cultural sites to gather traditional motifs."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/mrXD8YrR/Screenshot-2024-05-18-at-12-58-50-AM.png",
+                        "img_link": "./assets/projectImg/Screenshot-2024-05-18-at-12-58-50-AM.png",
                         "caption": "Capturing the vibrant details of cultural artifacts and designs."
                     }
                 ],
@@ -1450,11 +1439,11 @@ const FINAL_DATA = [
                 "heading": "Creating Multicultural Motifs with Advanced AI Technology",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/x1HyQQMr/Screenshot-2024-05-17-at-3-36-09-PM.png",
+                        "img_link": "./assets/projectImg/Screenshot-2024-05-17-at-3-36-09-PM.png",
                         "caption": "Layering LoRA to fine-tune AI for diverse cultural accuracy."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/0yzHkX7q/7.jpg",
+                        "img_link": "./assets/projectImg/7.jpg",
                         "caption": "Display of vibrant motifs generated by Multicultural Motif AI."
                     }
                 ],
@@ -1466,15 +1455,15 @@ const FINAL_DATA = [
                 "heading": "Infusing Contemporary Design into Traditional Motifs",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/9FsVzDFn/Hero-image-Gradsite2.png",
+                        "img_link": "./assets/projectImg/Hero-image-Gradsite2.png",
                         "caption": "Tapestree box showcasing the vibrant, multicultural motifs."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/Qtd7DwWQ/Hero-image-Gradsite3.png",
+                        "img_link": "./assets/projectImg/Hero-image-Gradsite3.png",
                         "caption": "Apparel featuring a Tapestree motif, blending tradition and modernity."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/zDV2P089/Hero-image-Gradsite.png",
+                        "img_link": "./assets/projectImg/Hero-image-Gradsite.png",
                         "caption": "Swatches display the variety in our three contemporary motifs."
                     }
                 ],
@@ -1498,8 +1487,8 @@ const FINAL_DATA = [
         "portfolio": "https://www.ngkengwei.com",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Hans Tan",
-        "projectImgMobile": "https://i.postimg.cc/dQ6CKZ4T/01b-C05-A8140-mobile-cover-sb.jpg",
-        "projectImgDesktop": "https://i.postimg.cc/qvSRVSgz/02b-sb-C05-A8143-Desktop-cover.jpg",
+        "projectImgMobile": "./assets/projectImg/01b-C05-A8140-mobile-cover-sb.jpg",
+        "projectImgDesktop": "./assets/projectImg/02b-sb-C05-A8143-Desktop-cover.jpg",
         "projectTitle": "Percolated tile collection",
         "projectDescription": "Each tile captures a distinctive blistered effect, textured by water.",
         "video": "https://www.youtube.com/embed/BrpZ32GSEOo?si=8PykuFis_8e-KiSL",
@@ -1508,15 +1497,15 @@ const FINAL_DATA = [
                 "heading": "What happens when acrylic paint is submerged in water?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/1zg0L1Dz/03a-sb-Section-1-Pic-1.jpg",
+                        "img_link": "./assets/projectImg/03a-sb-Section-1-Pic-1.jpg",
                         "caption": "I left some materials on a rooftop"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/pdnGKFGk/04a-sb-Section-1-Pic-2.jpg",
+                        "img_link": "./assets/projectImg/04a-sb-Section-1-Pic-2.jpg",
                         "caption": "Experiments 033 & 034: Little bumps appeared on the acrylic paint after it rained"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/Dwhp10kK/05a-sb-Section-1-pic-3.jpg",
+                        "img_link": "./assets/projectImg/05a-sb-Section-1-pic-3.jpg",
                         "caption": "Experiment 036: I recreated the blistered effect by submerging paint in water"
                     }
                 ],
@@ -1532,15 +1521,15 @@ const FINAL_DATA = [
                 "heading": "Capturing the fleeting beauty of the blistered texture",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/ZKLHMNCw/06d-sb-Section-2-gif-1.gif",
+                        "img_link": "./assets/projectImg/06d-sb-Section-2-gif-1.gif",
                         "caption": "Every experiment would dry out when taken out of the water"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/15MryND4/07a-sb-Section-2-pic-2.jpg",
+                        "img_link": "./assets/projectImg/07a-sb-Section-2-pic-2.jpg",
                         "caption": "Experiment 130: I made a silicone mold out of the blistered texture"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/6Q6qVY3f/08a-sb-Section-2-pic-3.jpg",
+                        "img_link": "./assets/projectImg/08a-sb-Section-2-pic-3.jpg",
                         "caption": "Original paint texture (left) and casted cement texture (right)"
                     }
                 ],
@@ -1556,15 +1545,15 @@ const FINAL_DATA = [
                 "heading": "A collection of wall tiles, made by water",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/4dbbMm1v/11a-Section-3-pic-1.jpg",
+                        "img_link": "./assets/projectImg/11a-Section-3-pic-1.jpg",
                         "caption": "The four featured textures are taken from these four samples of acrylic paint"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/xTcB79LB/09d-sb-Section-3-pic-2-copy-Now-merge-copy.jpg",
+                        "img_link": "./assets/projectImg/09d-sb-Section-3-pic-2-copy-Now-merge-copy.jpg",
                         "caption": ""
                     },
                     {
-                        "img_link": "https://i.postimg.cc/Cxj0PFgS/10d-Section-3-Pic-3.jpg",
+                        "img_link": "./assets/projectImg/10d-Section-3-Pic-3.jpg",
                         "caption": ""
                     }
                 ],
@@ -1591,7 +1580,7 @@ const FINAL_DATA = [
         "cluster": "Product Innovation",
         "supervisor": "Christophe Gaubert",
         "projectImgMobile": "",
-        "projectImgDesktop": "https://i.postimg.cc/63XNJdwp/collage-hero-shot.png",
+        "projectImgDesktop": "./assets/projectImg/collage-hero-shot.png",
         "projectTitle": "Aly",
         "projectDescription": "An age neutral hybrid trolley-walker designed to reduce aging\u2019s stigma and empower the elderly. ",
         "video": "https://www.youtube.com/embed/Y41FJflIYpQ?si=8PXXA_QB7reuVDCS",
@@ -1600,11 +1589,11 @@ const FINAL_DATA = [
                 "heading": "The Stigma of Aging",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/9QwMcY3d/post-its-43.png",
+                        "img_link": "./assets/projectImg/post-its-43.png",
                         "caption": "People's perception of the elderly "
                     },
                     {
-                        "img_link": "https://i.postimg.cc/254SZjS3/auntie-kuek-43.png",
+                        "img_link": "./assets/projectImg/auntie-kuek-43.png",
                         "caption": "Auntie Kuek explaining she would rather use a trolley than a walker"
                     }
                 ],
@@ -1622,11 +1611,11 @@ const FINAL_DATA = [
                 "heading": "Normalizing the use of mobility aids",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/sDp6qtx7/Pull-trolley-1-43.png",
+                        "img_link": "./assets/projectImg/Pull-trolley-1-43.png",
                         "caption": "Aly can be used as a trolley "
                     },
                     {
-                        "img_link": "https://i.postimg.cc/cJ5XfWky/walker-side-view-43.png",
+                        "img_link": "./assets/projectImg/walker-side-view-43.png",
                         "caption": "Aly with mobility aid functions of a walker"
                     }
                 ],
@@ -1643,7 +1632,7 @@ const FINAL_DATA = [
                 "heading": "Aly \u2014 your supportive companion",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/9XysH4ND/Aly-at-home-43.png",
+                        "img_link": "./assets/projectImg/Aly-at-home-43.png",
                         "caption": ""
                     }
                 ],
@@ -1668,8 +1657,8 @@ const FINAL_DATA = [
         "portfolio": "https://www.nicole-portfolio.site/",
         "cluster": "Social & Service",
         "supervisor": "Alistair Norris",
-        "projectImgMobile": "https://i.postimg.cc/JnY2GfxB/Hero-Portrait.png",
-        "projectImgDesktop": "https://i.postimg.cc/Kz0dtkGj/Hero-Landscape.png",
+        "projectImgMobile": "./assets/projectImg/Hero-Portrait.png",
+        "projectImgDesktop": "./assets/projectImg/Hero-Landscape.png",
         "projectTitle": "BoJio!",
         "projectDescription": "A social wellness app for drivers that improves screening outcomes through community engagement.",
         "video": "",
@@ -1678,11 +1667,11 @@ const FINAL_DATA = [
                 "heading": "Why are Singaporeans not getting screened for chronic illnesses?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/X7wGFKhv/Process-1.png",
+                        "img_link": "./assets/projectImg/Process-1.png",
                         "caption": "Experiencing and understanding the screening journey."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/FK2ND8kX/Process-2.png",
+                        "img_link": "./assets/projectImg/Process-2.png",
                         "caption": "Volunteering at outreach screening events to analyse current interventions."
                     }
                 ],
@@ -1698,15 +1687,15 @@ const FINAL_DATA = [
                 "heading": "Drivers struggle to follow-up with post-screening management.",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/mDwPThtX/Research-1.png ",
+                        "img_link": "./assets/projectImg/Research-1.png ",
                         "caption": "Shadowing and speaking to drivers to understand their behaviours."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/3wpngkq9/Research-2.png ",
+                        "img_link": "./assets/projectImg/Research-2.png ",
                         "caption": "Testing with doctors to ensure recommendations are prescribed accurately."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/y6DY05Cf/Research-3.png",
+                        "img_link": "./assets/projectImg/Research-3.png",
                         "caption": "Various iterations and concepts tested with drivers. "
                     }
                 ],
@@ -1720,15 +1709,15 @@ const FINAL_DATA = [
                 "heading": "Building healthier habits informed by screening outcomes, through community engagement.\u00a0",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/KYYyxkZ9/Context-photo-1.png",
+                        "img_link": "./assets/projectImg/Context-photo-1.png",
                         "caption": "Explore and join gatherings quickly while on the go."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/65KgB2cd/Context-photo-2.png",
+                        "img_link": "./assets/projectImg/Context-photo-2.png",
                         "caption": "Jio friends to healthy gatherings!"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/NFD4sMG4/Context-photo-3.png ",
+                        "img_link": "./assets/projectImg/Context-photo-3.png ",
                         "caption": "Get rewarded for checking in to health-goal friendly activities."
                     }
                 ],
@@ -1754,8 +1743,8 @@ const FINAL_DATA = [
         "portfolio": "https://ojhtravis.myportfolio.com/",
         "cluster": "Social & Service",
         "supervisor": "Alistair Norris",
-        "projectImgMobile": "https://i.postimg.cc/MHSm60N9/my-Markit-CONTEXTHERO34.png",
-        "projectImgDesktop": "https://i.postimg.cc/KY1NJ8tD/my-Markit-CONTEXTHERO.png",
+        "projectImgMobile": "./assets/projectImg/my-Markit-CONTEXTHERO34.png",
+        "projectImgDesktop": "./assets/projectImg/my-Markit-CONTEXTHERO.png",
         "projectTitle": "MyMarkit!",
         "projectDescription": "MyMarkit! is a family excursion kit for exploring wet markets, fostering cultural and culinary connections.",
         "video": "https://www.youtube.com/embed/y9E2dszRq7Y?si=LEFxKPklYrqykNSx",
@@ -1764,15 +1753,15 @@ const FINAL_DATA = [
                 "heading": "An excursion kit for families to explore wet markets together",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/zDMq5M9f/my-Markit-HERO34.png",
+                        "img_link": "./assets/projectImg/my-Markit-HERO34.png",
                         "caption": "Full Kit"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/0yCQ8nYH/my-Markit-HEROingredientcards34.png",
+                        "img_link": "./assets/projectImg/my-Markit-HEROingredientcards34.png",
                         "caption": "Ingredient Cards that aim to introduce local ingredients to younger Singaporeans"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/ZqKq0NjY/my-Markit-HEROzine34.png",
+                        "img_link": "./assets/projectImg/my-Markit-HEROzine34.png",
                         "caption": "Zine featuring local vendors and hawkers, sharing their stories."
                     }
                 ],
@@ -1788,11 +1777,11 @@ const FINAL_DATA = [
                 "heading": "MyMarkit! User Flow",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/nhdJRPYZ/my-Markit-HEROactioncards34.png",
+                        "img_link": "./assets/projectImg/my-Markit-HEROactioncards34.png",
                         "caption": "There are three types of action cards that each facilitate a different type of learning: the blue 5 senses card, the red people card, and finally, the green kindness card."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/L63RfXJJ/my-Markit-HEROmap34.png",
+                        "img_link": "./assets/projectImg/my-Markit-HEROmap34.png",
                         "caption": "Map & Directory of the entire wet market, unique to each individual market."
                     }
                 ],
@@ -1859,8 +1848,8 @@ const FINAL_DATA = [
         "portfolio": "https://celesteseah.webflow.io/",
         "cluster": "Social & Service",
         "supervisor": "Yen Ching Chiuan",
-        "projectImgMobile": "https://i.postimg.cc/90y2jTPQ/gradsite-hero-portrait.jpg",
-        "projectImgDesktop": "https://i.postimg.cc/LXcS7v1W/gradsite-hero-landscape.jpg",
+        "projectImgMobile": "./assets/projectImg/gradsite-hero-portrait.jpg",
+        "projectImgDesktop": "./assets/projectImg/gradsite-hero-landscape.jpg",
         "projectTitle": "Rememo",
         "projectDescription": "Bridge the gap between personal and generic photos for dementia reminiscence therapy",
         "video": "",
@@ -1869,11 +1858,11 @@ const FINAL_DATA = [
                 "heading": "For people with dementia, conventional reminiscence materials are too general or too specific",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/c4VZBPp7/gradsite-1-1.jpg",
+                        "img_link": "./assets/projectImg/gradsite-1-1.jpg",
                         "caption": "Journey with the Arts & Dementia (JADe) Conversation Starter Kit"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/G27n8fPy/gradsite-1-2.jpg",
+                        "img_link": "./assets/projectImg/gradsite-1-2.jpg",
                         "caption": "Interview session with Paul who has severe cognitive impairment"
                     }
                 ],
@@ -1889,15 +1878,15 @@ const FINAL_DATA = [
                 "heading": "Exploring AI image generation for reminiscence",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/pr5NJjcB/gradsite-2-1.jpg",
+                        "img_link": "./assets/projectImg/gradsite-2-1.jpg",
                         "caption": "Guided storytelling using prompt cards for image generation"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/VvxxGN3P/gradsite-2-2.jpg",
+                        "img_link": "./assets/projectImg/gradsite-2-2.jpg",
                         "caption": "Different styles of images generated by Midjourney"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/rwkmzyzH/gradsite-2-3.jpg",
+                        "img_link": "./assets/projectImg/gradsite-2-3.jpg",
                         "caption": "Varying levels of immersion: context, third-person and first-person"
                     }
                 ],
@@ -1913,15 +1902,15 @@ const FINAL_DATA = [
                 "heading": "Refining the interaction and service design",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/RFNC2NbW/gradsite-3-1.jpg",
+                        "img_link": "./assets/projectImg/gradsite-3-1.jpg",
                         "caption": "Early user testing with handwritten prompt phrases"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/26MjYrP2/gradsite-3-2.jpg",
+                        "img_link": "./assets/projectImg/gradsite-3-2.jpg",
                         "caption": "Prototype of polaroid camera concept with RFID reader and Raspberry Pi"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/Dzz7bShx/gradsite-3-3.jpg",
+                        "img_link": "./assets/projectImg/gradsite-3-3.jpg",
                         "caption": "User testing multiple card shelves prototype with therapist & seniors"
                     }
                 ],
@@ -1948,8 +1937,8 @@ const FINAL_DATA = [
         "portfolio": "https://sereneportfolio.framer.website/",
         "cluster": "Social & Service",
         "supervisor": "Alistair Norris",
-        "projectImgMobile": "https://i.postimg.cc/9Mkz2kJ1/Hero-Mobile-Cover.png",
-        "projectImgDesktop": "https://i.postimg.cc/8zdFvtzP/Hero-Desktop-Cover.png",
+        "projectImgMobile": "./assets/projectImg/Hero-Mobile-Cover.png",
+        "projectImgDesktop": "./assets/projectImg/Hero-Desktop-Cover.png",
         "projectTitle": "Kampung Spaces",
         "projectDescription": "Community-led design research capturing public vision for future HDB corridors through inclusive dialogue.",
         "video": "https://www.youtube.com/embed/_xQTzCVGhaQ?si=Zfszw9Gvdju_jb2o",
@@ -1958,15 +1947,15 @@ const FINAL_DATA = [
                 "heading": "How can design rekindle the Kampung Spirit that once animated our HDB corridors?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/Gtz79kTM/Hero-1.png",
+                        "img_link": "./assets/projectImg/Hero-1.png",
                         "caption": "Public engagement workshops about HDB corridors"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/MKP3SmSH/Hero-6.png",
+                        "img_link": "./assets/projectImg/Hero-6.png",
                         "caption": ""
                     },
                     {
-                        "img_link": "https://i.postimg.cc/NjZNyGLw/Hero-7.png",
+                        "img_link": "./assets/projectImg/Hero-7.png",
                         "caption": ""
                     }
                 ],
@@ -1982,15 +1971,15 @@ const FINAL_DATA = [
                 "heading": "The Resulting Zine Publication",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/MKK3Nrgg/Hero-3.png",
+                        "img_link": "./assets/projectImg/Hero-3.png",
                         "caption": "Resulting zine collection expressing stories, insights and design principles from research and public discourse."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/c1c5DNkQ/Hero-4.png",
+                        "img_link": "./assets/projectImg/Hero-4.png",
                         "caption": ""
                     },
                     {
-                        "img_link": "https://i.postimg.cc/RZWsVJSR/Hero-5.png",
+                        "img_link": "./assets/projectImg/Hero-5.png",
                         "caption": ""
                     }
                 ],
@@ -2018,8 +2007,8 @@ const FINAL_DATA = [
         "portfolio": "https://www.sherylyeo.com",
         "cluster": "Product Innovation",
         "supervisor": "Yen Ching Chiuan",
-        "projectImgMobile": "https://i.postimg.cc/3J7YZq7N/Cover-Image-Mobile-final.jpg",
-        "projectImgDesktop": "https://i.postimg.cc/rpdkmXGn/Cover-Image-Desktop.jpg",
+        "projectImgMobile": "./assets/projectImg/Cover-Image-Mobile-final.jpg",
+        "projectImgDesktop": "./assets/projectImg/Cover-Image-Desktop.jpg",
         "projectTitle": "AnatoBite",
         "projectDescription": "AnatoBite innovates simplicity in pet dental care with an anatomically designed, plaque-removing toy.",
         "video": "",
@@ -2028,15 +2017,15 @@ const FINAL_DATA = [
                 "heading": "Importance of Dental Health in Dogs",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/WbRhcSVc/Sec-1-Pic-1-Final.jpg",
+                        "img_link": "./assets/projectImg/Sec-1-Pic-1-Final.jpg",
                         "caption": "Neglected tooth care often leads to severe issues requiring surgery."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/gjqnM4p3/yoyo.jpg",
+                        "img_link": "./assets/projectImg/yoyo.jpg",
                         "caption": "Yoyo, a senior dog, with years of plaque buildup."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/9XGRFX9z/acute-long-term.png",
+                        "img_link": "./assets/projectImg/acute-long-term.png",
                         "caption": "Aim to prevent dental issues through proactive, holistic pet care."
                     }
                 ],
@@ -2052,15 +2041,15 @@ const FINAL_DATA = [
                 "heading": "Refinement of AnatoBite Design Based on Canine Dental Anatomy",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/26XVg3LS/prototypes-testings.png",
+                        "img_link": "./assets/projectImg/prototypes-testings.png",
                         "caption": "Prototypes for diverse tooth types, ensuring optimal cleaning."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/FHXLVdQy/Dog-user-testings.png",
+                        "img_link": "./assets/projectImg/Dog-user-testings.png",
                         "caption": "Dogs of different breeds and sizes testing prototypes."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/63SpYSF7/results-new.png",
+                        "img_link": "./assets/projectImg/results-new.png",
                         "caption": "Improvements shown through monitoring dental health changes."
                     }
                 ],
@@ -2074,15 +2063,15 @@ const FINAL_DATA = [
                 "heading": "Innovating Simplicity in Pet Dental Care",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/8C3TBPPg/anatobite-final.jpg",
+                        "img_link": "./assets/projectImg/anatobite-final.jpg",
                         "caption": "Introducing AnatoBite: Anatomical toy for thorough tooth cleaning."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/BQFg3P5y/3-Pic-2-newest.gif",
+                        "img_link": "./assets/projectImg/3-Pic-2-newest.gif",
                         "caption": "Demonstrating dogs' natural chewing, cleaning with AnatoBite."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/9025JD6K/3-Pic-3-final.jpg",
+                        "img_link": "./assets/projectImg/3-Pic-3-final.jpg",
                         "caption": "Dog chewing on AnatoBite, showcasing its dental cleaning effectiveness."
                     }
                 ],
@@ -2108,8 +2097,8 @@ const FINAL_DATA = [
         "portfolio": "https://evotions.cc",
         "cluster": "Social & Service",
         "supervisor": "Tiffany Loy",
-        "projectImgMobile": "https://i.postimg.cc/VvrDM2fS/vflow-Cover-Mobile.jpg",
-        "projectImgDesktop": "https://i.postimg.cc/3J0x4WY9/vflow-Cover.jpg",
+        "projectImgMobile": "./assets/projectImg/vflow-Cover-Mobile.jpg",
+        "projectImgDesktop": "./assets/projectImg/vflow-Cover.jpg",
         "projectTitle": "vFlow",
         "projectDescription": "AI-powered toolkit for event planners, generating visitor heatmaps from footage to capture and archive key insights.",
         "video": "https://www.youtube.com/embed/JBHgZdjo2EE?si=C2QHoWxHCjcd_z_k",
@@ -2118,15 +2107,15 @@ const FINAL_DATA = [
                 "heading": "\"I wanna make Exhibits better\"",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/26YjLfC6/image.png",
+                        "img_link": "./assets/projectImg/image.png",
                         "caption": "Answers from exhibit planners and curators"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/L6591DFz/image.png",
+                        "img_link": "./assets/projectImg/image(5).png",
                         "caption": "Current metrics"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/hGWcNqzr/image.png",
+                        "img_link": "./assets/projectImg/image(2).png",
                         "caption": "Driving Question"
                     }
                 ],
@@ -2140,15 +2129,15 @@ const FINAL_DATA = [
                 "heading": "\"wait..WTF is Engagement?\"",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/L8FWp4Dn/image.png",
+                        "img_link": "./assets/projectImg/image(1).png",
                         "caption": "academic papers about measuring engagement"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/YCTJjftq/image.png",
+                        "img_link": "./assets/projectImg/image(4).png",
                         "caption": "Digital prototypes to test and quantify the different types of engagement"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/FRwMkyyx/image.png",
+                        "img_link": "./assets/projectImg/image(3).png",
                         "caption": "experimenting with computer vision models"
                     }
                 ],
@@ -2164,11 +2153,11 @@ const FINAL_DATA = [
                 "heading": "\"A toolkit for event planners.\"",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/vBw71D1V/66.png",
+                        "img_link": "./assets/projectImg/66.png",
                         "caption": "before and after: Attendees list from previous events vs new insights from vflow"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/7hLBKfqW/Laptop-Screen-Copy.jpg",
+                        "img_link": "./assets/projectImg/Laptop-Screen-Copy.jpg",
                         "caption": "visualisation of the vFlow dashboard"
                     }
                 ],
@@ -2195,8 +2184,8 @@ const FINAL_DATA = [
         "email": "syafiq.bin.rahim@gmail.com ",
         "cluster": "Social & Service",
         "supervisor": "Patrick Chia",
-        "projectImgMobile": "https://i.postimg.cc/j54fQ5cn/DSCF3087-2.jpg",
-        "projectImgDesktop": "https://i.postimg.cc/NGd9SCV2/DSCF3087-3.jpg",
+        "projectImgMobile": "./assets/projectImg/DSCF3087-2.jpg",
+        "projectImgDesktop": "./assets/projectImg/DSCF3087-3.jpg",
         "projectTitle": "Projek Ginjal",
         "projectDescription": "Projek Ginjal aims to educates Singapore's Malay community about kidney health at neighborhood mosques",
         "video": "https://www.youtube.com/embed/6pFuSyEbfu0?si=XcRN8G8KYr2YquhQ",
@@ -2205,11 +2194,11 @@ const FINAL_DATA = [
                 "heading": "Kidney Awareness Exhibition",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/YCv1KtrT/DSCF3047-MOV-06-10-37-05-Still001-2.jpg",
+                        "img_link": "./assets/projectImg/DSCF3047-MOV-06-10-37-05-Still001-2.jpg",
                         "caption": "Mosque congregates gathered to around booth to learn about kidney disease"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/W3vrkrGP/DSCF3097.jpg",
+                        "img_link": "./assets/projectImg/DSCF3097.jpg",
                         "caption": "Participants tested their kidney conditions in mosque"
                     }
                 ],
@@ -2221,11 +2210,11 @@ const FINAL_DATA = [
                 "heading": "Urine Test Kit",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/YSgY08m3/DSCF3101-MOV-06-21-21-16-Still001.jpg",
+                        "img_link": "./assets/projectImg/DSCF3101-MOV-06-21-21-16-Still001.jpg",
                         "caption": "Test strip designed to test for Kidney disease"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/JzSjRSt0/photo-2024-05-01-19-50-49.jpg",
+                        "img_link": "./assets/projectImg/photo-2024-05-01-19-50-49.jpg",
                         "caption": "Test result of participant turned brown, indicating high glucose level"
                     }
                 ],
@@ -2249,8 +2238,8 @@ const FINAL_DATA = [
         "email": "cunjiatan@gmail.com",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Olivia Lee",
-        "projectImgMobile": "https://i.postimg.cc/bvBz6wfq/CJ-Thesis-Cover-Mobile.jpg",
-        "projectImgDesktop": "https://i.postimg.cc/7hhx7qMT/CJ-Thesis-Cover-Desktop.jpg",
+        "projectImgMobile": "./assets/projectImg/CJ-Thesis-Cover-Mobile.jpg",
+        "projectImgDesktop": "./assets/projectImg/CJ-Thesis-Cover-Desktop.jpg",
         "projectTitle": "Standard Singlish",
         "projectDescription": "Standard Singlish challenges Singlish\u2019s status through a new typographical system design.",
         "video": "",
@@ -2259,11 +2248,11 @@ const FINAL_DATA = [
                 "heading": "A Singlish Typographical System? Can or Not?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/ZK24Xt4J/CJ-Thesis-Picture1.jpg",
+                        "img_link": "./assets/projectImg/CJ-Thesis-Picture1.jpg",
                         "caption": "Set of Singlish education materials"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/zvWYr3J5/CJ-Thesis-Picture2.jpg",
+                        "img_link": "./assets/projectImg/CJ-Thesis-Picture2.jpg",
                         "caption": "Singlish typographical system"
                     }
                 ],
@@ -2277,11 +2266,11 @@ const FINAL_DATA = [
                 "heading": "Imagine a world where Singlish is formalised. Would its status change?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/C5wsFQ01/CJ-Thesis-Picture3.jpg",
+                        "img_link": "./assets/projectImg/CJ-Thesis-Picture3.jpg",
                         "caption": "Attempting the PSLE Singlish book"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/xdxXkpL8/CJ-Thesis-Picture4.jpg",
+                        "img_link": "./assets/projectImg/CJ-Thesis-Picture4.jpg",
                         "caption": ""
                     }
                 ],
@@ -2305,8 +2294,8 @@ const FINAL_DATA = [
         "portfolio": "https://drive.google.com/file/d/15klAOnW0M9EvZm4KjQWZqAZKdvYivyHC/view?usp=sharing",
         "cluster": "Social & Service",
         "supervisor": "Tiffany Loy",
-        "projectImgMobile": "https://i.postimg.cc/B6p23Y2J/AMUSE-HEROSHOT-CLOSER.jpg",
-        "projectImgDesktop": "https://i.postimg.cc/BbfBZLVC/AMUSE-HERO-SHOT.jpg",
+        "projectImgMobile": "./assets/projectImg/AMUSE-HEROSHOT-CLOSER.png",
+        "projectImgDesktop": "./assets/projectImg/AMUSE-HERO-SHOT.jpg",
         "projectTitle": "HerMuse",
         "projectDescription": "Transforms lipstick gifting by fostering interpersonal interaction, shifting from an individual journey to a shared beauty experience. ",
         "video": "",
@@ -2315,15 +2304,15 @@ const FINAL_DATA = [
                 "heading": "Lipstick gifting holds personal significance that is often overshadowed.",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/B6p23Y2J/AMUSE-HEROSHOT-CLOSER.jpg",
+                        "img_link": "./assets/projectImg/AMUSE-HEROSHOT-CLOSER.jpg",
                         "caption": "HerMuse Box and Lipstick Packaging"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/K8GsdZqV/IMG-2788-2.jpg",
+                        "img_link": "./assets/projectImg/IMG-2788-2.jpg",
                         "caption": "Unboxing experience"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/qRP5YySX/IMG-2813.jpg",
+                        "img_link": "./assets/projectImg/IMG-2813.jpg",
                         "caption": "Interactions between giver and recipient"
                     }
                 ],
@@ -2343,15 +2332,15 @@ const FINAL_DATA = [
                 "heading": "In some cultures, lipstick is a meaningful gift signifying new beginnings",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/G2dBj5hk/Black-Video-00-01-44-08-Still014.jpg",
+                        "img_link": "./assets/projectImg/Black-Video-00-01-44-08-Still014.jpg",
                         "caption": "First insight generated from interviews and survey"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/mDjPpytK/Black-Video-00-02-04-17-Still011.jpg",
+                        "img_link": "./assets/projectImg/Black-Video-00-02-04-17-Still011.jpg",
                         "caption": "Second insight generated from interviews and survey"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/N0wLgzXW/Insights.jpg",
+                        "img_link": "./assets/projectImg/Insights.jpg",
                         "caption": "Summary of insights"
                     }
                 ],
@@ -2368,15 +2357,15 @@ const FINAL_DATA = [
                 "heading": "Developed kit based on potential client, AMUSE",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/zDLLFKq2/IMG-2789-2.jpg",
+                        "img_link": "./assets/projectImg/IMG-2789-2.jpg",
                         "caption": "This or That cards prompting conversations around lipstick"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/pTmdkMM5/IMG-2803.jpg",
+                        "img_link": "./assets/projectImg/IMG-2803.jpg",
                         "caption": "Seasonal colour palette analysis"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/7Y3ZKNd9/two-lipstick.jpg",
+                        "img_link": "./assets/projectImg/two-lipstick.jpg",
                         "caption": "Receive lipsticks which are chosen through HerMuse kit"
                     }
                 ],
@@ -2402,8 +2391,8 @@ const FINAL_DATA = [
         "behance": "https://www.behance.net/valerieng9",
         "cluster": "Social & Service",
         "supervisor": "Tiffany Loy",
-        "projectImgMobile": "https://i.postimg.cc/85MXKmS3/Slide-4-3-1.png",
-        "projectImgDesktop": "https://i.postimg.cc/GtR7ZT3p/Slide-16-9-61.png",
+        "projectImgMobile": "./assets/projectImg/Slide-4-3-1.png",
+        "projectImgDesktop": "./assets/projectImg/Slide-16-9-61.png",
         "projectTitle": "True Cost of Fashion Exhibition",
         "projectDescription": "An exhibition designed to raise awareness among students about environmental impacts of fast fashion",
         "video": "https://www.youtube.com/embed/okMO9vEAM0Y?si=_YIIgeX8VPzdqkg1",
@@ -2412,7 +2401,7 @@ const FINAL_DATA = [
                 "heading": "Fast Fashion's Hidden Price: What Teens Don't See",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/GtR7ZT3p/Slide-16-9-61.png",
+                        "img_link": "./assets/projectImg/Slide-16-9-61.png",
                         "caption": "Overview of exhibition"
                     }
                 ],
@@ -2426,7 +2415,7 @@ const FINAL_DATA = [
                 "heading": "Going beyond the tag, beyond the barcode",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/PJmkvVMr/Mock-Up-2-copy.png",
+                        "img_link": "./assets/projectImg/Mock-Up-2-copy.png",
                         "caption": "Design of the tags"
                     }
                 ],
@@ -2442,15 +2431,15 @@ const FINAL_DATA = [
                 "heading": "Envisioning a sustainable future, starting with education.",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/VNjTR0CD/photo-2024-05-19-00-30-48.jpg",
+                        "img_link": "./assets/projectImg/photo-2024-05-19-00-30-48.jpg",
                         "caption": "User testing"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/L8F3VC3F/photo-2024-05-19-00-30-37.jpg",
+                        "img_link": "./assets/projectImg/photo-2024-05-19-00-30-37.jpg",
                         "caption": "User testing"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/GtYqcZxz/photo-2024-05-19-00-30-18.jpg",
+                        "img_link": "./assets/projectImg/photo-2024-05-19-00-30-18.jpg",
                         "caption": "User testing"
                     }
                 ],
@@ -2475,8 +2464,8 @@ const FINAL_DATA = [
         "portfolio": "https://tanya-portfolio.com/",
         "cluster": "Social & Service",
         "supervisor": "Alistair Norris",
-        "projectImgMobile": "https://i.postimg.cc/zDLBfSxc/Cover.png",
-        "projectImgDesktop": "https://i.postimg.cc/X7q1yqRq/Cover2.png",
+        "projectImgMobile": "./assets/projectImg/Cover.png",
+        "projectImgDesktop": "./assets/projectImg/Cover2.png",
         "projectTitle": "Exploring Anxiety",
         "projectDescription": "Helping the undiagnosed to take their first steps toward recognising anxiety through a storytelling game.",
         "video": "https://www.youtube.com/embed/UGE_MxJRLzQ?si=0prmqh3_dVaAJOvo",
@@ -2485,15 +2474,15 @@ const FINAL_DATA = [
                 "heading": "Do I have... anxiety?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/CLhtwXX0/Int1.png",
+                        "img_link": "./assets/projectImg/Int1.png",
                         "caption": "User study with prototype"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/tCBcJDGx/Int2.png",
+                        "img_link": "./assets/projectImg/Int2.png",
                         "caption": "User Research"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/qvg53npZ/Int3.png",
+                        "img_link": "./assets/projectImg/Int3.png",
                         "caption": "Interview with Psychologist"
                     }
                 ],
@@ -2518,15 +2507,15 @@ const FINAL_DATA = [
                 "heading": "How can a game help?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/yYbv4NX3/proto1.png",
+                        "img_link": "./assets/projectImg/proto1.png",
                         "caption": "Prototype testing"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/PfKSyyC4/proto2.png",
+                        "img_link": "./assets/projectImg/proto2.png",
                         "caption": "Prototype testing"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/tCT2M6PH/proto3.png",
+                        "img_link": "./assets/projectImg/proto3.png",
                         "caption": "Prototype testing"
                     }
                 ],
@@ -2543,15 +2532,15 @@ const FINAL_DATA = [
                 "heading": "The Phone Call: A game to self reflect",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/JhcNn7Jq/Tanya-Thesis-1-RGB.png",
+                        "img_link": "./assets/projectImg/Tanya-Thesis-1-RGB.png",
                         "caption": "Game preview"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/7hb0mgRs/Tanya-Thesis-2-RGB.png",
+                        "img_link": "./assets/projectImg/Tanya-Thesis-2-RGB.png",
                         "caption": "Game preview"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/5yGvGXdx/Tanya-Thesis-3-RGB.png",
+                        "img_link": "./assets/projectImg/Tanya-Thesis-3-RGB.png",
                         "caption": "Game preview"
                     }
                 ],
@@ -2577,7 +2566,7 @@ const FINAL_DATA = [
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Grace Tan",
         "projectImgMobile": "www.dummypic.com",
-        "projectImgDesktop": "https://i.postimg.cc/tgDn4TRf/Hero-1-16-x-9-RGB.png",
+        "projectImgDesktop": "./assets/projectImg/Hero-1-16-x-9-RGB.png",
         "projectTitle": "Re:Food",
         "projectDescription": "Revolutionising our relationship with food, ingredients and waste.",
         "video": "",
@@ -2608,7 +2597,7 @@ const FINAL_DATA = [
                         "caption": "User testing"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/TwLbNxG4/Hero-2-4x3-RGB.jpg",
+                        "img_link": "./assets/projectImg/Hero-2-4x3-RGB.jpg",
                         "caption": "food cover"
                     }
                 ],
@@ -2624,7 +2613,7 @@ const FINAL_DATA = [
                 "heading": "Wanna try?",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/L88n0S33/Hero-3-16x9-RGB.jpg",
+                        "img_link": "./assets/projectImg/Hero-3-16x9-RGB.jpg",
                         "caption": "Try out some snacks at my booth!"
                     }
                 ],
@@ -2652,8 +2641,8 @@ const FINAL_DATA = [
         "portfolio": "https://yangdesign-504954.webflow.io/",
         "cluster": "Critical Inquiry & Design Futures",
         "supervisor": "Hans Tan",
-        "projectImgMobile": "https://i.postimg.cc/brx4nPRj/Grain-Glow.jpg",
-        "projectImgDesktop": "https://i.postimg.cc/zDKs6wYP/Product-shot.jpg",
+        "projectImgMobile": "./assets/projectImg/Grain-Glow.jpg",
+        "projectImgDesktop": "./assets/projectImg/Product-shot.jpg",
         "projectTitle": "GrainGlow",
         "projectDescription": "GrainGlow advocates for mindfulness by embracing a process-based approach Inspired by traditional remedies at home.",
         "video": "https://www.youtube.com/embed/ls5hunZUdWU?si=eFL8fXlbYu2DqEtC",
@@ -2662,15 +2651,15 @@ const FINAL_DATA = [
                 "heading": "An opportunity to be mindful in one\u2019s skin care journey",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/6QD9L9C7/DSF7941.jpg",
+                        "img_link": "./assets/projectImg/DSF7941.jpg",
                         "caption": "GrainGlow is both a mold and a mask."
                     },
                     {
-                        "img_link": "https://i.postimg.cc/sxWs0b9n/Face-Mask.jpg",
+                        "img_link": "./assets/projectImg/Face-Mask.jpg",
                         "caption": "GrainGlow on user"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/8CCHBGTV/21.jpg",
+                        "img_link": "./assets/projectImg/21.jpg",
                         "caption": "GrainGlow includes an informational microsite"
                     }
                 ],
@@ -2682,15 +2671,15 @@ const FINAL_DATA = [
                 "heading": "GrainGlow Microsite",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/c19hWSvz/15.jpg",
+                        "img_link": "./assets/projectImg/15.jpg",
                         "caption": "GrainGlow microsite"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/15JV0qXf/Instructions.jpg",
+                        "img_link": "./assets/projectImg/Instructions.jpg",
                         "caption": "Instructional guide for users"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/gJmGBgBd/Case-studies-and-additives.jpg",
+                        "img_link": "./assets/projectImg/Case-studies-and-additives.jpg",
                         "caption": "Case studies and other natural additives"
                     }
                 ],
@@ -2714,8 +2703,8 @@ const FINAL_DATA = [
         "behance": "https://www.behance.net/gzhang",
         "cluster": "Social & Service",
         "supervisor": "Patrick Chia",
-        "projectImgMobile": "https://i.postimg.cc/wxNxNWL0/3-4.png",
-        "projectImgDesktop": "https://i.postimg.cc/GmgnVYv4/16-9.png",
+        "projectImgMobile": "./assets/projectImg/3-4.png",
+        "projectImgDesktop": "./assets/projectImg/16-9.png",
         "projectTitle": "Don't Be Salty Lah",
         "projectDescription": "Don\u2019t Be Salty Lah, an initiative aimed to onboard NUS food vendors to reduce sodium in their dishes",
         "video": "https://www.youtube.com/embed/f3X0XPpR5lc?si=ZemznY-HgTD-hzu7",
@@ -2724,7 +2713,7 @@ const FINAL_DATA = [
                 "heading": "Reducing salt intake is the most cost effective measure to combat hypertension - the leading cause of death \n",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/hP0Z2H8h/IMG-6228.jpg",
+                        "img_link": "./assets/projectImg/IMG-6228.jpg",
                         "caption": "Onboarding NUS food vendors"
                     }
                 ],
@@ -2740,7 +2729,7 @@ const FINAL_DATA = [
                 "heading": "Interviews revealed that reducing sodium is not straightforward ",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/wM3FZyzk/Slide-16-9-67.jpg",
+                        "img_link": "./assets/projectImg/Slide-16-9-67.jpg",
                         "caption": "Vendors\u2019 concerns to swap to lower sodium salt"
                     }
                 ],
@@ -2757,15 +2746,15 @@ const FINAL_DATA = [
                 "heading": "A self-assuring system to empower vendors to confidently transition to lower sodium",
                 "pictures": [
                     {
-                        "img_link": "https://i.postimg.cc/rpcgGyhQ/Journey-Map-A2.png ",
+                        "img_link": "./assets/projectImg/Journey-Map-A2.png ",
                         "caption": ""
                     },
                     {
-                        "img_link": "https://i.postimg.cc/T1BdFKvq/Service-Blueprint.png ",
+                        "img_link": "./assets/projectImg/Service-Blueprint.png ",
                         "caption": "Service Blueprint"
                     },
                     {
-                        "img_link": "https://i.postimg.cc/SNWR3Gjn/Guide.jpg ",
+                        "img_link": "./assets/projectImg/Guide.jpg ",
                         "caption": "Onboarding Guide Pamphlet "
                     }
                 ],
