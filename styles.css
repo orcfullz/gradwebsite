@@ -359,7 +359,7 @@ a {
 }
 
 .animated-circle {
-    position: absolute;
+    position: fixed; /* Changed from absolute to fixed */
     opacity: 0.4;
     background: var(--main-color-yellow);
     width: 0px;
@@ -367,8 +367,12 @@ a {
     border-radius: 100% 100% 100% 100%;
     bottom: 0;
     left: -200px;
+    z-index: 9999; /* Ensure it's on top of other elements */
+    pointer-events: none; /* Prevent interaction with the circle */
     transition: width 1000ms ease, height 1000ms ease, opacity 500ms ease;
 }
+
+  
 
 .enlarge {
     transform: translate(-30vw, -100vh);
