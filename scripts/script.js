@@ -65,21 +65,21 @@ window.onload = () => {
   
   let navMenu = document.getElementById("navigation-menu");
 
-  // document.querySelector("#arrow-down").addEventListener('click', function (e) {
-  //   document.querySelector("#arrow-down-drag").classList.add("move-down");
-  //   setTimeout(function () {
-  //     document.querySelector("#arrow-down-drag").classList.remove("move-down");
-  //   }, 1000);
-  //   welcomePageAnimation(e);
-  // });
+  document.querySelector("#arrow-down").addEventListener('click', function (e) {
+    document.querySelector("#arrow-down-drag").classList.add("move-down");
+    setTimeout(function () {
+      document.querySelector("#arrow-down-drag").classList.remove("move-down");
+    }, 1000);
+    welcomePageAnimation(e);
+  });
 
-  // document.querySelector("#arrow-right").addEventListener('click', function (e) {
-  //   document.querySelector("#arrow-right-drag").classList.add("move-right");
-  //   setTimeout(function () {
-  //     document.querySelector("#arrow-right-drag").classList.remove("move-right");
-  //   }, 1000);
-  //   welcomePageAnimation(e);
-  // })
+  document.querySelector("#arrow-right").addEventListener('click', function (e) {
+    document.querySelector("#arrow-right-drag").classList.add("move-right");
+    setTimeout(function () {
+      document.querySelector("#arrow-right-drag").classList.remove("move-right");
+    }, 1000);
+    welcomePageAnimation(e);
+  })
 
   // window.addEventListener('resize', documentHeight)
   documentHeight();
