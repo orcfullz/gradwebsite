@@ -6,6 +6,8 @@
     <title>Event Guide</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="scripts/event.js" type="module"></script>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <link rel="icon" href="./assets/Logo.png">
 </head>
 <body>
     <!-- <div class="cursor trail"></div> -->
@@ -14,15 +16,17 @@
         <div id="navigation-menu-event" class="navigation-menu">
             <div id="navigation-logo">
                 <a href="./index.html">
-                <img src="assets/logo_navigation.png" alt="logo" id="navigation-img">
+                <img src="assets/logo_navigation.svg" alt="logo" id="navigation-img">
                 </a>
             </div>
             <div class="topnav" id="navigation-list">
                 <nav id="nav-bar">
                   <ul>
                     <li><a href="./event-guide.html" class="nav-link">Event Guide</a></li>
-                    <li><a href="./index.html#main-page" class="nav-link">Designers</a></li>
-                    <li><a href="https://cde.nus.edu.sg/did/" target="_blank" class="nav-link">About DID</a></li>
+                    <li><a href="./index.html?filter=designer#main-page" class="nav-link">Designers</a></li>
+                    <li><a href="./index.html?filter=works#main-page" class="nav-link">Works</a></li>
+                    <li><a href="./about-us.html" class="nav-link">About DID</a></li>
+                    <li><a href="./assets/Gradbook2024.pdf" target="_blank" class="nav-link">Gradbook</a></li>
                   </ul>
                 </nav>
             </div>
@@ -30,24 +34,26 @@
         <div id="navigation-menu-event-mobile" class="navigation-menu navigation-menu-mobile">
             <div id="navigation-logo-mobile">
                 <a href="./index.html">
-                <img src="assets/logo_navigation.png" alt="logo" class="navigation-img-mobile">
+                <img src="assets/logo_navigation.svg" alt="logo" class="navigation-img-mobile">
                 </a>
             </div>
             <div id="menu-icon" class="menu-icon">
-                <img src="assets/menu-icon.png" alt="logo" class="menu-img">
+                <img src="assets/menu-icon.svg" alt="logo" class="menu-img">
             </div>
             <div class="topnav" id="navigation-list-mobile">
                 <div id="navigation-mobile-event" class="navigation-mobile">
                     <nav id="nav-bar-mobile">
                         <ul>
                           <li><a href="./event-guide.html" class="nav-link-event">Event Guide</a></li>
-                          <li><a href="./index.html#main-page" class="nav-link-event close-to-des">Designers</a></li>
-                          <li><a href="https://cde.nus.edu.sg/did/" target="_blank" class="nav-link-event">About DID</a></li>
+                          <li><a href="./index.html?filter=designer#main-page" class="nav-link-event close-to-des">Designers</a></li>
+                          <li><a href="./index.html?filter=works#main-page" class="nav-link-event close-to-des">Works</a></li>
+                          <li><a href="./about-us.html" class="nav-link-event">About DID</a></li>
+                          <li><a href="./assets/Gradbook2024.pdf" target="_blank" class="nav-link-event">Gradbook</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div id="navigation-button-event" class="navigation-button">
-                    <img src="assets/navigation-x-light.svg" class="navigation-button-img">
+                    <img src="./assets/navigation-x-light.svg" class="navigation-button-img">
                 </div>
             </div>
         </div>
@@ -61,10 +67,10 @@
                     </div>
                     <div id="rsvp-link" class="row">
                         <div id="rsvp-link-text" class="yellow">
-                            RSVP for Industry Night
+                            Event Map
                         </div>
                         <div id="rsvp-link-img">
-                            <img src="assets/link.svg" alt="logo" id="rsvp-img">
+                            <img src="./assets/link_event_map.svg" alt="logo" id="rsvp-img">
                         </div>
                     </div>
                 </div>
@@ -101,74 +107,90 @@
                     </div>
                 </div>
             </div>
-            <div id="event-guide-direction" class="column">
-                <div id="getting-there">
-                    <div id="getting-there-content">
-                        <div id="getting-there-title" class="yellow subtitle-1">
-                            Getting There
+            <div id="event-direction-merch">
+                <div id="event-guide-direction" class="row">
+                    <div id="getting-there">
+                        <div id="getting-there-content">
+                            <div id="getting-there-title" class="yellow subtitle-1">
+                                Getting There
+                            </div>
+                            <div id="getting-there-text" class="text">
+                                Ascent Building<br>2 Science Park Drive<br>Singapore Science Park 1<br>Singapore 118222
+                            </div>
                         </div>
-                        <div id="getting-there-text" class="text">
-                            Ascent Building<br>2 Science Park Drive<br>Singapore Science Park 1<br>Singapore 118222
+                        <div id="getting-there-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.806426452342!2d103.78275401083476!3d1.2904397617578856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1b161a130d85%3A0x85145b0e9467a1b2!2sAscent%20pick-up%20point!5e0!3m2!1sen!2ssg!4v1709077121038!5m2!1sen!2ssg" width="100%" height="100%" style="border:0;" allowfullscreen="" borderRadius="10px" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="google-map"></iframe>
                         </div>
                     </div>
-                    <div id="getting-there-image" class="event-image">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.806426452342!2d103.78275401083476!3d1.2904397617578856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1b161a130d85%3A0x85145b0e9467a1b2!2sAscent%20pick-up%20point!5e0!3m2!1sen!2ssg!4v1709077121038!5m2!1sen!2ssg" width="100%" height="100%" style="border:0;" allowfullscreen="" borderRadius="10px" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="google-map"></iframe>
+
+                    <div id="getting-there-by">
+                        <div id="getting-there-by-text">
+                            <div class="tab">
+                                <button id="by-car-button" class="tablinks defaultOpen subtitle-2 clickable">By car</button>
+                                <button id="by-train-button" class="tablinks subtitle-2 clickable">By train</button>
+                                <button id="by-bus-button" class="tablinks subtitle-2 clickable">By bus</button>
+                            </div>
+
+                            <div id="by-car-content" class="by-car tabcontent by-way">
+                                <div id="by-car-text" class="text text-width">
+                                    From Ayer Rajah Expressway (AYE), take the Normanton Park or South Buona Vista Road exit and then take the turn into Science Park Drive.
+                                </div>
+                            </div>
+
+                            <div id="by-train-content" class="by-train tabcontent by-way">
+                                <div id="by-train-text" class="text text-width">
+                                    Take the Circle Line and alight at Kent Ridge MRT and then take Exit B. Visitors can access the park by foot or take the Singapore Science Park shuttle bus.
+                                </div>
+                            </div>
+
+                            <div id="by-bus-content" class="by-bus tabcontent by-way">
+                                <div id="by-bus-text" class="text text-width">
+                                    Take public Bus No. 92/ 92A from Buona Vista MRT Station. Other public Bus services plying along Buona Vista Flyover are 14, 33, 97, 166, 197, 963 and 963e.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="getting-there-by-image">
+                            <div id="by-car-image" class="by-car tabcontent event-image">
+                                <img src="assets/by-car.png" alt="by-car" id="by-car-img" class="by-way-images">
+                            </div>
+                            <div id="by-train-image" class="by-train tabcontent event-image">
+                                <img src="assets/by-train.png" alt="by-train" id="by-train-img" class="by-way-images">
+                            </div>
+                            <div id="by-bus-images" class="by-bus tabcontent by-way-images">
+                                <p class="text">
+                                <span class="yellow bus-stop">Opp Ascent(15181)</span>
+                                <br>Bus 92
+                                </p>
+                                <p class="text">
+                                <span class="yellow bus-stop">Ascent(15189)</span>
+                                <br>Bus 92
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div id="getting-there-by" class="row">
-                    <div id="by-car" class="by-way">
-                        <div id="by-car-content" class="first-content">
-                            <div id="by-car-title" class="yellow subtitle-2">
-                                By car
-                            </div>
-                            <div id="by-car-text" class="text  text-width">
-                                From Ayer Rajah Expressway (AYE), take the Normanton Park or South Buona Vista Road exit and then take the turn into Science Park Drive.
-                            </div>
-                        </div>
-                        <div id="by-car-image" class="second-content event-image">
-                            <img src="assets/by-car.png" alt="by-car" id="by-car-img" class="by-way-images">
+                <div id="event-merch-splash">
+                    <div id="event-merch-text">
+                        <p class="yellow subtitle-1">Merch!</p>
+                        <div class="text text-width">
+                           Get our exclusive merch when you visit our show! While stocks last ~
                         </div>
                     </div>
-                    <div id="by-train" class="by-way">
-                        <div id="by-train-content" class="first-content">
-                            <div id="by-train-title" class="yellow subtitle-2">
-                                By train
-                            </div>
-                            <div id="by-train-text" class="text text-width">
-                                Take the Circle Line and alight at Kent Ridge MRT and then take Exit B. Visitors can access the park by foot or take the Singapore Science Park shuttle bus.
-                            </div>
+                    <div id="event-merch-images">
+                        <div id="event-merch-totes">
+                            <img src="assets/tote_bag.png">
                         </div>
-                        <div id="by-train-image" class="second-content event-image">
-                            <img src="assets/by-train.png" alt="by-train" id="by-train-img" class="by-way-images">
-                        </div>
-                    </div>
-                    <div id="by-bus" class="by-way">
-                        <div id="by-bus-content" class="first-content">
-                            <div id="by-bus-title" class="yellow subtitle-2">
-                                By bus
+                        <div id="event-merch-block-ironon">
+                            <div id="event-merch-block">
+                                <img src="assets/creative_juices_block.png">
                             </div>
-                            <div id="by-bus-text" class="text">
-                                Take public Bus No. 92/ 92A from Buona Vista MRT Station. Other public Bus services plying along Buona Vista Flyover are 14, 33, 97, 166, 197, 963 and 963e.
-                            </div>
-                        </div>
-                        <div id="by-bus-second" class="second-content">
-                            <div id="nearest-bus" class="yellow subtitle-2">
-                                Nearest bus stops
-                            </div>
-                            <div id="by-bus-images" class="row">
-                                <div class="bus-images event-image">
-                                    <img src="assets/by-bus-1.png" alt="by-bus" class="by-bus-img">
-                                    <p class="text">
-                                    <span class="yellow bus-stop">Opp Ascent(15181)</span>
-                                    <br>Bus 92
-                                    </p>
+                            <div id="event-merch-ironon">
+                                <div id="event-merch-ironon1">
+                                    <img src="assets/iron_on_1.png">
                                 </div>
-                                <div class="bus-images event-image">
-                                    <img src="assets/by-bus-1.png" alt="by-bus" class="by-bus-img">
-                                    <p class="text">
-                                    <span class="yellow bus-stop">Ascent(15189)</span>
-                                    <br>Bus 92
-                                    </p>
+                                <div id="event-merch-ironon2">
+                                    <img src="assets/iron_on_2.png">
                                 </div>
                             </div>
                         </div>
@@ -176,7 +198,29 @@
                 </div>
             </div>
         </div>
-        <div id="footer-event" class="footer">
+        <div id="event-sponsors">
+            <div class="event-sponsors-images">
+                <img src="./assets/nus-cde.png">
+                <img src="./assets/JDF_2016_JDF logo short.jpg">
+                <img src="./assets/20160505_SSP_Logo.png">
+            </div>
+
+            <div class="event-sponsors-images mobile">
+                <div>
+                    <img src="./assets/20160505_SSP_Logo.png">
+                    <img src="./assets/nus-cde-small.png">
+                </div>
+                <div>
+                    <img src="./assets/JDF_2016_JDF logo short.jpg">
+                </div>
+            </div>
+
+            <div id="event-sponsors-text">
+                <div id="event-support">Event Support</div>
+                <div id="event-support-text">We owe our gratitude to these sponsors</div>
+            </div>
+        </div>
+        <div id="footer-event" class="footer webpage">
             <div class="footer-logo">
                 <div id="logo-footer-event" class="logo-footer"></div>
                 <div id="footer-text-event" class="footer-text">DID Grad Show</div>
@@ -184,24 +228,46 @@
             <div id="footer-description-event" class="footer-description">
                 <div class="webpage">
                     7-10 June 2024&nbsp&nbsp&nbsp&nbsp&#8226&nbsp&nbsp&nbsp&nbspAscent Building, 118222
-                </div>
-                <div class="mobile">
-                    7-10 June 2024
-                </div>
-                <div class="mobile">
-                    Ascent Building<br>
-                    2 Science Park Drive<br>
-                    Singapore Science Park 1<br>
-                    Singapore 118222
+                    <a href="https://g.co/kgs/vUVvbXq" target="_blank"><div class="footer-description-location-logo event clickable"></div></a>
                 </div>
             </div>
             <div id="footer-social-event" class="footer-social">
                 <a href="https://www.instagram.com/nusdidshow.24/" target="_blank"><div id="instagram-light" class="social"></div></a>
-                <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="vina-setiawaty.github.io/gradwebsite" data-a2a-title="DID 24 Gradshow">
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
                     <a class="a2a_dd" href="https://www.addtoany.com/share"><div id="share-light" class="social"></div></a>
                 </div>
             </div>
         </div>
+
+        <div id="footer-mobile" class="footer mobile">
+            <div class="footer-social">
+                <a href="https://www.instagram.com/nusdidshow.24/" target="_blank"><div id="instagram-light" class="social"></div></a>
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                    <a class="a2a_dd" href="https://www.addtoany.com/share"><div id="share-light" class="social"></div></a>
+                </div>
+            </div>
+            <div class="footer-logo-location event mobile">
+                <div class="footer-logo">
+                    <div id="logo-footer-event" class="logo-footer"></div>
+                </div>
+                <div id="footer-description-event" class="footer-description">
+                    <div class="mobile">
+                        <span class="bold">7-10 June 2024</span>
+                    </div>
+                    <div class="mobile">
+                        <span class="bold">Ascent Building</span>
+                        2 Science Park Drive<br>
+                        Singapore 118222<br>
+                    </div>
+                </div>
+                <a href="https://g.co/kgs/vUVvbXq" target="_blank"><div class="footer-description-location-logo event clickable"></div></a>
+            </div>
+        </div>
     </div>
 </body>
+<script>
+    a2a_config.linkname = 'DID Gradshow 2024 - Event Guide';
+    a2a_config.linkurl = window.location.href;
+    a2a.init('page');
+</script>
 </html>
