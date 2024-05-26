@@ -1,4 +1,6 @@
 import { DATA, FINAL_DATA } from "./data.js";
+import { initializeCursor } from "./cursor.js";
+
 const mouse = { x: 0, y: 0 };
 let filter = "designer";
 let params;
@@ -24,6 +26,7 @@ window.onload = () => {
     let url = new URL(window.location.href);
     url.searchParams.set('filter', 'designer');
     window.history.replaceState({}, '', url);
+    setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
   });
 
   document.querySelector("#project-filter").addEventListener("click", (e) => {
@@ -31,35 +34,23 @@ window.onload = () => {
     let url = new URL(window.location.href);
     url.searchParams.set('filter', 'works');
     window.history.replaceState({}, '', url);
+    setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
   });
 
   document.querySelector(".menu-icon").addEventListener("click", (e) => {
     openMenu();
+    setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
   });
 
   document.querySelector(".navigation-button").addEventListener("click", (e) => {
     closeMenu();
+    setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
   });
 
   document.querySelector(".close-to-des").addEventListener("click", (e) => {
     closeMenu();
+    setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
   });
-
-  window.addEventListener('mousemove', moveCursor);
-
-  const linkArray = document.querySelectorAll("a, .clickable, .designer-element, #arrow-down, #arrow-right");
-
-  linkArray.forEach(d => {
-    d.addEventListener("mouseenter", (e) => {
-      document.querySelector(".cursor.small").classList.add("link");
-    });
-
-    d.addEventListener("mouseleave", (e) => {
-      document.querySelector(".cursor.small").classList.remove("link");
-    });
-  });
-
-  let navMenu = document.getElementById("navigation-menu");
 
   document.querySelector("#arrow-down").addEventListener('click', function (e) {
     e.preventDefault(); // Prevent default scroll action
@@ -68,6 +59,7 @@ window.onload = () => {
       document.querySelector("#arrow-down-drag").classList.remove("move-down");
     }, 1000);
     welcomePageAnimation(e, "#arrow-down");
+    setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
   });
 
   document.querySelector("#arrow-right").addEventListener('click', function (e) {
@@ -77,6 +69,7 @@ window.onload = () => {
       document.querySelector("#arrow-right-drag").classList.remove("move-right");
     }, 1000);
     welcomePageAnimation(e, "#arrow-right");
+    setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
   });
 
   documentHeight();
@@ -95,6 +88,7 @@ window.onload = () => {
         arrowDown.style.top = "0px";
       }, 1000);
       welcomePageAnimation(e, "#arrow-down");
+      setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
     }
   }
 
@@ -105,6 +99,7 @@ window.onload = () => {
 
   document.addEventListener("mouseup", () => {
     document.removeEventListener("mousemove", move);
+    setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
   });
 
   let arrowRight = document.querySelector("#arrow-right-drag");
@@ -121,6 +116,7 @@ window.onload = () => {
         arrowRight.style.left = "-260px";
       }, 1000);
       welcomePageAnimation(e, "#arrow-right");
+      setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
     }
   }
 
@@ -134,6 +130,7 @@ window.onload = () => {
     setTimeout(function () {
       arrowRight.style.left = "-260px";
     }, 100);
+    setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
   });
 
   function moveRightTouch(e) {
@@ -148,6 +145,7 @@ window.onload = () => {
         arrowRight.style.left = "-260px";
       }, 1000);
       welcomePageAnimation(e, "#arrow-right");
+      setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
     }
   }
 
@@ -162,6 +160,7 @@ window.onload = () => {
     setTimeout(function () {
       arrowRight.style.left = "-260px";
     }, 100);
+    setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
   });
 };
 
@@ -207,7 +206,6 @@ function welcomePageAnimation(e, target) {
     console.log("Scroll position after animation:", window.scrollY); // Log scroll position after animation
   }, 950);
 }
-
 
 const cursor = document.querySelector('.cursor.small');
 
@@ -264,6 +262,7 @@ const generateDesignerCollection = () => {
     container.append(image_div, text_div);
     collections.append(container);
   });
+  setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
 };
 
 const generateProjectCollection = () => {
@@ -301,4 +300,33 @@ const generateProjectCollection = () => {
     container.append(image_div, text_div);
     collections.append(container);
   });
+  setTimeout(initializeCursor, 0); // Reinitialize cursor after DOM update
 };
+
+document.addEventListener('DOMContentLoaded', function() {
+  const observerOptions = {
+    root: null, // Use the viewport as the container
+    rootMargin: '0px',
+    threshold: 0.1 // Trigger when 10% of the element is in the viewport
+  };
+
+  const fadeInElements = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Stop observing once it's visible
+      }
+    });
+  }, observerOptions);
+
+  fadeInElements.forEach(element => {
+    // Check if the element is already in the viewport
+    if (element.getBoundingClientRect().top < window.innerHeight) {
+      element.classList.add('visible');
+    } else {
+      observer.observe(element);
+    }
+  });
+});

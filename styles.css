@@ -83,54 +83,65 @@ body {
 button {
     cursor: none;
 }
-
-.cursor {
+/* Define the cursor styles */
+.cursor.small {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity:0.8;
+    background-color: var(--main-color-yellow);
     position: fixed;
-    z-index: 100000; /* this is to make sure this is the top most element make this bigger if the cursor is going under other elements */
-    cursor: none; /* this is to hide the default cursor */
-    pointer-events: none; /* this is to make it so that the cursor can still interact with elements */
-    transition: width 100ms ease, height 100ms ease;
-}
+    pointer-events: none;
+    transition: width 100ms ease, height 100ms ease, transform 0.05s ease; /* Smooth transition for size change */
+    z-index: 1000; /* Ensure the cursor is above other elements */
+  }
+  
+  /* Define the enlarged cursor for clickable elements */
+  .cursor.small.enlarged {
+    width: 70px !important; /* Adjust width for enlargement */
+    height: 70px !important; /* Adjust height for enlargement */
+    mix-blend-mode:hard-light !important;
+    opacity:1 !important;
 
-.small {
-    z-index: 2000000;
-}
-
-.trail {
+  }
+  
+  /* Additional cursor styles */
+  .trail {
     width: 30px;
     height: 30px;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     background-color: var(--main-color-yellow);
     border-radius: 50%;
     transition: all 200ms ease;
-}
-
-
-.trail-array { /* className for the trail elements */
+  }
+  
+  .trail-array { /* className for the trail elements */
     position: fixed;
     z-index: 100001;
-    height: 30px; width: 30px;
-    transform: translate(-50%, -50%); 
+    height: 30px;
+    width: 30px;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
     background: var(--main-color-yellow);
     opacity: 0.2;
-}
-
-
-
-.small {
+  }
+  
+  .small {
     width: 30px;
     height: 30px;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     background-color: var(--main-color-yellow);
-    box-shadow: 0 0 6px 3px rgba(0,0,0,.2);
+    /* box-shadow: 0 0 6px 3px rgba(0, 0, 0, .2); */
     border-radius: 50%;
-}
+  }
+  
+  .link {
+    width: 100px !important;
+    height: 100px !important;
+    opacity:0.5 !important;
+  }
+  
 
-.link {
-    width: 40px;
-    height: 40px;
-}
 
 /* Hide the scroll bar in Chrome */
 /* Change the style of the scroll bar in Chrome */
@@ -372,7 +383,19 @@ a {
     transition: width 1000ms ease, height 1000ms ease, opacity 500ms ease;
 }
 
-  
+  /* Initial state of elements */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Fade-in animation */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .enlarge {
     transform: translate(-30vw, -100vh);
